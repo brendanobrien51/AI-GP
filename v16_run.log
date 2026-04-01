@@ -1,0 +1,120 @@
+Initializing drone interface...
+Connected!
+Client Ver:1 (Min Req: 1), Server Ver:1 (Min Req: 1)
+
+Arming and taking off...
+Arming drone...
+Taking off...
+Climbing to z=-1.5m...
+Takeoff complete.
+Getting gate poses...
+Found 12 gates.
+   1. Gate00
+   2. Gate01
+   3. Gate02
+   4. Gate03
+   5. Gate04
+   6. Gate05
+   7. Gate06
+   8. Gate07
+   9. Gate08
+  10. Gate09
+  11. Gate10_21
+  12. Gate11_23
+  Gate  1: Gate00         turn=  0.0deg  speed_mult=1.00
+  Gate  2: Gate01         turn= 33.2deg  speed_mult=0.82
+  Gate  3: Gate02         turn= 25.8deg  speed_mult=0.86
+  Gate  4: Gate03         turn= 20.7deg  speed_mult=0.88
+  Gate  5: Gate04         turn= 18.4deg  speed_mult=0.90
+  Gate  6: Gate05         turn= 29.8deg  speed_mult=0.83
+  Gate  7: Gate06         turn= 41.8deg  speed_mult=0.77
+  Gate  8: Gate07         turn= 37.6deg  speed_mult=0.79
+  Gate  9: Gate08         turn= 34.5deg  speed_mult=0.81
+  Gate 10: Gate09         turn= 17.9deg  speed_mult=0.90
+  Gate 11: Gate10_21      turn= 17.3deg  speed_mult=0.90
+  Gate 12: Gate11_23      turn=  0.0deg  speed_mult=1.00
+  Gate  1: req_speed=14.0 decel_start_dist=0.0m
+  Gate  2: req_speed=11.4 decel_start_dist=5.5m
+  Gate  3: req_speed=12.0 decel_start_dist=0.0m
+  Gate  4: req_speed=12.4 decel_start_dist=0.0m
+  Gate  5: req_speed=12.6 decel_start_dist=0.0m
+  Gate  6: req_speed=11.7 decel_start_dist=1.8m
+  Gate  7: req_speed=10.8 decel_start_dist=1.7m
+  Gate  8: req_speed=11.1 decel_start_dist=0.0m
+  Gate  9: req_speed=11.3 decel_start_dist=0.0m
+  Gate 10: req_speed=12.6 decel_start_dist=0.0m
+  Gate 11: req_speed=12.7 decel_start_dist=0.0m
+  Gate 12: req_speed=14.0 decel_start_dist=0.0m
+Pre-race: climbing to gate altitude z=2.0 ...
+Pre-race: flying to gate 1 approach point ...
+Pre-race alignment complete. Starting race loop.
+Shutting down...
+Traceback (most recent call last):
+  File "C:\Users\brend\AI-GP\airsim_contour_trackerV16.py", line 1341, in <module>
+    main()
+  File "C:\Users\brend\AI-GP\airsim_contour_trackerV16.py", line 1023, in main
+    telem.update_frame(speed=cur_speed, detection_found=(tracker.current is not None))
+  File "C:\Users\brend\AI-GP\airsim_contour_trackerV16.py", line 479, in current
+    if time.time() - self._t > cfg.tracker_stale_s:
+NameError: name 'cfg' is not defined. Did you mean: 'Cfg'?
+Initializing drone interface...
+Connected!
+Client Ver:1 (Min Req: 1), Server Ver:1 (Min Req: 1)
+
+Arming and taking off...
+Arming drone...
+Taking off...
+Climbing to z=-1.5m...
+Takeoff complete.
+Getting gate poses...
+Found 12 gates.
+   1. Gate00
+   2. Gate01
+   3. Gate02
+   4. Gate03
+   5. Gate04
+   6. Gate05
+   7. Gate06
+   8. Gate07
+   9. Gate08
+  10. Gate09
+  11. Gate10_21
+  12. Gate11_23
+  Gate  1: Gate00         turn=  0.0deg  speed_mult=1.00
+  Gate  2: Gate01         turn= 33.2deg  speed_mult=0.82
+  Gate  3: Gate02         turn= 25.8deg  speed_mult=0.86
+  Gate  4: Gate03         turn= 20.7deg  speed_mult=0.88
+  Gate  5: Gate04         turn= 18.4deg  speed_mult=0.90
+  Gate  6: Gate05         turn= 29.8deg  speed_mult=0.83
+  Gate  7: Gate06         turn= 41.8deg  speed_mult=0.77
+  Gate  8: Gate07         turn= 37.6deg  speed_mult=0.79
+  Gate  9: Gate08         turn= 34.5deg  speed_mult=0.81
+  Gate 10: Gate09         turn= 17.9deg  speed_mult=0.90
+  Gate 11: Gate10_21      turn= 17.3deg  speed_mult=0.90
+  Gate 12: Gate11_23      turn=  0.0deg  speed_mult=1.00
+  Gate  1: req_speed=14.0 decel_start_dist=0.0m
+  Gate  2: req_speed=11.4 decel_start_dist=5.5m
+  Gate  3: req_speed=12.0 decel_start_dist=0.0m
+  Gate  4: req_speed=12.4 decel_start_dist=0.0m
+  Gate  5: req_speed=12.6 decel_start_dist=0.0m
+  Gate  6: req_speed=11.7 decel_start_dist=1.8m
+  Gate  7: req_speed=10.8 decel_start_dist=1.7m
+  Gate  8: req_speed=11.1 decel_start_dist=0.0m
+  Gate  9: req_speed=11.3 decel_start_dist=0.0m
+  Gate 10: req_speed=12.6 decel_start_dist=0.0m
+  Gate 11: req_speed=12.7 decel_start_dist=0.0m
+  Gate 12: req_speed=14.0 decel_start_dist=0.0m
+Pre-race: climbing to gate altitude z=2.0 ...
+Pre-race: flying to gate 1 approach point ...
+Pre-race alignment complete. Starting race loop.
+Shutting down...
+Traceback (most recent call last):
+  File "C:\Users\brend\AI-GP\airsim_contour_trackerV16.py", line 1343, in <module>
+    main()
+  File "C:\Users\brend\AI-GP\airsim_contour_trackerV16.py", line 1304, in main
+    dash = build_dashboard(
+  File "C:\Users\brend\AI-GP\airsim_contour_trackerV16.py", line 885, in build_dashboard
+    cam_p = draw_camera_panel(frame, tracker, phase, gate["name"],
+  File "C:\Users\brend\AI-GP\airsim_contour_trackerV16.py", line 810, in draw_camera_panel
+    t    = clamp((det["score"] - cfg.cv_score_threshold) /
+NameError: name 'cfg' is not defined. Did you mean: 'Cfg'?

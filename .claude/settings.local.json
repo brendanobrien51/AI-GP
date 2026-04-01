@@ -1,0 +1,39 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(wc:*)",
+      "Bash(grep -v \"^$\")",
+      "Bash(/tmp/replacements.txt:*)",
+      "Read(//tmp/**)",
+      "Bash(python3:*)",
+      "Bash(python:*)",
+      "Bash(pip install:*)",
+      "Bash(tee v16_run.log)",
+      "Bash(tee -a v16_run.log)",
+      "Bash(nvidia-smi --query-gpu=name,driver_version,compute_cap --format=csv,noheader)",
+      "Bash(pip show:*)",
+      "Bash(pip index:*)",
+      "Bash(dir C:UsersbrendAppDataLocalTempclaude /b)",
+      "Bash(python -c \":*)",
+      "WebSearch",
+      "Bash(xargs cat:*)",
+      "Bash(ls -la /c/Users/brend/AI-GP/*.txt /c/Users/brend/AI-GP/requirements.txt)",
+      "Bash(pip list:*)",
+      "Bash(ls -lh /c/Users/brend/AI-GP/*.pt)",
+      "Bash(grep:*)",
+      "Bash(ls -la /c/Users/brend/AI-GP/*.py)",
+      "Bash(ls -la /c/Users/brend/AI-GP/*.yaml /c/Users/brend/AI-GP/*.json)",
+      "Bash(pkill -f airsim_contour_trackerV16.py)",
+      "Bash(tee race_run.log)",
+      "Bash(ls -lth C:UsersbrendAI-GP*.log C:UsersbrendAI-GP*.csv)",
+      "Bash(ls -la *.zip)",
+      "Bash(ls -la *zip)",
+      "Bash(tee v16_test.log)",
+      "Bash(find . -name *.zip -type f)",
+      "Bash(pkill -9 -f airsim_contour_trackerV16)",
+      "Bash(wmic process:*)",
+      "Bash(tee v16_fresh_run.log)",
+      "Bash(pkill -9 -f \"python.*airsim_contour_trackerV16|python.*train_rl\")"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+.vs/
+venv/
+__pycache__/
+*.pyc
+.idea/
+# Ignore huge AI/Drone files
+*.pt
+*.onnx
+*.weights
+datasets/
+runs/
+__pycache__/
+*.mp4
+*.avi
+echo "training_data/" >> .gitignore
+echo "runs/" >> .gitignore
+echo "*.pt" >> .gitignore
+echo "*.log" >> .gitignore
+echo "*.db" >> .gitignore

@@ -1,0 +1,161 @@
+# V16 Drone Racing Configuration
+# All tuning parameters for airsim_contour_trackerV16.py
+
+# --- MPCC Controller (Model Predictive Contouring Control) ---
+# Set mpcc_enabled: true to use MPCC instead of pure pursuit
+mpcc_enabled: true
+mpcc_horizon: 12        # prediction steps (longer horizon = smoother, more forward-looking)
+mpcc_w_progress: 3.5    # weight on forward progress maximization (increased for aggressive racing)
+mpcc_w_lateral: 4.0     # weight on lateral deviation minimization (reduced for tighter turns)
+mpcc_w_speed: 0.3       # weight on speed tracking (reduced - progress > smooth speed)
+
+# --- Flight envelope ---
+takeoff_height: -1.5
+
+# Speed limits per phase (conservative baseline - optimizer will tune)
+max_approach_speed: 14.0
+max_center_speed: 10.0
+max_exit_speed: 16.0
+min_speed_fraction: 0.28
+min_center_speed: 5.5
+
+# Speed control dynamics
+yaw_scale_exponent: 1.1
+brake_dist: 2.0
+brake_min_fraction: 0.40
+vel_ff_alpha: 0.04
+
+# --- Gate geometry ---
+approach_tol: 4.2
+exit_tol: 14.0
+first_approach_dist: 8.0
+approach_dist: 3.5
+exit_dist: 3.0
+center_through_dist: 4.0
+gate_cross_eps: 0.15
+dyn_approach_frac: 0.45
+auto_skip_progress: 3.5
+
+# --- Commit zone (forces commitment through gate) ---
+commit_dist: 2.5
+commit_lat_damp: 0.20
+commit_min_fwd_speed: 6.0
+commit_alt_tol: 1.2
+
+# --- Collision recovery ---
+collision_speed_thresh: 0.8
+collision_dist_thresh: 4.0
+collision_time_thresh: 1.2
+backup_dist: 6.0
+backup_speed: 3.5
+max_retries: 2
+retry_speed_mult: 0.50
+
+# --- Gate cushion (speed-proportional centering force) ---
+cushion_dist: 9.0
+cushion_threshold: 0.2
+cushion_gain: 10.0
+cushion_max: 10.0
+cushion_speed_scale: 8.0
+
+# --- Turn-angle adaptive speed ---
+turn_speed_straight: 1.0
+turn_speed_90deg: 0.50
+turn_speed_180deg: 0.30
+turn_taper_dist: 12.0
+
+# --- PREDICTIVE speed profiling (V16 new) ---
+# Maximum deceleration rate for predictive braking calculations
+max_decel: 6.0
+# How many upcoming gates to scan for deceleration constraints
+predictive_lookahead_gates: 2
+
+# --- Pure-pursuit lookahead ---
+lookahead_min: 7.0
+lookahead_max: 20.0
+lookahead_speed_scale: 1.4
+
+# --- Proximity lookahead scaling (shrink near gates) ---
+prox_scale_dist: 8.0
+prox_scale_min: 0.30
+prox_lookahead_floor: 3.0
+
+# --- Lateral centering (speed-proportional) ---
+lateral_gain_approach: 4.0
+lateral_gain_center: 6.0
+lateral_max: 10.0
+lateral_speed_scale: 12.0
+
+# --- CV-guided lateral correction (speed-proportional) ---
+cv_steer_gain_approach: 2.0
+cv_steer_gain_center: 4.0
+cv_steer_gain_exit: 1.0
+cv_steer_max: 8.0
+cv_steer_blend: 0.6
+cv_steer_speed_scale: 10.0
+
+# --- Yaw alignment ---
+yaw_align_start_dist: 12.0
+yaw_align_full_dist: 3.0
+
+# --- Altitude control ---
+alt_kp: 6.0
+alt_kp_center: 7.0
+alt_max_z_vel: 10.0
+
+# --- Stuck detection ---
+stuck_window: 3.0
+stuck_min_progress: 0.25
+
+# --- Gate tracker stale timeout ---
+tracker_stale_s: 0.8
+
+# --- Gate timeout ---
+max_gate_time: 25.0
+
+# --- Control loop ---
+control_dt: 0.05
+
+# --- Computer Vision ---
+contour_min_area: 250
+cv_score_threshold: 0.30
+canny_low: 50
+canny_high: 130
+
+# --- DYNAMIC CV search window (V16 new) ---
+# Sky mask scaling based on gate distance
+sky_mask_near: 0.35    # fraction of frame height masked when gate < 8m
+sky_mask_mid: 0.25     # fraction when gate 8-15m
+sky_mask_far: 0.15     # fraction when gate > 15m
+
+# Floor mask scaling
+floor_mask_near: 0.15
+floor_mask_mid: 0.10
+floor_mask_far: 0.05
+
+# Distance breakpoints for CV window scaling
+dist_near: 8.0
+dist_far: 15.0
+
+# Min contour area scaling for distant gates
+contour_min_area_far: 50
+
+# --- Gate-centric targeting (from v15) ---
+gate_blend_far: 16.0
+gate_blend_near: 5.0
+
+# --- Camera ---
+camera_fov_h_deg: 90.0
+
+# --- Path visualization ---
+path_vis_dist: 45.0
+path_vis_samples: 60
+
+# --- State estimation (VIO + PnP + Kalman, Swift-style) ---
+gate_half_size: 0.75        # metres, half side of gate square
+cam_fov: 90.0               # degrees horizontal FOV
+use_state_estimator: true   # enable VIO+PnP+Kalman; false = raw AirSim (for A/B)
+vio_accel_noise: 0.01       # accelerometer noise std (m/s² per sqrt(Hz))
+vio_gyro_noise: 0.001       # gyroscope noise std (rad/s per sqrt(Hz))
+pnp_cov_scale: 0.01         # documents k in sigma^2=k*d^2 (baked into PnPLocalizer)
+use_rl_policy: false        # set true after running train_rl.py to use PPO body-rate control

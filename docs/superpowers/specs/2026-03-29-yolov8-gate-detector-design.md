@@ -1,0 +1,190 @@
+# YOLOv8 Gate Detector — Design Spec
+**Date:** 2026-03-29
+**Project:** Anduril AI-GP V16 Drone Racer
+**GPU:** RTX 4080 Studio
+
+---
+
+## Problem
+
+The current gate detector (`find_best_gate_contour`) uses HSV color masking + Canny edges + contour scoring. It fails on:
+- Gates at distance >15m (too small for min contour area)
+- Gates at steep angles (perspective distortion breaks rectangularity score)
+- Partially visible gates (low solidity score rejects them)
+- Lighting variation (HSV ranges are fixed)
+
+These failures cause missed gates, which add 100s penalty per gate in the optimizer.
+
+## Goal
+
+Replace the primary gate detector with YOLOv8-nano trained on auto-labeled AirSim images. Keep the existing contour detector as a fallback. The drone should detect gates reliably at 5–20m range across all angles, with no change to the downstream steering or telemetry code.
+
+---
+
+## Architecture
+
+```
+collect_training_data.py    → training_data/images/ + training_data/labels/
+train_gate_detector.py      → gate_detector.pt
+gate_detector.py            → GateDetector class (inference wrapper)
+airsim_contour_trackerV16.py → 3-line change (YOLO first, contour fallback)
+```
+
+---
+
+## Step 1: Data Collection (`collect_training_data.py`)
+
+**What it does:**
+- Connects to AirSim, arms drone, flies a slow patrol path past all gates
+- Each frame (~20 fps, 20 min = ~24,000 frames, subsample every 5th = ~4,800 images):
+  1. Capture BGR image from AirSim camera
+  2. For each gate, call `simGetObjectPose(gate_name)` to get 3D center in world frame
+  3. Project 3D gate center to 2D pixel using drone pose + camera intrinsics (90° FOV, 640×480)
+  4. Compute bounding box: gate physical size ~1.8m square, distance-scaled
+  5. If projected center is within image bounds and gate is in front of drone: save label
+- Output: YOLO format labels (`0 cx_norm cy_norm w_norm h_norm`)
+- Saves to `training_data/images/` and `training_data/labels/`
+- Target: ~2000 usable images
+
+**Auto-labeling math:**
+```
+# World → camera frame
+gate_cam = R_cam_world @ (gate_world - drone_world)
+
+# Pinhole projection
+fx = fy = (image_width / 2) / tan(FOV_h / 2)
+px = fx * (gate_cam.y / gate_cam.x) + cx_img
+py = fy * (gate_cam.z / gate_cam.x) + cy_img
+
+# Bounding box size (gate is ~1.8m, scale by distance)
+dist = gate_cam.x
+box_px = fx * 1.8 / dist
+```
+
+**Patrol path:** Fly a slow figure-8 through all gates at varying altitudes (±1m) to capture diverse angles. Speed: 3 m/s. Collect from both approach and far distances (3–20m).
+
+---
+
+## Step 2: Training (`train_gate_detector.py`)
+
+- Splits collected images 80/20 train/val
+- Generates `dataset.yaml` (single class: `gate`)
+- Trains `yolov8n.pt` (nano) for 50 epochs, image size 640
+- On RTX 4080: ~5–10 minutes
+- Output: `gate_detector.pt` (best weights, ~3MB)
+
+```python
+from ultralytics import YOLO
+model = YOLO("yolov8n.pt")
+model.train(data="dataset.yaml", epochs=50, imgsz=640, device=0)
+model.export(format="pt")
+```
+
+---
+
+## Step 3: Inference Wrapper (`gate_detector.py`)
+
+**Class:** `GateDetector`
+
+**Interface:**
+```python
+detector = GateDetector("gate_detector.pt", conf_threshold=0.45)
+result = detector.detect(frame)  # frame: BGR uint8 numpy array
+# result: {"centroid_px": (cx, cy), "score": conf, ...} or None
+```
+
+**Returns dict matching existing `score_contour()` format:**
+```python
+{
+    "centroid_px": (int, int),   # pixel center of detection
+    "score": float,              # YOLO confidence [0,1]
+    "rect": None,                # not used by cv_steer_correction
+    "area_frac": 0.0,            # placeholder
+    "aspect": 1.0,               # placeholder
+}
+```
+
+**Fallback:** If `gate_detector.pt` not found, logs a warning and returns `None` every call (contour takes over).
+
+**Performance:** ~2ms inference on RTX 4080 (well within 50ms control loop).
+
+---
+
+## Step 4: V16 Integration
+
+**File:** `airsim_contour_trackerV16.py`
+
+**Change 1** — Import at top:
+```python
+from gate_detector import GateDetector
+```
+
+**Change 2** — Initialize after config load:
+```python
+gate_det = GateDetector("gate_detector.pt", conf_threshold=0.45)
+```
+
+**Change 3** — In main loop, replace:
+```python
+raw_det = find_best_gate_contour(hsv_m, edge_m, windowed_frame.shape, ...)
+```
+With:
+```python
+raw_det = gate_det.detect(windowed_frame) or \
+          find_best_gate_contour(hsv_m, edge_m, windowed_frame.shape, ...)
+```
+
+**Add `--no-yolo` flag** to `parse_args()` for debugging without YOLO.
+
+Nothing else changes. `cv_steer_correction()`, `GateTracker`, telemetry, dashboard — all untouched.
+
+---
+
+## Files Modified / Created
+
+| File | Action |
+|---|---|
+| `collect_training_data.py` | New — data collection + auto-labeling |
+| `train_gate_detector.py` | New — YOLOv8 training script |
+| `gate_detector.py` | New — inference wrapper class |
+| `airsim_contour_trackerV16.py` | 3-line change — YOLO first, contour fallback |
+| `training_data/` | New directory — images + labels |
+| `gate_detector.pt` | Generated by training |
+
+---
+
+## Run Order
+
+```
+# Step 1: Open AirSim, set Soccer Field - Easy, press BACKSPACE
+python collect_training_data.py        # ~20 min, collects ~2000 images
+
+# Step 2: Train
+python train_gate_detector.py          # ~10 min on 4080
+
+# Step 3: Run V16 with YOLO active
+python airsim_contour_trackerV16.py    # uses gate_detector.pt automatically
+```
+
+---
+
+## Success Criteria
+
+- `collect_training_data.py` produces ≥1500 labeled images in `training_data/`
+- `train_gate_detector.py` achieves mAP50 ≥ 0.80 on validation set
+- V16 with YOLO enabled: missed gates ≤ 1 on Soccer Field Easy
+- V16 with YOLO enabled: lap time ≤ current best (12.36s)
+- `--no-yolo` flag disables YOLO cleanly, contour takes over
+
+---
+
+## Dependencies
+
+```
+pip install ultralytics    # YOLOv8 (includes PyTorch CUDA)
+```
+
+PyTorch CUDA should auto-detect the RTX 4080. Verify with:
+```python
+import torch; print(torch.cuda.is_available())  # should print True
+```

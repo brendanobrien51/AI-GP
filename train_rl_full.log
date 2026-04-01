@@ -1,0 +1,157 @@
+[TRAIN] Creating environment
+Connected!
+Client Ver:1 (Min Req: 1), Server Ver:1 (Min Req: 1)
+
+[INIT] Gate Gate00: (0.00, 2.00, 2.02)
+[INIT] Gate Gate01: (nan, nan, nan)
+[INIT] Gate Gate02: (8.89, 18.48, 2.02)
+[INIT] Gate Gate03: (18.74, 22.21, 2.02)
+[INIT] Gate Gate04: (30.04, 22.21, 2.02)
+[INIT] Gate Gate05: (39.04, 19.21, 2.02)
+[INIT] Gate Gate06: (45.74, 11.71, 2.02)
+[INIT] Gate Gate07: (nan, nan, nan)
+[INIT] Gate Gate08: (40.34, -4.79, 2.02)
+[INIT] Gate Gate09: (30.74, -7.89, 2.02)
+[INIT] Gate Gate10_21: (18.54, -7.89, 2.02)
+[INIT] Gate Gate11_23: (9.54, -5.09, 2.02)
+C:\Users\brend\AppData\Local\Programs\Python\Python310\lib\site-packages\stable_baselines3\common\on_policy_algorithm.py:150: UserWarning: You are trying to run PPO on the GPU, but it is primarily intended to run on the CPU when not using a CNN policy (you are using ActorCriticPolicy which should be a MlpPolicy). See https://github.com/DLR-RM/stable-baselines3/issues/1245 for more info. You can pass `device='cpu'` or `export CUDA_VISIBLE_DEVICES=` to force using the CPU.Note: The model will train, but the GPU utilization will be poor and the training might take longer than on CPU.
+  warnings.warn(
+[GateDetector] Loaded gate_detector.pt (conf_threshold=0.28)
+[INIT] Loaded 12 gates
+[INIT] Start pose: (nan, nan, 2.02) yaw=nan
+[TRAIN] Running random warmup so you can verify motion
+
+[RESET] Episode 1 starting
+[RESET] Armed
+[RESET] Moved to start pose (nan, nan, 2.16)
+[RESET] Distance to gate 0: 2.53
+[WARMUP 0] reward=-0.702 info={'next_gate_idx': 0, 'gate_dist': 2.5303714275360107, 'gate_found': 0.0, 'closest_gate_idx': 1}
+[WARMUP 1] reward=-0.615 info={'next_gate_idx': 0, 'gate_dist': 2.5303714275360107, 'gate_found': 0.0, 'closest_gate_idx': 1}
+[WARMUP 2] reward=-0.604 info={'next_gate_idx': 0, 'gate_dist': 2.5303714275360107, 'gate_found': 0.0, 'closest_gate_idx': 1}
+[WARMUP 3] reward=-0.574 info={'next_gate_idx': 0, 'gate_dist': 2.5303714275360107, 'gate_found': 0.0, 'closest_gate_idx': 1}
+[WARMUP 4] reward=-0.524 info={'next_gate_idx': 0, 'gate_dist': 2.528263807296753, 'gate_found': 0.0, 'closest_gate_idx': 1}
+[WARMUP 5] reward=-0.653 info={'next_gate_idx': 0, 'gate_dist': 2.5166091918945312, 'gate_found': 0.0, 'closest_gate_idx': 1}
+[STEP 7] Collision detected
+[WARMUP 6] reward=-100.575 info={'next_gate_idx': 0, 'gate_dist': 2.5127995014190674, 'gate_found': 0.0, 'closest_gate_idx': 1, 'episode': {'r': -104.246929, 'l': 7, 't': 2.457496}}
+
+[RESET] Episode 2 starting
+[RESET] Armed
+[RESET] Moved to start pose (nan, nan, 1.92)
+[RESET] Distance to gate 0: 2.53
+[WARMUP 7] reward=-0.577 info={'next_gate_idx': 0, 'gate_dist': 2.5247089862823486, 'gate_found': 0.0, 'closest_gate_idx': 1}
+[WARMUP 8] reward=-0.584 info={'next_gate_idx': 0, 'gate_dist': 2.505634069442749, 'gate_found': 0.0, 'closest_gate_idx': 1}
+[WARMUP 9] reward=-0.579 info={'next_gate_idx': 0, 'gate_dist': 2.508103609085083, 'gate_found': 0.0, 'closest_gate_idx': 1}
+[WARMUP 10] reward=-0.574 info={'next_gate_idx': 0, 'gate_dist': 2.508103609085083, 'gate_found': 0.0, 'closest_gate_idx': 1}
+[WARMUP 11] reward=-0.549 info={'next_gate_idx': 0, 'gate_dist': 2.508103609085083, 'gate_found': 0.0, 'closest_gate_idx': 1}
+[WARMUP 12] reward=-0.644 info={'next_gate_idx': 0, 'gate_dist': 2.505657434463501, 'gate_found': 0.0, 'closest_gate_idx': 1}
+[STEP 7] Collision detected
+[WARMUP 13] reward=-100.703 info={'next_gate_idx': 0, 'gate_dist': 2.5120229721069336, 'gate_found': 0.0, 'closest_gate_idx': 1, 'episode': {'r': -104.209768, 'l': 7, 't': 4.917444}}
+
+[RESET] Episode 3 starting
+[RESET] Armed
+[RESET] Moved to start pose (nan, nan, 2.03)
+[RESET] Distance to gate 0: 2.53
+[WARMUP 14] reward=-0.695 info={'next_gate_idx': 0, 'gate_dist': 2.5291829109191895, 'gate_found': 0.0, 'closest_gate_idx': 1}
+[WARMUP 15] reward=-0.653 info={'next_gate_idx': 0, 'gate_dist': 2.5237975120544434, 'gate_found': 0.0, 'closest_gate_idx': 1}
+[WARMUP 16] reward=-0.650 info={'next_gate_idx': 0, 'gate_dist': 2.506338357925415, 'gate_found': 0.0, 'closest_gate_idx': 1}
+[WARMUP 17] reward=-0.653 info={'next_gate_idx': 0, 'gate_dist': 2.5078468322753906, 'gate_found': 0.0, 'closest_gate_idx': 1}
+[WARMUP 18] reward=-0.558 info={'next_gate_idx': 0, 'gate_dist': 2.5016963481903076, 'gate_found': 0.0, 'closest_gate_idx': 1}
+[WARMUP 19] reward=-0.585 info={'next_gate_idx': 0, 'gate_dist': 2.5085108280181885, 'gate_found': 0.0, 'closest_gate_idx': 1}
+[WARMUP 20] reward=-0.496 info={'next_gate_idx': 0, 'gate_dist': 2.4982149600982666, 'gate_found': 0.0, 'closest_gate_idx': 1}
+[WARMUP 21] reward=-0.641 info={'next_gate_idx': 0, 'gate_dist': 2.4999709129333496, 'gate_found': 0.0, 'closest_gate_idx': 1}
+[WARMUP 22] reward=-0.632 info={'next_gate_idx': 0, 'gate_dist': 2.4998483657836914, 'gate_found': 0.0, 'closest_gate_idx': 1}
+[STEP 10] active_gate=0 closest_gate=1 dist=2.50 reward=-0.522 vel=(0.00,0.00,0.00) cmd=(r=-0.07,p=0.15,yaw_rate=-1.82,z=3.52) gate_found=0 gate_area=0.0000
+[WARMUP 23] reward=-0.522 info={'next_gate_idx': 0, 'gate_dist': 2.4998483657836914, 'gate_found': 0.0, 'closest_gate_idx': 1}
+[WARMUP 24] reward=-0.636 info={'next_gate_idx': 0, 'gate_dist': 2.4998483657836914, 'gate_found': 0.0, 'closest_gate_idx': 1}
+[WARMUP 25] reward=-0.595 info={'next_gate_idx': 0, 'gate_dist': 2.4998483657836914, 'gate_found': 0.0, 'closest_gate_idx': 1}
+[WARMUP 26] reward=-0.654 info={'next_gate_idx': 0, 'gate_dist': 2.4998483657836914, 'gate_found': 0.0, 'closest_gate_idx': 1}
+[WARMUP 27] reward=-0.598 info={'next_gate_idx': 0, 'gate_dist': 2.4998483657836914, 'gate_found': 0.0, 'closest_gate_idx': 1}
+[WARMUP 28] reward=-0.626 info={'next_gate_idx': 0, 'gate_dist': 2.4998483657836914, 'gate_found': 0.0, 'closest_gate_idx': 1}
+[WARMUP 29] reward=-0.578 info={'next_gate_idx': 0, 'gate_dist': 2.4998483657836914, 'gate_found': 0.0, 'closest_gate_idx': 1}
+[WARMUP 30] reward=-0.542 info={'next_gate_idx': 0, 'gate_dist': 2.4998483657836914, 'gate_found': 0.0, 'closest_gate_idx': 1}
+[WARMUP 31] reward=-0.665 info={'next_gate_idx': 0, 'gate_dist': 2.4998483657836914, 'gate_found': 0.0, 'closest_gate_idx': 1}
+[WARMUP 32] reward=-0.681 info={'next_gate_idx': 0, 'gate_dist': 2.4998483657836914, 'gate_found': 0.0, 'closest_gate_idx': 1}
+[STEP 20] active_gate=0 closest_gate=1 dist=2.50 reward=-0.658 vel=(0.00,0.00,0.00) cmd=(r=-0.02,p=0.25,yaw_rate=-15.30,z=3.80) gate_found=0 gate_area=0.0000
+[WARMUP 33] reward=-0.658 info={'next_gate_idx': 0, 'gate_dist': 2.4998483657836914, 'gate_found': 0.0, 'closest_gate_idx': 1}
+[WARMUP 34] reward=-0.578 info={'next_gate_idx': 0, 'gate_dist': 2.4998483657836914, 'gate_found': 0.0, 'closest_gate_idx': 1}
+[WARMUP 35] reward=-0.699 info={'next_gate_idx': 0, 'gate_dist': 2.4998483657836914, 'gate_found': 0.0, 'closest_gate_idx': 1}
+[WARMUP 36] reward=-0.683 info={'next_gate_idx': 0, 'gate_dist': 2.4965322017669678, 'gate_found': 0.0, 'closest_gate_idx': 1}
+[STEP 24] Collision detected
+[WARMUP 37] reward=-100.656 info={'next_gate_idx': 0, 'gate_dist': 2.4998021125793457, 'gate_found': 0.0, 'closest_gate_idx': 1, 'episode': {'r': -114.932813, 'l': 24, 't': 10.082243}}
+
+[RESET] Episode 4 starting
+[RESET] Armed
+[RESET] Moved to start pose (nan, nan, 2.06)
+[RESET] Distance to gate 0: 2.53
+[WARMUP 38] reward=-0.570 info={'next_gate_idx': 0, 'gate_dist': 2.5291829109191895, 'gate_found': 0.0, 'closest_gate_idx': 1}
+[WARMUP 39] reward=-0.526 info={'next_gate_idx': 0, 'gate_dist': 2.5236761569976807, 'gate_found': 0.0, 'closest_gate_idx': 1}
+[WARMUP 40] reward=-0.650 info={'next_gate_idx': 0, 'gate_dist': 2.516408681869507, 'gate_found': 0.0, 'closest_gate_idx': 1}
+[WARMUP 41] reward=-0.599 info={'next_gate_idx': 0, 'gate_dist': 2.519179582595825, 'gate_found': 0.0, 'closest_gate_idx': 1}
+[WARMUP 42] reward=-0.590 info={'next_gate_idx': 0, 'gate_dist': 2.5187325477600098, 'gate_found': 0.0, 'closest_gate_idx': 1}
+[WARMUP 43] reward=-0.536 info={'next_gate_idx': 0, 'gate_dist': 2.520033121109009, 'gate_found': 0.0, 'closest_gate_idx': 1}
+[WARMUP 44] reward=-0.640 info={'next_gate_idx': 0, 'gate_dist': 2.5176076889038086, 'gate_found': 0.0, 'closest_gate_idx': 1}
+[WARMUP 45] reward=-0.612 info={'next_gate_idx': 0, 'gate_dist': 2.5147621631622314, 'gate_found': 0.0, 'closest_gate_idx': 1}
+[WARMUP 46] reward=-0.661 info={'next_gate_idx': 0, 'gate_dist': 2.5047531127929688, 'gate_found': 0.0, 'closest_gate_idx': 1}
+[STEP 10] Collision detected
+[STEP 10] active_gate=0 closest_gate=1 dist=2.50 reward=-100.523 vel=(0.46,0.14,0.08) cmd=(r=-0.04,p=0.19,yaw_rate=3.77,z=3.50) gate_found=0 gate_area=0.0000
+[WARMUP 47] reward=-100.523 info={'next_gate_idx': 0, 'gate_dist': 2.497875690460205, 'gate_found': 0.0, 'closest_gate_idx': 1, 'episode': {'r': -105.908462, 'l': 10, 't': 12.989395}}
+
+[RESET] Episode 5 starting
+[RESET] Armed
+[RESET] Moved to start pose (nan, nan, 2.09)
+[RESET] Distance to gate 0: 2.53
+[WARMUP 48] reward=-0.555 info={'next_gate_idx': 0, 'gate_dist': 2.5263235569000244, 'gate_found': 0.0, 'closest_gate_idx': 1}
+[STEP 2] Collision detected
+[WARMUP 49] reward=-100.499 info={'next_gate_idx': 0, 'gate_dist': 2.5178754329681396, 'gate_found': 0.0, 'closest_gate_idx': 1, 'episode': {'r': -101.053784, 'l': 2, 't': 14.609898}}
+
+[RESET] Episode 6 starting
+[RESET] Armed
+[RESET] Moved to start pose (nan, nan, 2.00)
+[RESET] Distance to gate 0: 2.53
+[TRAIN] Building PPO model
+Using cuda device
+Wrapping the env in a DummyVecEnv.
+[TRAIN] Starting learning (1,000,000 timesteps)
+
+[RESET] Episode 7 starting
+[RESET] Armed
+[RESET] Moved to start pose (nan, nan, 1.83)
+[RESET] Distance to gate 0: 2.53
+Logging to ./tb_logs/PPO_12
+Traceback (most recent call last):
+  File "C:\Users\brend\AI-GP\train_rl.py", line 66, in <module>
+    model.learn(total_timesteps=TOTAL_TIMESTEPS, callback=callbacks, progress_bar=True)
+  File "C:\Users\brend\AppData\Local\Programs\Python\Python310\lib\site-packages\stable_baselines3\ppo\ppo.py", line 311, in learn
+    return super().learn(
+  File "C:\Users\brend\AppData\Local\Programs\Python\Python310\lib\site-packages\stable_baselines3\common\on_policy_algorithm.py", line 324, in learn
+    continue_training = self.collect_rollouts(self.env, callback, self.rollout_buffer, n_rollout_steps=self.n_steps)
+  File "C:\Users\brend\AppData\Local\Programs\Python\Python310\lib\site-packages\stable_baselines3\common\on_policy_algorithm.py", line 202, in collect_rollouts
+    actions, values, log_probs = self.policy(obs_tensor)
+  File "C:\Users\brend\AppData\Local\Programs\Python\Python310\lib\site-packages\torch\nn\modules\module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\brend\AppData\Local\Programs\Python\Python310\lib\site-packages\torch\nn\modules\module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\brend\AppData\Local\Programs\Python\Python310\lib\site-packages\stable_baselines3\common\policies.py", line 654, in forward
+    distribution = self._get_action_dist_from_latent(latent_pi)
+  File "C:\Users\brend\AppData\Local\Programs\Python\Python310\lib\site-packages\stable_baselines3\common\policies.py", line 694, in _get_action_dist_from_latent
+    return self.action_dist.proba_distribution(mean_actions, self.log_std)
+  File "C:\Users\brend\AppData\Local\Programs\Python\Python310\lib\site-packages\stable_baselines3\common\distributions.py", line 164, in proba_distribution
+    self.distribution = Normal(mean_actions, action_std)
+  File "C:\Users\brend\AppData\Local\Programs\Python\Python310\lib\site-packages\torch\distributions\normal.py", line 59, in __init__
+    super().__init__(batch_shape, validate_args=validate_args)
+  File "C:\Users\brend\AppData\Local\Programs\Python\Python310\lib\site-packages\torch\distributions\distribution.py", line 71, in __init__
+    raise ValueError(
+ValueError: Expected parameter loc (Tensor of shape (1, 4)) of distribution Normal(loc: torch.Size([1, 4]), scale: torch.Size([1, 4])) to satisfy the constraint Real(), but found invalid values:
+tensor([[nan, nan, nan, nan]], device='cuda:0')
+Exception ignored in: <function tqdm.__del__ at 0x000001E3C3383AC0>
+Traceback (most recent call last):
+  File "C:\Users\brend\AppData\Local\Programs\Python\Python310\lib\site-packages\tqdm\std.py", line 1148, in __del__
+  File "C:\Users\brend\AppData\Local\Programs\Python\Python310\lib\site-packages\tqdm\rich.py", line 121, in close
+  File "C:\Users\brend\AppData\Local\Programs\Python\Python310\lib\site-packages\rich\progress.py", line 1190, in __exit__
+  File "C:\Users\brend\AppData\Local\Programs\Python\Python310\lib\site-packages\rich\progress.py", line 1176, in stop
+  File "C:\Users\brend\AppData\Local\Programs\Python\Python310\lib\site-packages\rich\live.py", line 162, in stop
+  File "C:\Users\brend\AppData\Local\Programs\Python\Python310\lib\site-packages\rich\console.py", line 870, in __exit__
+  File "C:\Users\brend\AppData\Local\Programs\Python\Python310\lib\site-packages\rich\console.py", line 826, in _exit_buffer
+  File "C:\Users\brend\AppData\Local\Programs\Python\Python310\lib\site-packages\rich\console.py", line 2042, in _check_buffer
+  File "C:\Users\brend\AppData\Local\Programs\Python\Python310\lib\site-packages\rich\console.py", line 2071, in _write_buffer
+ImportError: sys.meta_path is None, Python is likely shutting down

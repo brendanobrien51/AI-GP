@@ -1,0 +1,6 @@
+names:
+- gate
+nc: 1
+path: C:\Users\brend\AI-GP\training_data
+train: train.txt
+val: val.txt

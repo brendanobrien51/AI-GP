@@ -1,0 +1,178 @@
+[TRAIN] Creating environment
+Connected!
+Client Ver:1 (Min Req: 1), Server Ver:1 (Min Req: 1)
+
+[INIT] Gate Gate00: (0.00, 2.00, 2.02)
+[INIT] Gate Gate01: (1.60, 10.80, 2.02)
+[INIT] Gate Gate02: (8.89, 18.48, 2.02)
+[INIT] Gate Gate03: (18.74, 22.21, 2.02)
+[INIT] Gate Gate04: (30.04, 22.21, 2.02)
+[INIT] Gate Gate05: (39.04, 19.21, 2.02)
+[INIT] Gate Gate06: (45.74, 11.71, 2.02)
+[INIT] Gate Gate07: (45.74, 2.21, 2.02)
+[INIT] Gate Gate08: (40.34, -4.79, 2.02)
+[INIT] Gate Gate09: (30.74, -7.89, 2.02)
+[INIT] Gate Gate10_21: (18.54, -7.89, 2.02)
+[INIT] Gate Gate11_23: (9.54, -5.09, 2.02)
+C:\Users\brend\AppData\Local\Programs\Python\Python310\lib\site-packages\stable_baselines3\common\on_policy_algorithm.py:150: UserWarning: You are trying to run PPO on the GPU, but it is primarily intended to run on the CPU when not using a CNN policy (you are using ActorCriticPolicy which should be a MlpPolicy). See https://github.com/DLR-RM/stable-baselines3/issues/1245 for more info. You can pass `device='cpu'` or `export CUDA_VISIBLE_DEVICES=` to force using the CPU.Note: The model will train, but the GPU utilization will be poor and the training might take longer than on CPU.
+  warnings.warn(
+[GateDetector] Loaded gate_detector.pt (conf_threshold=0.28)
+[INIT] Loaded 12 gates
+[INIT] Start pose: (-1.07, -3.90, 2.02) yaw=79.70
+[TRAIN] Running random warmup so you can verify motion
+
+[RESET] Episode 1 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.77, -3.63, 2.16)
+[RESET] Distance to gate 0: 2.23
+[WARMUP 0] reward=-0.181 info={'next_gate_idx': 0, 'gate_dist': 2.307238817214966, 'gate_found': 0.0, 'closest_gate_idx': 0}
+[WARMUP 1] reward=0.016 info={'next_gate_idx': 0, 'gate_dist': 2.3733856678009033, 'gate_found': 1.0, 'closest_gate_idx': 0}
+[WARMUP 2] reward=0.053 info={'next_gate_idx': 0, 'gate_dist': 2.431617021560669, 'gate_found': 1.0, 'closest_gate_idx': 0}
+[WARMUP 3] reward=-0.272 info={'next_gate_idx': 0, 'gate_dist': 2.5228664875030518, 'gate_found': 0.0, 'closest_gate_idx': 0}
+[WARMUP 4] reward=-0.207 info={'next_gate_idx': 0, 'gate_dist': 2.6270859241485596, 'gate_found': 0.0, 'closest_gate_idx': 0}
+[WARMUP 5] reward=-0.203 info={'next_gate_idx': 0, 'gate_dist': 2.829820394515991, 'gate_found': 1.0, 'closest_gate_idx': 0}
+[WARMUP 6] reward=-0.250 info={'next_gate_idx': 0, 'gate_dist': 2.958545446395874, 'gate_found': 0.0, 'closest_gate_idx': 0}
+[WARMUP 7] reward=-0.400 info={'next_gate_idx': 0, 'gate_dist': 3.1521341800689697, 'gate_found': 0.0, 'closest_gate_idx': 0}
+[WARMUP 8] reward=-0.657 info={'next_gate_idx': 0, 'gate_dist': 3.4094321727752686, 'gate_found': 0.0, 'closest_gate_idx': 0}
+[STEP 10] active_gate=0 closest_gate=0 dist=3.62 reward=-0.565 vel=(3.19,0.17,0.44) cmd=(r=0.08,p=0.10,yaw_rate=-17.26,z=3.20) gate_found=0 gate_area=0.0000
+[WARMUP 9] reward=-0.565 info={'next_gate_idx': 0, 'gate_dist': 3.6198179721832275, 'gate_found': 0.0, 'closest_gate_idx': 0}
+[WARMUP 10] reward=-0.759 info={'next_gate_idx': 0, 'gate_dist': 3.9904351234436035, 'gate_found': 0.0, 'closest_gate_idx': 0}
+[WARMUP 11] reward=-0.533 info={'next_gate_idx': 0, 'gate_dist': 4.184667587280273, 'gate_found': 0.0, 'closest_gate_idx': 0}
+[WARMUP 12] reward=-0.273 info={'next_gate_idx': 0, 'gate_dist': 4.378957748413086, 'gate_found': 1.0, 'closest_gate_idx': 0}
+[WARMUP 13] reward=-0.512 info={'next_gate_idx': 0, 'gate_dist': 4.738551139831543, 'gate_found': 1.0, 'closest_gate_idx': 0}
+[WARMUP 14] reward=-0.692 info={'next_gate_idx': 0, 'gate_dist': 5.175293445587158, 'gate_found': 1.0, 'closest_gate_idx': 0}
+[WARMUP 15] reward=-0.719 info={'next_gate_idx': 0, 'gate_dist': 5.459648609161377, 'gate_found': 0.0, 'closest_gate_idx': 0}
+[WARMUP 16] reward=-0.750 info={'next_gate_idx': 0, 'gate_dist': 5.849251747131348, 'gate_found': 0.0, 'closest_gate_idx': 0}
+[WARMUP 17] reward=-0.758 info={'next_gate_idx': 0, 'gate_dist': 6.234223365783691, 'gate_found': 0.0, 'closest_gate_idx': 0}
+[WARMUP 18] reward=-1.207 info={'next_gate_idx': 0, 'gate_dist': 6.62373161315918, 'gate_found': 1.0, 'closest_gate_idx': 11}
+[STEP 20] active_gate=0 closest_gate=11 dist=7.02 reward=-1.289 vel=(4.59,0.37,0.85) cmd=(r=0.01,p=0.23,yaw_rate=4.69,z=3.52) gate_found=0 gate_area=0.0000
+[WARMUP 19] reward=-1.289 info={'next_gate_idx': 0, 'gate_dist': 7.0158562660217285, 'gate_found': 0.0, 'closest_gate_idx': 11}
+[WARMUP 20] reward=-1.446 info={'next_gate_idx': 0, 'gate_dist': 7.438114643096924, 'gate_found': 0.0, 'closest_gate_idx': 11}
+[WARMUP 21] reward=9.192 info={'next_gate_idx': 0, 'gate_dist': 2.8966004848480225, 'gate_found': 1.0, 'closest_gate_idx': 0}
+[WARMUP 22] reward=0.232 info={'next_gate_idx': 0, 'gate_dist': 2.7964611053466797, 'gate_found': 1.0, 'closest_gate_idx': 0}
+[WARMUP 23] reward=0.510 info={'next_gate_idx': 0, 'gate_dist': 2.6261355876922607, 'gate_found': 1.0, 'closest_gate_idx': 0}
+[WARMUP 24] reward=0.557 info={'next_gate_idx': 0, 'gate_dist': 2.408975124359131, 'gate_found': 1.0, 'closest_gate_idx': 0}
+[WARMUP 25] reward=0.680 info={'next_gate_idx': 0, 'gate_dist': 2.1839277744293213, 'gate_found': 1.0, 'closest_gate_idx': 0}
+[WARMUP 26] reward=0.282 info={'next_gate_idx': 0, 'gate_dist': 2.0402915477752686, 'gate_found': 0.0, 'closest_gate_idx': 0}
+[WARMUP 27] reward=0.208 info={'next_gate_idx': 0, 'gate_dist': 1.9840660095214844, 'gate_found': 1.0, 'closest_gate_idx': 0}
+[WARMUP 28] reward=0.185 info={'next_gate_idx': 0, 'gate_dist': 1.9721121788024902, 'gate_found': 1.0, 'closest_gate_idx': 0}
+[STEP 30] active_gate=0 closest_gate=0 dist=1.98 reward=0.142 vel=(0.67,0.15,1.26) cmd=(r=0.04,p=0.22,yaw_rate=5.19,z=1.98) gate_found=1 gate_area=0.0098
+[WARMUP 29] reward=0.142 info={'next_gate_idx': 0, 'gate_dist': 1.9822951555252075, 'gate_found': 1.0, 'closest_gate_idx': 0}
+[WARMUP 30] reward=-0.014 info={'next_gate_idx': 0, 'gate_dist': 1.9983173608779907, 'gate_found': 1.0, 'closest_gate_idx': 0}
+[WARMUP 31] reward=-0.056 info={'next_gate_idx': 0, 'gate_dist': 2.0116374492645264, 'gate_found': 0.0, 'closest_gate_idx': 0}
+[WARMUP 32] reward=0.093 info={'next_gate_idx': 0, 'gate_dist': 2.028231620788574, 'gate_found': 1.0, 'closest_gate_idx': 0}
+[WARMUP 33] reward=-0.136 info={'next_gate_idx': 0, 'gate_dist': 2.0589373111724854, 'gate_found': 0.0, 'closest_gate_idx': 0}
+[WARMUP 34] reward=-0.150 info={'next_gate_idx': 0, 'gate_dist': 2.107485771179199, 'gate_found': 0.0, 'closest_gate_idx': 0}
+[WARMUP 35] reward=-0.017 info={'next_gate_idx': 0, 'gate_dist': 2.1730968952178955, 'gate_found': 1.0, 'closest_gate_idx': 0}
+[WARMUP 36] reward=-0.222 info={'next_gate_idx': 0, 'gate_dist': 2.276093006134033, 'gate_found': 0.0, 'closest_gate_idx': 0}
+[WARMUP 37] reward=-0.100 info={'next_gate_idx': 0, 'gate_dist': 2.3815298080444336, 'gate_found': 1.0, 'closest_gate_idx': 0}
+[WARMUP 38] reward=-0.277 info={'next_gate_idx': 0, 'gate_dist': 2.535907030105591, 'gate_found': 1.0, 'closest_gate_idx': 0}
+[STEP 40] active_gate=0 closest_gate=0 dist=2.68 reward=-0.200 vel=(2.44,0.13,0.39) cmd=(r=0.08,p=0.23,yaw_rate=-14.37,z=2.30) gate_found=1 gate_area=0.0055
+[WARMUP 39] reward=-0.200 info={'next_gate_idx': 0, 'gate_dist': 2.675302267074585, 'gate_found': 1.0, 'closest_gate_idx': 0}
+[WARMUP 40] reward=-0.497 info={'next_gate_idx': 0, 'gate_dist': 2.899986743927002, 'gate_found': 0.0, 'closest_gate_idx': 0}
+[WARMUP 41] reward=-0.369 info={'next_gate_idx': 0, 'gate_dist': 3.043994188308716, 'gate_found': 0.0, 'closest_gate_idx': 0}
+[WARMUP 42] reward=-0.573 info={'next_gate_idx': 0, 'gate_dist': 3.2951343059539795, 'gate_found': 0.0, 'closest_gate_idx': 0}
+[WARMUP 43] reward=-0.521 info={'next_gate_idx': 0, 'gate_dist': 3.4837660789489746, 'gate_found': 0.0, 'closest_gate_idx': 0}
+[WARMUP 44] reward=-0.152 info={'next_gate_idx': 0, 'gate_dist': 3.67065691947937, 'gate_found': 1.0, 'closest_gate_idx': 0}
+[WARMUP 45] reward=-0.558 info={'next_gate_idx': 0, 'gate_dist': 3.870337724685669, 'gate_found': 0.0, 'closest_gate_idx': 0}
+[WARMUP 46] reward=-0.424 info={'next_gate_idx': 0, 'gate_dist': 4.053771018981934, 'gate_found': 0.0, 'closest_gate_idx': 0}
+[WARMUP 47] reward=-0.642 info={'next_gate_idx': 0, 'gate_dist': 4.469024181365967, 'gate_found': 1.0, 'closest_gate_idx': 0}
+[WARMUP 48] reward=-0.472 info={'next_gate_idx': 0, 'gate_dist': 4.74467134475708, 'gate_found': 1.0, 'closest_gate_idx': 0}
+[STEP 50] active_gate=0 closest_gate=0 dist=5.00 reward=-0.438 vel=(3.76,0.20,0.38) cmd=(r=-0.01,p=0.23,yaw_rate=16.26,z=2.81) gate_found=1 gate_area=0.0090
+[WARMUP 49] reward=-0.438 info={'next_gate_idx': 0, 'gate_dist': 5.001088619232178, 'gate_found': 1.0, 'closest_gate_idx': 0}
+[TRAIN] Building PPO model
+Using cuda device
+Wrapping the env in a DummyVecEnv.
+[TRAIN] Starting learning (1,000,000 timesteps)
+
+[RESET] Episode 2 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.48, -3.48, 1.91)
+[RESET] Distance to gate 0: 2.08
+Logging to ./tb_logs/PPO_11
+[STEP 10] active_gate=0 closest_gate=0 dist=2.94 reward=-0.481 vel=(2.85,0.40,0.47) cmd=(r=-0.10,p=0.12,yaw_rate=-10.45,z=2.94) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=0 dist=6.47 reward=-1.056 vel=(4.47,0.80,0.69) cmd=(r=-0.01,p=0.20,yaw_rate=-20.00,z=3.43) gate_found=0 gate_area=0.0000
+[STEP 30] active_gate=0 closest_gate=0 dist=1.99 reward=0.080 vel=(0.26,0.13,2.65) cmd=(r=0.03,p=0.25,yaw_rate=-0.79,z=1.92) gate_found=0 gate_area=0.0000
+[STEP 40] active_gate=0 closest_gate=0 dist=2.37 reward=-0.330 vel=(2.30,0.36,0.36) cmd=(r=-0.01,p=0.14,yaw_rate=-13.22,z=2.69) gate_found=0 gate_area=0.0000
+[STEP 50] active_gate=0 closest_gate=0 dist=4.65 reward=-0.560 vel=(3.58,0.42,0.68) cmd=(r=-0.04,p=0.25,yaw_rate=5.21,z=3.14) gate_found=1 gate_area=0.0082
+[STEP 60] active_gate=0 closest_gate=0 dist=2.72 reward=0.338 vel=(0.00,0.00,2.15) cmd=(r=0.10,p=0.18,yaw_rate=-15.95,z=-0.24) gate_found=1 gate_area=0.0178
+[STEP 70] active_gate=0 closest_gate=0 dist=2.46 reward=-0.406 vel=(2.15,-0.18,0.27) cmd=(r=0.02,p=0.24,yaw_rate=-20.00,z=2.92) gate_found=0 gate_area=0.0000
+[STEP 80] active_gate=0 closest_gate=0 dist=4.72 reward=-0.790 vel=(3.93,0.04,0.55) cmd=(r=0.08,p=0.25,yaw_rate=-20.00,z=3.34) gate_found=0 gate_area=0.0000
+[STEP 90] active_gate=0 closest_gate=0 dist=2.78 reward=0.364 vel=(0.00,0.00,1.82) cmd=(r=-0.02,p=0.25,yaw_rate=-10.17,z=-0.18) gate_found=1 gate_area=0.0173
+[STEP 100] active_gate=0 closest_gate=0 dist=2.15 reward=-0.209 vel=(1.76,0.36,0.17) cmd=(r=0.09,p=0.08,yaw_rate=17.77,z=3.05) gate_found=0 gate_area=0.0000
+[STEP 110] active_gate=0 closest_gate=0 dist=3.48 reward=-0.670 vel=(3.10,0.43,0.27) cmd=(r=0.07,p=0.08,yaw_rate=-20.00,z=3.11) gate_found=0 gate_area=0.0000
+[STEP 120] active_gate=0 closest_gate=0 dist=2.90 reward=7.764 vel=(0.00,0.00,0.61) cmd=(r=-0.06,p=0.25,yaw_rate=16.35,z=-0.39) gate_found=1 gate_area=0.0179
+[STEP 130] active_gate=0 closest_gate=0 dist=2.30 reward=-0.298 vel=(1.65,-0.26,0.27) cmd=(r=0.10,p=0.25,yaw_rate=-12.86,z=2.46) gate_found=0 gate_area=0.0000
+[STEP 140] active_gate=0 closest_gate=0 dist=4.17 reward=-0.558 vel=(3.57,-0.22,0.10) cmd=(r=0.10,p=0.25,yaw_rate=10.15,z=3.02) gate_found=0 gate_area=0.0000
+[STEP 150] active_gate=0 closest_gate=0 dist=2.91 reward=9.905 vel=(0.00,0.00,0.00) cmd=(r=-0.02,p=0.20,yaw_rate=18.23,z=3.21) gate_found=1 gate_area=0.0179
+[STEP 160] active_gate=0 closest_gate=0 dist=2.05 reward=-0.062 vel=(1.63,0.34,0.28) cmd=(r=0.01,p=0.25,yaw_rate=-3.16,z=2.72) gate_found=0 gate_area=0.0000
+[STEP 170] active_gate=0 closest_gate=0 dist=3.44 reward=-0.671 vel=(3.37,0.40,0.28) cmd=(r=-0.02,p=0.08,yaw_rate=-20.00,z=2.88) gate_found=0 gate_area=0.0000
+[STEP 180] active_gate=0 closest_gate=11 dist=7.07 reward=-1.104 vel=(4.88,0.31,0.71) cmd=(r=0.10,p=0.19,yaw_rate=-20.00,z=3.53) gate_found=1 gate_area=0.0104
+[STEP 190] active_gate=0 closest_gate=0 dist=2.01 reward=-0.016 vel=(0.81,0.03,1.56) cmd=(r=-0.09,p=0.25,yaw_rate=-20.00,z=2.13) gate_found=1 gate_area=0.0050
+[STEP 200] active_gate=0 closest_gate=0 dist=3.17 reward=-0.585 vel=(3.00,0.14,0.46) cmd=(r=-0.01,p=0.23,yaw_rate=20.00,z=2.29) gate_found=0 gate_area=0.0000
+[STEP 210] active_gate=0 closest_gate=11 dist=6.89 reward=-1.220 vel=(4.50,0.49,0.58) cmd=(r=-0.01,p=0.16,yaw_rate=10.75,z=2.96) gate_found=1 gate_area=0.0110
+[STEP 220] active_gate=0 closest_gate=0 dist=2.08 reward=0.192 vel=(0.04,-0.01,3.81) cmd=(r=0.10,p=0.08,yaw_rate=20.00,z=0.93) gate_found=0 gate_area=0.0000
+[STEP 230] active_gate=0 closest_gate=0 dist=2.67 reward=-0.351 vel=(2.39,-0.03,0.31) cmd=(r=-0.00,p=0.13,yaw_rate=20.00,z=3.10) gate_found=1 gate_area=0.0055
+[STEP 240] active_gate=0 closest_gate=0 dist=5.82 reward=-1.223 vel=(4.29,-0.49,0.49) cmd=(r=-0.05,p=0.15,yaw_rate=-18.84,z=3.55) gate_found=0 gate_area=0.0000
+[STEP 243] Collision detected
+
+[RESET] Episode 3 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.40, -4.06, 2.02)
+[RESET] Distance to gate 0: 2.11
+[STEP 10] active_gate=0 closest_gate=0 dist=3.08 reward=-0.361 vel=(2.77,-0.04,0.26) cmd=(r=0.10,p=0.08,yaw_rate=-1.11,z=2.38) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=11 dist=6.49 reward=-1.412 vel=(4.34,-0.07,0.49) cmd=(r=-0.10,p=0.25,yaw_rate=11.01,z=2.74) gate_found=1 gate_area=0.0104
+[STEP 30] active_gate=0 closest_gate=0 dist=2.13 reward=0.324 vel=(0.02,-0.01,3.64) cmd=(r=-0.06,p=0.08,yaw_rate=-20.00,z=0.81) gate_found=0 gate_area=0.0000
+[STEP 40] active_gate=0 closest_gate=0 dist=2.62 reward=-0.103 vel=(2.32,-0.02,-0.13) cmd=(r=-0.03,p=0.08,yaw_rate=-1.56,z=2.84) gate_found=1 gate_area=0.0058
+[STEP 50] active_gate=0 closest_gate=0 dist=5.12 reward=-0.402 vel=(3.90,-0.07,0.47) cmd=(r=-0.10,p=0.25,yaw_rate=-6.44,z=3.12) gate_found=1 gate_area=0.0766
+[STEP 59] Collision detected
+
+[RESET] Episode 4 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.54, -3.34, 2.19)
+[RESET] Distance to gate 0: 2.09
+[STEP 10] active_gate=0 closest_gate=0 dist=3.08 reward=-0.452 vel=(2.93,0.53,0.21) cmd=(r=-0.10,p=0.08,yaw_rate=-12.79,z=2.46) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=0 dist=6.48 reward=-0.928 vel=(4.48,0.63,0.61) cmd=(r=-0.00,p=0.25,yaw_rate=7.22,z=3.65) gate_found=0 gate_area=0.0000
+[STEP 30] active_gate=0 closest_gate=0 dist=2.03 reward=0.049 vel=(0.96,-0.03,1.67) cmd=(r=0.10,p=0.24,yaw_rate=11.70,z=2.43) gate_found=1 gate_area=0.0051
+[STEP 40] active_gate=0 closest_gate=0 dist=3.27 reward=-0.558 vel=(3.11,0.09,0.29) cmd=(r=-0.00,p=0.10,yaw_rate=-16.87,z=2.71) gate_found=0 gate_area=0.0000
+[STEP 50] active_gate=0 closest_gate=11 dist=6.96 reward=-1.419 vel=(4.56,0.08,0.80) cmd=(r=-0.03,p=0.08,yaw_rate=-20.00,z=3.20) gate_found=0 gate_area=0.0000
+[STEP 60] active_gate=0 closest_gate=0 dist=2.05 reward=0.203 vel=(0.15,0.01,3.39) cmd=(r=0.10,p=0.15,yaw_rate=19.29,z=1.42) gate_found=0 gate_area=0.0000
+[STEP 70] active_gate=0 closest_gate=0 dist=2.85 reward=-0.488 vel=(2.53,-0.37,0.33) cmd=(r=-0.03,p=0.25,yaw_rate=20.00,z=3.03) gate_found=0 gate_area=0.0000
+Traceback (most recent call last):
+  File "C:\Users\brend\AI-GP\train_rl.py", line 66, in <module>
+    model.learn(total_timesteps=TOTAL_TIMESTEPS, callback=callbacks, progress_bar=True)
+  File "C:\Users\brend\AppData\Local\Programs\Python\Python310\lib\site-packages\stable_baselines3\ppo\ppo.py", line 311, in learn
+    return super().learn(
+  File "C:\Users\brend\AppData\Local\Programs\Python\Python310\lib\site-packages\stable_baselines3\common\on_policy_algorithm.py", line 324, in learn
+    continue_training = self.collect_rollouts(self.env, callback, self.rollout_buffer, n_rollout_steps=self.n_steps)
+  File "C:\Users\brend\AppData\Local\Programs\Python\Python310\lib\site-packages\stable_baselines3\common\on_policy_algorithm.py", line 218, in collect_rollouts
+    new_obs, rewards, dones, infos = env.step(clipped_actions)
+  File "C:\Users\brend\AppData\Local\Programs\Python\Python310\lib\site-packages\stable_baselines3\common\vec_env\base_vec_env.py", line 222, in step
+    return self.step_wait()
+  File "C:\Users\brend\AppData\Local\Programs\Python\Python310\lib\site-packages\stable_baselines3\common\vec_env\dummy_vec_env.py", line 59, in step_wait
+    obs, self.buf_rews[env_idx], terminated, truncated, self.buf_infos[env_idx] = self.envs[env_idx].step(  # type: ignore[assignment]
+  File "C:\Users\brend\AppData\Local\Programs\Python\Python310\lib\site-packages\stable_baselines3\common\monitor.py", line 94, in step
+    observation, reward, terminated, truncated, info = self.env.step(action)
+  File "C:\Users\brend\AI-GP\adrl_env.py", line 374, in step
+    "next_gate_idx": self.next_gate_idx,
+  File "C:\Users\brend\AI-GP\adrl_env.py", line 159, in _get_state
+    course_dir = vec3(1.0, 0.0, 0.0)
+  File "C:\Users\brend\AppData\Local\Programs\Python\Python310\lib\site-packages\airsimdroneracinglab\client.py", line 1894, in getMultirotorState
+    self.client.call("getMultirotorState", vehicle_name)
+  File "C:\Users\brend\AppData\Local\Programs\Python\Python310\lib\site-packages\msgpackrpc\session.py", line 41, in call
+    return self.send_request(method, args).get()
+  File "C:\Users\brend\AppData\Local\Programs\Python\Python310\lib\site-packages\msgpackrpc\future.py", line 43, in get
+    raise self._error
+msgpackrpc.error.TimeoutError: Request timed out
+Exception ignored in: <function tqdm.__del__ at 0x00000198B2A13AC0>
+Traceback (most recent call last):
+  File "C:\Users\brend\AppData\Local\Programs\Python\Python310\lib\site-packages\tqdm\std.py", line 1148, in __del__
+  File "C:\Users\brend\AppData\Local\Programs\Python\Python310\lib\site-packages\tqdm\rich.py", line 121, in close
+  File "C:\Users\brend\AppData\Local\Programs\Python\Python310\lib\site-packages\rich\progress.py", line 1190, in __exit__
+  File "C:\Users\brend\AppData\Local\Programs\Python\Python310\lib\site-packages\rich\progress.py", line 1176, in stop
+  File "C:\Users\brend\AppData\Local\Programs\Python\Python310\lib\site-packages\rich\live.py", line 162, in stop
+  File "C:\Users\brend\AppData\Local\Programs\Python\Python310\lib\site-packages\rich\console.py", line 870, in __exit__
+  File "C:\Users\brend\AppData\Local\Programs\Python\Python310\lib\site-packages\rich\console.py", line 826, in _exit_buffer
+  File "C:\Users\brend\AppData\Local\Programs\Python\Python310\lib\site-packages\rich\console.py", line 2042, in _check_buffer
+  File "C:\Users\brend\AppData\Local\Programs\Python\Python310\lib\site-packages\rich\console.py", line 2071, in _write_buffer
+ImportError: sys.meta_path is None, Python is likely shutting down

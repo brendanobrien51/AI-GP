@@ -1,0 +1,2273 @@
+[TRAIN] Creating environment
+Connected!
+Client Ver:1 (Min Req: 1), Server Ver:1 (Min Req: 1)
+
+[INIT] Gate Gate00: (0.00, 2.00, 2.02)
+[INIT] Gate Gate01: (1.60, 10.80, 2.02)
+[INIT] Gate Gate02: (8.89, 18.48, 2.02)
+[INIT] Gate Gate03: (18.74, 22.21, 2.02)
+[INIT] Gate Gate04: (30.04, 22.21, 2.02)
+[INIT] Gate Gate05: (39.04, 19.21, 2.02)
+[INIT] Gate Gate06: (45.74, 11.71, 2.02)
+[INIT] Gate Gate07: (45.74, 2.21, 2.02)
+[INIT] Gate Gate08: (40.34, -4.79, 2.02)
+[INIT] Gate Gate09: (30.74, -7.89, 2.02)
+[INIT] Gate Gate10_21: (18.54, -7.89, 2.02)
+[INIT] Gate Gate11_23: (9.54, -5.09, 2.02)
+C:\Users\brend\AppData\Local\Programs\Python\Python310\lib\site-packages\stable_baselines3\common\on_policy_algorithm.py:150: UserWarning: You are trying to run PPO on the GPU, but it is primarily intended to run on the CPU when not using a CNN policy (you are using ActorCriticPolicy which should be a MlpPolicy). See https://github.com/DLR-RM/stable-baselines3/issues/1245 for more info. You can pass `device='cpu'` or `export CUDA_VISIBLE_DEVICES=` to force using the CPU.Note: The model will train, but the GPU utilization will be poor and the training might take longer than on CPU.
+  warnings.warn(
+[GateDetector] Loaded gate_detector.pt (conf_threshold=0.28)
+[INIT] Loaded 12 gates
+[INIT] Start pose: (-1.07, -3.90, 2.02) yaw=79.70
+[TRAIN] Running random warmup so you can verify motion
+
+[RESET] Episode 1 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.59, -4.34, 2.08)
+[RESET] Distance to gate 0: 2.15
+[WARMUP 0] reward=0.126 info={'next_gate_idx': 0, 'gate_dist': 2.185513734817505, 'gate_found': 1.0, 'closest_gate_idx': 0}
+[WARMUP 1] reward=-0.131 info={'next_gate_idx': 0, 'gate_dist': 2.2378385066986084, 'gate_found': 0.0, 'closest_gate_idx': 0}
+[WARMUP 2] reward=-0.226 info={'next_gate_idx': 0, 'gate_dist': 2.3089487552642822, 'gate_found': 0.0, 'closest_gate_idx': 0}
+[WARMUP 3] reward=-0.300 info={'next_gate_idx': 0, 'gate_dist': 2.4520580768585205, 'gate_found': 0.0, 'closest_gate_idx': 0}
+[WARMUP 4] reward=-0.162 info={'next_gate_idx': 0, 'gate_dist': 2.6138246059417725, 'gate_found': 1.0, 'closest_gate_idx': 0}
+[WARMUP 5] reward=-0.338 info={'next_gate_idx': 0, 'gate_dist': 2.8320553302764893, 'gate_found': 1.0, 'closest_gate_idx': 0}
+[WARMUP 6] reward=-0.528 info={'next_gate_idx': 0, 'gate_dist': 3.1026597023010254, 'gate_found': 0.0, 'closest_gate_idx': 0}
+[WARMUP 7] reward=-0.595 info={'next_gate_idx': 0, 'gate_dist': 3.3986337184906006, 'gate_found': 0.0, 'closest_gate_idx': 0}
+[WARMUP 8] reward=-0.680 info={'next_gate_idx': 0, 'gate_dist': 3.7111690044403076, 'gate_found': 0.0, 'closest_gate_idx': 0}
+[STEP 10] active_gate=0 closest_gate=0 dist=4.09 reward=-0.685 vel=(3.53,0.48,0.13) cmd=(r=0.04,p=0.17,yaw_rate=16.19,z=2.78) gate_found=1 gate_area=0.0065
+[WARMUP 9] reward=-0.685 info={'next_gate_idx': 0, 'gate_dist': 4.090187072753906, 'gate_found': 1.0, 'closest_gate_idx': 0}
+[WARMUP 10] reward=-0.709 info={'next_gate_idx': 0, 'gate_dist': 4.5432820320129395, 'gate_found': 1.0, 'closest_gate_idx': 0}
+[WARMUP 11] reward=-0.763 info={'next_gate_idx': 0, 'gate_dist': 4.965751647949219, 'gate_found': 1.0, 'closest_gate_idx': 0}
+[WARMUP 12] reward=-0.623 info={'next_gate_idx': 0, 'gate_dist': 5.382902145385742, 'gate_found': 1.0, 'closest_gate_idx': 0}
+[WARMUP 13] reward=-0.767 info={'next_gate_idx': 0, 'gate_dist': 5.837921142578125, 'gate_found': 1.0, 'closest_gate_idx': 0}
+[WARMUP 14] reward=-0.877 info={'next_gate_idx': 0, 'gate_dist': 6.3198113441467285, 'gate_found': 1.0, 'closest_gate_idx': 0}
+[WARMUP 15] reward=-1.491 info={'next_gate_idx': 0, 'gate_dist': 6.938563823699951, 'gate_found': 1.0, 'closest_gate_idx': 11}
+[WARMUP 16] reward=-1.599 info={'next_gate_idx': 0, 'gate_dist': 7.518731117248535, 'gate_found': 1.0, 'closest_gate_idx': 11}
+[STEP 18] Collision detected
+[WARMUP 17] reward=-101.754 info={'next_gate_idx': 0, 'gate_dist': 8.124464988708496, 'gate_found': 0.0, 'closest_gate_idx': 11, 'episode': {'r': -112.101976, 'l': 18, 't': 3.516734}}
+
+[RESET] Episode 2 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.96, -2.90, 2.21)
+[RESET] Distance to gate 0: 2.29
+[WARMUP 18] reward=-0.137 info={'next_gate_idx': 0, 'gate_dist': 2.3979756832122803, 'gate_found': 1.0, 'closest_gate_idx': 0}
+[WARMUP 19] reward=-0.352 info={'next_gate_idx': 0, 'gate_dist': 2.4925105571746826, 'gate_found': 0.0, 'closest_gate_idx': 0}
+[WARMUP 20] reward=-0.106 info={'next_gate_idx': 0, 'gate_dist': 2.5855448246002197, 'gate_found': 1.0, 'closest_gate_idx': 0}
+[WARMUP 21] reward=-0.408 info={'next_gate_idx': 0, 'gate_dist': 2.7205867767333984, 'gate_found': 0.0, 'closest_gate_idx': 0}
+[WARMUP 22] reward=-0.297 info={'next_gate_idx': 0, 'gate_dist': 2.8767502307891846, 'gate_found': 0.0, 'closest_gate_idx': 0}
+[WARMUP 23] reward=-0.361 info={'next_gate_idx': 0, 'gate_dist': 3.1686959266662598, 'gate_found': 1.0, 'closest_gate_idx': 0}
+[WARMUP 24] reward=-0.308 info={'next_gate_idx': 0, 'gate_dist': 3.423696279525757, 'gate_found': 1.0, 'closest_gate_idx': 0}
+[WARMUP 25] reward=-0.598 info={'next_gate_idx': 0, 'gate_dist': 3.7008399963378906, 'gate_found': 0.0, 'closest_gate_idx': 0}
+[WARMUP 26] reward=-0.598 info={'next_gate_idx': 0, 'gate_dist': 3.983867883682251, 'gate_found': 0.0, 'closest_gate_idx': 0}
+[STEP 10] active_gate=0 closest_gate=0 dist=4.34 reward=-0.691 vel=(3.58,-0.23,0.31) cmd=(r=-0.10,p=0.25,yaw_rate=1.68,z=3.49) gate_found=0 gate_area=0.0000
+[WARMUP 27] reward=-0.691 info={'next_gate_idx': 0, 'gate_dist': 4.336172103881836, 'gate_found': 0.0, 'closest_gate_idx': 0}
+[WARMUP 28] reward=-1.158 info={'next_gate_idx': 0, 'gate_dist': 4.832676410675049, 'gate_found': 0.0, 'closest_gate_idx': 0}
+[WARMUP 29] reward=-1.098 info={'next_gate_idx': 0, 'gate_dist': 5.371556282043457, 'gate_found': 0.0, 'closest_gate_idx': 0}
+[WARMUP 30] reward=-1.097 info={'next_gate_idx': 0, 'gate_dist': 5.86245584487915, 'gate_found': 0.0, 'closest_gate_idx': 0}
+[WARMUP 31] reward=5.917 info={'next_gate_idx': 0, 'gate_dist': 2.914515495300293, 'gate_found': 1.0, 'closest_gate_idx': 0}
+[WARMUP 32] reward=0.181 info={'next_gate_idx': 0, 'gate_dist': 2.835232734680176, 'gate_found': 1.0, 'closest_gate_idx': 0}
+[WARMUP 33] reward=0.537 info={'next_gate_idx': 0, 'gate_dist': 2.6210134029388428, 'gate_found': 1.0, 'closest_gate_idx': 0}
+[WARMUP 34] reward=0.758 info={'next_gate_idx': 0, 'gate_dist': 2.3155007362365723, 'gate_found': 1.0, 'closest_gate_idx': 0}
+[WARMUP 35] reward=0.606 info={'next_gate_idx': 0, 'gate_dist': 2.0698580741882324, 'gate_found': 1.0, 'closest_gate_idx': 0}
+[WARMUP 36] reward=0.294 info={'next_gate_idx': 0, 'gate_dist': 2.023672342300415, 'gate_found': 1.0, 'closest_gate_idx': 0}
+[STEP 20] active_gate=0 closest_gate=0 dist=2.03 reward=0.177 vel=(0.32,-0.20,2.34) cmd=(r=-0.09,p=0.25,yaw_rate=-3.98,z=2.18) gate_found=1 gate_area=0.0052
+[WARMUP 37] reward=0.177 info={'next_gate_idx': 0, 'gate_dist': 2.0254812240600586, 'gate_found': 1.0, 'closest_gate_idx': 0}
+[WARMUP 38] reward=-0.094 info={'next_gate_idx': 0, 'gate_dist': 2.1220667362213135, 'gate_found': 1.0, 'closest_gate_idx': 0}
+[WARMUP 39] reward=-0.306 info={'next_gate_idx': 0, 'gate_dist': 2.260457992553711, 'gate_found': 0.0, 'closest_gate_idx': 0}
+[WARMUP 40] reward=-0.329 info={'next_gate_idx': 0, 'gate_dist': 2.3861618041992188, 'gate_found': 0.0, 'closest_gate_idx': 0}
+[WARMUP 41] reward=-0.109 info={'next_gate_idx': 0, 'gate_dist': 2.497178316116333, 'gate_found': 1.0, 'closest_gate_idx': 0}
+[WARMUP 42] reward=-0.181 info={'next_gate_idx': 0, 'gate_dist': 2.627089023590088, 'gate_found': 1.0, 'closest_gate_idx': 0}
+[WARMUP 43] reward=-0.449 info={'next_gate_idx': 0, 'gate_dist': 2.853294610977173, 'gate_found': 0.0, 'closest_gate_idx': 0}
+[WARMUP 44] reward=-0.570 info={'next_gate_idx': 0, 'gate_dist': 3.053450584411621, 'gate_found': 0.0, 'closest_gate_idx': 0}
+[WARMUP 45] reward=-0.615 info={'next_gate_idx': 0, 'gate_dist': 3.2853856086730957, 'gate_found': 0.0, 'closest_gate_idx': 0}
+[WARMUP 46] reward=-0.470 info={'next_gate_idx': 0, 'gate_dist': 3.5471723079681396, 'gate_found': 1.0, 'closest_gate_idx': 0}
+[STEP 30] active_gate=0 closest_gate=0 dist=3.81 reward=-0.465 vel=(2.77,-0.85,-0.04) cmd=(r=0.03,p=0.24,yaw_rate=-17.05,z=2.64) gate_found=1 gate_area=0.0063
+[WARMUP 47] reward=-0.465 info={'next_gate_idx': 0, 'gate_dist': 3.8078877925872803, 'gate_found': 1.0, 'closest_gate_idx': 0}
+[WARMUP 48] reward=-0.589 info={'next_gate_idx': 0, 'gate_dist': 4.079333305358887, 'gate_found': 0.0, 'closest_gate_idx': 0}
+[WARMUP 49] reward=-0.520 info={'next_gate_idx': 0, 'gate_dist': 4.382397174835205, 'gate_found': 1.0, 'closest_gate_idx': 0}
+[TRAIN] Building PPO model
+Using cuda device
+Wrapping the env in a DummyVecEnv.
+[TRAIN] Starting learning (1,000,000 timesteps)
+
+[RESET] Episode 3 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.43, -4.14, 1.89)
+[RESET] Distance to gate 0: 2.14
+Logging to ./tb_logs/PPO_10
+[STEP 10] active_gate=0 closest_gate=0 dist=4.17 reward=-0.506 vel=(3.31,-0.42,0.35) cmd=(r=-0.07,p=0.25,yaw_rate=-7.90,z=2.51) gate_found=1 gate_area=0.0054
+[STEP 20] active_gate=0 closest_gate=0 dist=2.91 reward=11.542 vel=(0.00,0.00,0.00) cmd=(r=0.10,p=0.22,yaw_rate=9.42,z=3.39) gate_found=1 gate_area=0.0178
+[STEP 30] active_gate=0 closest_gate=0 dist=2.29 reward=-0.308 vel=(1.59,-0.04,-0.04) cmd=(r=-0.10,p=0.20,yaw_rate=-20.00,z=3.02) gate_found=0 gate_area=0.0000
+[STEP 40] active_gate=0 closest_gate=0 dist=4.07 reward=-0.518 vel=(3.19,-0.34,0.36) cmd=(r=0.03,p=0.11,yaw_rate=-5.96,z=3.09) gate_found=1 gate_area=0.0594
+[STEP 46] Collision detected
+
+[RESET] Episode 4 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.69, -4.58, 2.12)
+[RESET] Distance to gate 0: 2.11
+[STEP 10] active_gate=0 closest_gate=0 dist=3.98 reward=-0.565 vel=(3.50,-0.13,0.33) cmd=(r=0.10,p=0.14,yaw_rate=1.64,z=2.74) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=0 dist=2.91 reward=10.209 vel=(0.00,0.00,0.00) cmd=(r=-0.10,p=0.08,yaw_rate=-6.96,z=3.69) gate_found=1 gate_area=0.0178
+[STEP 30] active_gate=0 closest_gate=0 dist=2.35 reward=-0.068 vel=(1.90,-0.38,0.13) cmd=(r=-0.01,p=0.08,yaw_rate=10.57,z=2.90) gate_found=1 gate_area=0.0051
+[STEP 40] active_gate=0 closest_gate=0 dist=5.02 reward=-1.109 vel=(3.72,-0.88,0.87) cmd=(r=0.10,p=0.08,yaw_rate=-20.00,z=2.85) gate_found=0 gate_area=0.0000
+[STEP 50] active_gate=0 closest_gate=0 dist=2.02 reward=0.114 vel=(0.22,-0.04,3.19) cmd=(r=-0.10,p=0.17,yaw_rate=-20.00,z=2.01) gate_found=1 gate_area=0.0055
+[STEP 60] active_gate=0 closest_gate=0 dist=2.94 reward=-0.383 vel=(2.68,-0.03,-0.02) cmd=(r=-0.07,p=0.25,yaw_rate=-20.00,z=2.31) gate_found=1 gate_area=0.0060
+[STEP 70] active_gate=0 closest_gate=11 dist=6.66 reward=-1.555 vel=(4.22,-0.60,0.55) cmd=(r=-0.10,p=0.12,yaw_rate=15.12,z=3.02) gate_found=1 gate_area=0.0104
+[STEP 76] Collision detected
+
+[RESET] Episode 5 starting
+[RESET] Armed
+[RESET] Moved to hard pose (0.92, -0.10, 2.59)
+[RESET] Distance to gate 0: 2.14
+[STEP 10] active_gate=0 closest_gate=0 dist=3.74 reward=-0.852 vel=(3.14,0.08,0.20) cmd=(r=0.07,p=0.16,yaw_rate=-20.00,z=2.79) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=11 dist=8.41 reward=-1.757 vel=(4.92,0.24,0.38) cmd=(r=0.06,p=0.22,yaw_rate=-9.90,z=3.21) gate_found=0 gate_area=0.0000
+[STEP 30] active_gate=0 closest_gate=0 dist=2.11 reward=-0.127 vel=(1.21,0.04,0.65) cmd=(r=0.02,p=0.25,yaw_rate=1.63,z=2.64) gate_found=0 gate_area=0.0000
+[STEP 40] active_gate=0 closest_gate=0 dist=3.66 reward=-0.444 vel=(3.44,0.00,0.46) cmd=(r=0.06,p=0.08,yaw_rate=-2.96,z=2.76) gate_found=1 gate_area=0.0740
+[STEP 50] active_gate=0 closest_gate=0 dist=2.57 reward=0.687 vel=(0.00,0.00,2.85) cmd=(r=0.10,p=0.08,yaw_rate=4.45,z=0.23) gate_found=1 gate_area=0.0173
+[STEP 60] active_gate=0 closest_gate=0 dist=2.74 reward=-0.463 vel=(2.61,-0.18,-0.12) cmd=(r=0.01,p=0.23,yaw_rate=19.14,z=2.60) gate_found=0 gate_area=0.0000
+[STEP 70] active_gate=0 closest_gate=0 dist=6.16 reward=-0.858 vel=(4.37,-0.46,0.96) cmd=(r=-0.08,p=0.15,yaw_rate=-20.00,z=3.52) gate_found=1 gate_area=0.0096
+[STEP 80] active_gate=0 closest_gate=0 dist=2.14 reward=-0.173 vel=(0.87,-0.21,1.77) cmd=(r=0.04,p=0.25,yaw_rate=-16.32,z=2.59) gate_found=1 gate_area=0.0050
+[STEP 90] active_gate=0 closest_gate=0 dist=3.83 reward=-0.555 vel=(3.12,-0.40,0.30) cmd=(r=0.05,p=0.15,yaw_rate=3.76,z=2.87) gate_found=0 gate_area=0.0000
+[STEP 100] active_gate=0 closest_gate=11 dist=8.19 reward=-1.868 vel=(5.03,-0.44,0.93) cmd=(r=0.03,p=0.09,yaw_rate=14.70,z=3.21) gate_found=0 gate_area=0.0000
+[STEP 110] active_gate=0 closest_gate=0 dist=2.03 reward=-0.020 vel=(1.58,0.48,0.61) cmd=(r=-0.02,p=0.08,yaw_rate=20.00,z=2.62) gate_found=1 gate_area=0.0048
+[STEP 120] active_gate=0 closest_gate=0 dist=3.83 reward=-0.759 vel=(3.58,0.46,0.03) cmd=(r=0.04,p=0.24,yaw_rate=20.00,z=2.66) gate_found=1 gate_area=0.0064
+[STEP 129] Collision detected
+
+[RESET] Episode 6 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.38, -4.63, 1.85)
+[RESET] Distance to gate 0: 1.97
+[STEP 10] active_gate=0 closest_gate=0 dist=3.42 reward=-0.440 vel=(3.25,0.83,0.58) cmd=(r=-0.01,p=0.11,yaw_rate=-2.67,z=2.87) gate_found=1 gate_area=0.0068
+[STEP 18] Collision detected
+
+[RESET] Episode 7 starting
+[RESET] Armed
+[RESET] Moved to hard pose (2.49, 0.87, 2.75)
+[RESET] Distance to gate 0: 2.22
+[STEP 10] active_gate=0 closest_gate=0 dist=3.78 reward=-0.502 vel=(2.94,-0.29,-0.08) cmd=(r=0.00,p=0.25,yaw_rate=2.99,z=2.57) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=11 dist=8.01 reward=-1.710 vel=(4.60,-0.26,0.54) cmd=(r=-0.06,p=0.24,yaw_rate=3.44,z=3.42) gate_found=0 gate_area=0.0000
+[STEP 30] active_gate=0 closest_gate=0 dist=2.34 reward=-0.105 vel=(0.95,-0.60,0.71) cmd=(r=0.10,p=0.20,yaw_rate=2.59,z=2.74) gate_found=1 gate_area=0.0049
+[STEP 40] active_gate=0 closest_gate=0 dist=4.07 reward=-0.804 vel=(3.20,-0.42,0.34) cmd=(r=-0.10,p=0.25,yaw_rate=16.06,z=3.37) gate_found=0 gate_area=0.0000
+[STEP 50] active_gate=0 closest_gate=0 dist=2.07 reward=0.313 vel=(0.08,-0.01,3.72) cmd=(r=-0.02,p=0.25,yaw_rate=-20.00,z=1.15) gate_found=0 gate_area=0.0000
+[STEP 60] active_gate=0 closest_gate=0 dist=3.01 reward=-0.469 vel=(2.62,-0.25,0.11) cmd=(r=-0.10,p=0.25,yaw_rate=-7.99,z=3.21) gate_found=0 gate_area=0.0000
+[STEP 70] active_gate=0 closest_gate=11 dist=6.59 reward=-1.466 vel=(4.51,0.07,0.48) cmd=(r=-0.03,p=0.10,yaw_rate=-8.03,z=3.12) gate_found=0 gate_area=0.0000
+[STEP 72] Collision detected
+
+[RESET] Episode 8 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.56, -3.80, 1.90)
+[RESET] Distance to gate 0: 2.07
+[STEP 10] active_gate=0 closest_gate=0 dist=3.55 reward=-0.528 vel=(3.36,0.65,0.34) cmd=(r=-0.10,p=0.22,yaw_rate=2.91,z=2.66) gate_found=1 gate_area=0.0647
+[STEP 20] active_gate=0 closest_gate=11 dist=8.09 reward=-1.631 vel=(4.95,0.68,0.79) cmd=(r=0.10,p=0.25,yaw_rate=8.93,z=3.62) gate_found=0 gate_area=0.0000
+[STEP 30] active_gate=0 closest_gate=0 dist=2.13 reward=-0.258 vel=(1.94,0.18,-0.03) cmd=(r=0.10,p=0.25,yaw_rate=-16.26,z=2.57) gate_found=0 gate_area=0.0000
+[STEP 40] active_gate=0 closest_gate=0 dist=4.65 reward=-0.807 vel=(3.76,0.60,0.03) cmd=(r=0.10,p=0.11,yaw_rate=-6.47,z=2.57) gate_found=1 gate_area=0.0042
+[STEP 50] active_gate=0 closest_gate=0 dist=2.83 reward=0.240 vel=(0.00,0.00,1.45) cmd=(r=0.08,p=0.25,yaw_rate=15.39,z=-0.24) gate_found=1 gate_area=0.0179
+[STEP 60] active_gate=0 closest_gate=0 dist=2.76 reward=-0.375 vel=(2.32,-0.55,0.31) cmd=(r=-0.10,p=0.25,yaw_rate=7.33,z=2.85) gate_found=0 gate_area=0.0000
+[STEP 70] active_gate=0 closest_gate=11 dist=6.14 reward=-1.542 vel=(4.29,-0.74,0.40) cmd=(r=-0.01,p=0.08,yaw_rate=13.75,z=3.39) gate_found=0 gate_area=0.0000
+[STEP 80] active_gate=0 closest_gate=0 dist=2.04 reward=-0.056 vel=(0.41,0.07,1.79) cmd=(r=-0.02,p=0.25,yaw_rate=20.00,z=2.14) gate_found=1 gate_area=0.0051
+[STEP 90] active_gate=0 closest_gate=0 dist=3.13 reward=-0.415 vel=(2.82,-0.18,0.35) cmd=(r=-0.06,p=0.25,yaw_rate=20.00,z=3.10) gate_found=1 gate_area=0.0049
+[STEP 100] active_gate=0 closest_gate=11 dist=7.34 reward=-1.936 vel=(4.77,-0.57,0.62) cmd=(r=0.07,p=0.14,yaw_rate=-13.03,z=3.25) gate_found=0 gate_area=0.0000
+[STEP 102] Collision detected
+
+[RESET] Episode 9 starting
+[RESET] Armed
+[RESET] Moved to hard pose (6.90, 1.52, 3.37)
+[RESET] Distance to gate 0: 2.12
+[STEP 10] active_gate=0 closest_gate=0 dist=4.51 reward=-0.819 vel=(3.69,-0.40,0.11) cmd=(r=0.01,p=0.18,yaw_rate=18.51,z=2.36) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=11 dist=10.11 reward=-2.041 vel=(5.31,-0.65,1.20) cmd=(r=-0.04,p=0.20,yaw_rate=-17.28,z=3.57) gate_found=0 gate_area=0.0000
+[STEP 21] Collision detected
+
+[RESET] Episode 10 starting
+[RESET] Armed
+[RESET] Moved to hard pose (4.69, -0.57, 2.75)
+[RESET] Distance to gate 0: 1.94
+[STEP 10] active_gate=0 closest_gate=0 dist=3.39 reward=-0.643 vel=(3.52,0.59,0.37) cmd=(r=-0.09,p=0.17,yaw_rate=-18.18,z=2.50) gate_found=1 gate_area=0.0068
+[STEP 20] active_gate=0 closest_gate=0 dist=2.91 reward=10.171 vel=(0.00,0.00,0.00) cmd=(r=0.03,p=0.25,yaw_rate=19.26,z=3.54) gate_found=1 gate_area=0.0179
+[STEP 30] active_gate=0 closest_gate=0 dist=2.27 reward=-0.282 vel=(2.29,0.14,0.07) cmd=(r=-0.04,p=0.15,yaw_rate=13.08,z=2.91) gate_found=0 gate_area=0.0000
+[STEP 40] active_gate=0 closest_gate=0 dist=5.16 reward=-0.732 vel=(3.96,0.30,0.53) cmd=(r=-0.01,p=0.08,yaw_rate=4.39,z=3.25) gate_found=0 gate_area=0.0000
+[STEP 43] Collision detected
+
+[RESET] Episode 11 starting
+[RESET] Armed
+[RESET] Moved to hard pose (4.84, 1.07, 3.01)
+[RESET] Distance to gate 0: 2.13
+[STEP 10] active_gate=0 closest_gate=0 dist=4.17 reward=-0.902 vel=(3.55,-0.08,0.62) cmd=(r=-0.10,p=0.08,yaw_rate=-20.00,z=3.32) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=0 dist=2.29 reward=0.649 vel=(0.00,0.00,3.91) cmd=(r=-0.04,p=0.17,yaw_rate=-20.00,z=0.59) gate_found=1 gate_area=0.0175
+[STEP 30] active_gate=0 closest_gate=0 dist=2.70 reward=-0.446 vel=(2.49,-0.32,-0.24) cmd=(r=0.03,p=0.10,yaw_rate=-20.00,z=2.65) gate_found=0 gate_area=0.0000
+[STEP 40] active_gate=0 closest_gate=0 dist=6.15 reward=-0.879 vel=(4.41,-0.65,0.72) cmd=(r=-0.03,p=0.24,yaw_rate=-10.49,z=3.18) gate_found=1 gate_area=0.0094
+[STEP 50] active_gate=0 closest_gate=0 dist=2.21 reward=-0.024 vel=(1.61,0.14,0.35) cmd=(r=0.10,p=0.20,yaw_rate=12.29,z=2.82) gate_found=1 gate_area=0.0048
+[STEP 60] active_gate=0 closest_gate=0 dist=4.32 reward=-0.623 vel=(3.69,0.30,0.70) cmd=(r=0.10,p=0.25,yaw_rate=8.21,z=3.39) gate_found=1 gate_area=0.0073
+[STEP 63] Collision detected
+
+[RESET] Episode 12 starting
+[RESET] Armed
+[RESET] Moved to hard pose (1.32, 0.21, 2.96)
+[RESET] Distance to gate 0: 2.05
+[STEP 10] active_gate=0 closest_gate=0 dist=3.63 reward=-0.587 vel=(3.26,0.24,0.53) cmd=(r=0.02,p=0.12,yaw_rate=-17.43,z=2.40) gate_found=1 gate_area=0.0062
+[STEP 20] active_gate=0 closest_gate=11 dist=8.57 reward=-1.876 vel=(5.15,0.19,0.59) cmd=(r=0.00,p=0.12,yaw_rate=20.00,z=3.19) gate_found=0 gate_area=0.0000
+[STEP 30] active_gate=0 closest_gate=0 dist=2.18 reward=-0.038 vel=(0.99,-0.04,0.76) cmd=(r=0.08,p=0.25,yaw_rate=-7.33,z=2.92) gate_found=1 gate_area=0.0049
+[STEP 40] active_gate=0 closest_gate=0 dist=4.00 reward=-0.597 vel=(2.99,0.63,0.42) cmd=(r=0.10,p=0.25,yaw_rate=-0.42,z=2.95) gate_found=1 gate_area=0.0071
+[STEP 50] active_gate=0 closest_gate=11 dist=7.60 reward=-0.493 vel=(0.02,0.02,-0.08) cmd=(r=0.09,p=0.08,yaw_rate=-19.62,z=3.41) gate_found=1 gate_area=0.0110
+[STEP 60] active_gate=0 closest_gate=0 dist=2.04 reward=0.229 vel=(0.11,-0.03,3.22) cmd=(r=-0.09,p=0.18,yaw_rate=-18.34,z=1.11) gate_found=0 gate_area=0.0000
+[STEP 70] active_gate=0 closest_gate=0 dist=3.12 reward=-0.422 vel=(2.82,-0.28,-0.07) cmd=(r=0.10,p=0.08,yaw_rate=-20.00,z=2.47) gate_found=1 gate_area=0.0056
+[STEP 80] active_gate=0 closest_gate=11 dist=7.42 reward=-1.760 vel=(4.77,-0.22,0.49) cmd=(r=0.02,p=0.25,yaw_rate=20.00,z=3.01) gate_found=0 gate_area=0.0000
+[STEP 90] active_gate=0 closest_gate=0 dist=2.17 reward=0.060 vel=(1.30,-0.08,0.46) cmd=(r=0.10,p=0.08,yaw_rate=-0.40,z=2.32) gate_found=1 gate_area=0.0046
+[STEP 100] active_gate=0 closest_gate=0 dist=3.78 reward=-0.557 vel=(3.25,0.13,0.61) cmd=(r=0.02,p=0.08,yaw_rate=13.89,z=2.69) gate_found=1 gate_area=0.0715
+[STEP 110] Collision detected
+[STEP 110] active_gate=0 closest_gate=11 dist=9.28 reward=-101.803 vel=(5.07,0.05,1.25) cmd=(r=0.01,p=0.10,yaw_rate=-12.46,z=3.73) gate_found=0 gate_area=0.0000
+
+[RESET] Episode 13 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.09, -4.31, 2.01)
+[RESET] Distance to gate 0: 2.12
+[STEP 10] active_gate=0 closest_gate=0 dist=4.13 reward=-0.887 vel=(3.38,0.55,0.43) cmd=(r=-0.07,p=0.14,yaw_rate=20.00,z=2.45) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=11 dist=9.41 reward=-1.961 vel=(5.05,0.00,0.62) cmd=(r=0.10,p=0.12,yaw_rate=20.00,z=3.21) gate_found=0 gate_area=0.0000
+[STEP 30] active_gate=0 closest_gate=0 dist=2.68 reward=-0.186 vel=(1.88,-0.93,0.17) cmd=(r=-0.01,p=0.15,yaw_rate=-4.39,z=2.93) gate_found=1 gate_area=0.0069
+[STEP 40] active_gate=0 closest_gate=11 dist=6.49 reward=-2.010 vel=(3.97,-1.13,0.72) cmd=(r=-0.10,p=0.25,yaw_rate=-20.00,z=3.58) gate_found=0 gate_area=0.0000
+[STEP 50] active_gate=0 closest_gate=0 dist=2.23 reward=-0.179 vel=(1.39,-0.14,-0.28) cmd=(r=0.05,p=0.25,yaw_rate=-10.02,z=2.33) gate_found=0 gate_area=0.0000
+[STEP 60] active_gate=0 closest_gate=0 dist=4.57 reward=-1.062 vel=(3.78,-0.16,0.76) cmd=(r=-0.04,p=0.23,yaw_rate=-20.00,z=3.26) gate_found=0 gate_area=0.0000
+[STEP 64] Collision detected
+
+[RESET] Episode 14 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.75, -4.49, 2.00)
+[RESET] Distance to gate 0: 2.27
+[STEP 10] active_gate=0 closest_gate=0 dist=4.66 reward=-0.761 vel=(3.54,-0.30,0.65) cmd=(r=-0.07,p=0.19,yaw_rate=-20.00,z=3.13) gate_found=1 gate_area=0.0636
+[STEP 20] active_gate=0 closest_gate=0 dist=2.09 reward=0.531 vel=(0.03,0.03,3.57) cmd=(r=0.09,p=0.08,yaw_rate=-20.00,z=0.91) gate_found=1 gate_area=0.0052
+[STEP 30] active_gate=0 closest_gate=0 dist=2.30 reward=-0.098 vel=(2.40,0.64,-0.10) cmd=(r=-0.04,p=0.18,yaw_rate=-0.24,z=2.38) gate_found=1 gate_area=0.0056
+[STEP 40] active_gate=0 closest_gate=0 dist=6.46 reward=-1.361 vel=(4.32,0.90,0.57) cmd=(r=-0.09,p=0.19,yaw_rate=20.00,z=3.35) gate_found=0 gate_area=0.0000
+[STEP 50] active_gate=0 closest_gate=0 dist=2.19 reward=-0.222 vel=(1.36,0.07,0.58) cmd=(r=0.10,p=0.18,yaw_rate=-6.61,z=2.82) gate_found=0 gate_area=0.0000
+[STEP 60] active_gate=0 closest_gate=0 dist=4.61 reward=-1.045 vel=(3.95,0.50,0.53) cmd=(r=-0.02,p=0.16,yaw_rate=-16.53,z=3.17) gate_found=0 gate_area=0.0000
+[STEP 70] active_gate=0 closest_gate=0 dist=2.39 reward=-0.369 vel=(1.42,-0.57,-0.43) cmd=(r=-0.06,p=0.08,yaw_rate=20.00,z=2.19) gate_found=0 gate_area=0.0000
+[STEP 80] active_gate=0 closest_gate=0 dist=5.22 reward=-0.658 vel=(3.36,-1.17,0.12) cmd=(r=0.01,p=0.08,yaw_rate=-1.90,z=2.40) gate_found=1 gate_area=0.0065
+[STEP 90] active_gate=0 closest_gate=0 dist=2.56 reward=0.618 vel=(0.00,0.00,2.90) cmd=(r=-0.05,p=0.11,yaw_rate=-13.61,z=-0.15) gate_found=1 gate_area=0.0173
+[STEP 100] active_gate=0 closest_gate=0 dist=2.45 reward=-0.320 vel=(2.45,0.43,-0.06) cmd=(r=-0.04,p=0.16,yaw_rate=10.26,z=2.82) gate_found=0 gate_area=0.0000
+[STEP 110] active_gate=0 closest_gate=0 dist=6.11 reward=-0.998 vel=(4.23,-0.17,0.70) cmd=(r=0.10,p=0.25,yaw_rate=18.70,z=3.27) gate_found=1 gate_area=0.0032
+[STEP 120] active_gate=0 closest_gate=0 dist=2.50 reward=0.721 vel=(0.00,0.00,3.15) cmd=(r=0.08,p=0.08,yaw_rate=-11.91,z=-0.07) gate_found=1 gate_area=0.0168
+[STEP 130] active_gate=0 closest_gate=0 dist=2.86 reward=-0.365 vel=(2.33,-0.41,0.44) cmd=(r=-0.02,p=0.08,yaw_rate=20.00,z=3.01) gate_found=1 gate_area=0.0058
+[STEP 140] active_gate=0 closest_gate=11 dist=6.66 reward=-1.510 vel=(4.42,-0.61,0.49) cmd=(r=0.10,p=0.15,yaw_rate=6.34,z=3.04) gate_found=0 gate_area=0.0000
+[STEP 143] Collision detected
+
+[RESET] Episode 15 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.15, -3.24, 1.91)
+[RESET] Distance to gate 0: 2.14
+[STEP 10] active_gate=0 closest_gate=0 dist=4.34 reward=-0.858 vel=(3.35,-0.75,0.65) cmd=(r=-0.10,p=0.15,yaw_rate=1.77,z=2.99) gate_found=0 gate_area=0.0000
+[STEP 15] Collision detected
+
+[RESET] Episode 16 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.40, -3.92, 2.08)
+[RESET] Distance to gate 0: 2.06
+[STEP 10] active_gate=0 closest_gate=0 dist=3.22 reward=-0.763 vel=(2.83,0.64,0.57) cmd=(r=0.10,p=0.08,yaw_rate=20.00,z=3.11) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=11 dist=7.82 reward=-1.741 vel=(4.82,0.63,0.91) cmd=(r=0.07,p=0.25,yaw_rate=11.42,z=3.56) gate_found=0 gate_area=0.0000
+[STEP 30] active_gate=0 closest_gate=0 dist=2.16 reward=-0.194 vel=(1.93,0.37,-0.14) cmd=(r=0.08,p=0.08,yaw_rate=-12.14,z=2.48) gate_found=0 gate_area=0.0000
+[STEP 40] active_gate=0 closest_gate=0 dist=4.68 reward=-1.007 vel=(3.81,0.48,0.66) cmd=(r=0.10,p=0.25,yaw_rate=20.00,z=2.57) gate_found=1 gate_area=0.0095
+[STEP 50] active_gate=0 closest_gate=0 dist=2.19 reward=0.813 vel=(0.00,-0.00,4.14) cmd=(r=-0.04,p=0.16,yaw_rate=-5.08,z=0.61) gate_found=1 gate_area=0.0198
+[STEP 60] active_gate=0 closest_gate=0 dist=3.25 reward=-0.571 vel=(2.66,-0.83,-0.06) cmd=(r=-0.10,p=0.08,yaw_rate=9.25,z=2.33) gate_found=0 gate_area=0.0000
+[STEP 70] active_gate=0 closest_gate=11 dist=7.52 reward=-1.820 vel=(4.77,-0.71,1.08) cmd=(r=-0.07,p=0.14,yaw_rate=20.00,z=3.66) gate_found=0 gate_area=0.0000
+[STEP 71] Collision detected
+
+[RESET] Episode 17 starting
+[RESET] Armed
+[RESET] Moved to hard pose (7.01, -1.70, 3.54)
+[RESET] Distance to gate 0: 2.15
+[STEP 10] active_gate=0 closest_gate=0 dist=3.90 reward=-0.731 vel=(3.19,-0.21,0.00) cmd=(r=-0.04,p=0.08,yaw_rate=-14.18,z=2.81) gate_found=0 gate_area=0.0000
+[STEP 19] Collision detected
+
+[RESET] Episode 18 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.99, -4.26, 1.93)
+[RESET] Distance to gate 0: 2.21
+[STEP 10] active_gate=0 closest_gate=0 dist=4.83 reward=-0.955 vel=(3.74,-0.55,0.71) cmd=(r=-0.06,p=0.25,yaw_rate=20.00,z=3.12) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=0 dist=2.29 reward=0.671 vel=(0.00,0.00,3.93) cmd=(r=-0.10,p=0.09,yaw_rate=-20.00,z=0.30) gate_found=1 gate_area=0.0177
+[STEP 30] active_gate=0 closest_gate=0 dist=2.76 reward=-0.418 vel=(2.94,0.61,-0.11) cmd=(r=0.02,p=0.22,yaw_rate=-20.00,z=2.80) gate_found=1 gate_area=0.0050
+[STEP 40] active_gate=0 closest_gate=0 dist=2.80 reward=0.281 vel=(0.00,0.00,1.65) cmd=(r=0.10,p=0.25,yaw_rate=-16.70,z=0.21) gate_found=1 gate_area=0.0179
+[STEP 50] active_gate=0 closest_gate=0 dist=2.49 reward=-0.202 vel=(2.14,-0.05,-0.03) cmd=(r=-0.10,p=0.08,yaw_rate=0.18,z=2.42) gate_found=0 gate_area=0.0000
+[STEP 60] active_gate=0 closest_gate=0 dist=5.60 reward=-1.109 vel=(4.23,-0.19,1.05) cmd=(r=-0.10,p=0.25,yaw_rate=7.06,z=3.27) gate_found=0 gate_area=0.0000
+[STEP 70] active_gate=0 closest_gate=0 dist=2.08 reward=-0.136 vel=(0.95,-0.08,1.11) cmd=(r=0.04,p=0.08,yaw_rate=5.10,z=2.50) gate_found=0 gate_area=0.0000
+[STEP 80] active_gate=0 closest_gate=0 dist=3.50 reward=-0.753 vel=(3.16,0.32,0.22) cmd=(r=-0.09,p=0.11,yaw_rate=-18.01,z=2.40) gate_found=0 gate_area=0.0000
+[STEP 90] active_gate=0 closest_gate=11 dist=8.63 reward=-1.928 vel=(5.04,0.59,0.63) cmd=(r=0.10,p=0.25,yaw_rate=-16.12,z=3.11) gate_found=0 gate_area=0.0000
+[STEP 91] Collision detected
+
+[RESET] Episode 19 starting
+[RESET] Armed
+[RESET] Moved to hard pose (3.96, 0.40, 2.65)
+[RESET] Distance to gate 0: 2.29
+[STEP 10] active_gate=0 closest_gate=0 dist=5.06 reward=-0.711 vel=(3.53,-0.97,0.44) cmd=(r=-0.10,p=0.25,yaw_rate=-4.12,z=2.79) gate_found=0 gate_area=0.0000
+[STEP 18] Collision detected
+
+[RESET] Episode 20 starting
+[RESET] Armed
+[RESET] Moved to hard pose (1.03, 0.25, 3.09)
+[RESET] Distance to gate 0: 1.93
+[STEP 10] active_gate=0 closest_gate=0 dist=3.57 reward=-0.612 vel=(3.24,0.82,-0.10) cmd=(r=-0.02,p=0.08,yaw_rate=-15.95,z=2.26) gate_found=1 gate_area=0.0068
+[STEP 20] active_gate=0 closest_gate=11 dist=9.22 reward=-2.002 vel=(5.25,0.46,0.72) cmd=(r=0.02,p=0.08,yaw_rate=-20.00,z=3.12) gate_found=1 gate_area=0.0038
+[STEP 23] Collision detected
+
+[RESET] Episode 21 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.94, -3.59, 1.95)
+[RESET] Distance to gate 0: 2.13
+[STEP 10] active_gate=0 closest_gate=0 dist=4.22 reward=-0.807 vel=(3.54,0.60,-0.07) cmd=(r=0.03,p=0.16,yaw_rate=-20.00,z=2.85) gate_found=1 gate_area=0.0041
+[STEP 20] active_gate=0 closest_gate=0 dist=2.23 reward=0.742 vel=(0.00,0.00,4.12) cmd=(r=0.06,p=0.22,yaw_rate=20.00,z=0.63) gate_found=1 gate_area=0.0172
+[STEP 30] active_gate=0 closest_gate=0 dist=2.91 reward=-0.500 vel=(2.09,-0.27,0.68) cmd=(r=0.08,p=0.09,yaw_rate=-19.80,z=3.27) gate_found=0 gate_area=0.0000
+[STEP 39] Collision detected
+
+[RESET] Episode 22 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.36, -3.13, 2.00)
+[RESET] Distance to gate 0: 2.12
+[STEP 10] active_gate=0 closest_gate=0 dist=3.84 reward=-0.704 vel=(3.30,0.18,0.73) cmd=(r=0.01,p=0.20,yaw_rate=14.78,z=2.87) gate_found=1 gate_area=0.0065
+[STEP 17] Collision detected
+
+[RESET] Episode 23 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.60, -3.51, 1.98)
+[RESET] Distance to gate 0: 2.12
+[STEP 10] active_gate=0 closest_gate=0 dist=4.60 reward=-0.727 vel=(3.87,0.01,0.33) cmd=(r=0.10,p=0.25,yaw_rate=14.19,z=2.72) gate_found=1 gate_area=0.0083
+[STEP 15] Collision detected
+
+[RESET] Episode 24 starting
+[RESET] Armed
+[RESET] Moved to start pose (-2.07, -4.66, 2.13)
+[RESET] Distance to gate 0: 2.18
+[STEP 10] active_gate=0 closest_gate=0 dist=4.03 reward=-0.529 vel=(3.29,0.16,0.69) cmd=(r=0.06,p=0.25,yaw_rate=10.77,z=2.98) gate_found=1 gate_area=0.0720
+[STEP 20] active_gate=0 closest_gate=11 dist=9.26 reward=-1.807 vel=(5.26,0.31,0.50) cmd=(r=0.10,p=0.22,yaw_rate=-20.00,z=3.14) gate_found=0 gate_area=0.0000
+[STEP 21] Collision detected
+
+[RESET] Episode 25 starting
+[RESET] Armed
+[RESET] Moved to hard pose (1.24, 0.07, 2.76)
+[RESET] Distance to gate 0: 2.30
+[STEP 10] active_gate=0 closest_gate=0 dist=3.87 reward=-0.736 vel=(2.94,-0.12,0.56) cmd=(r=-0.10,p=0.10,yaw_rate=-20.00,z=2.95) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=11 dist=8.32 reward=-1.655 vel=(4.57,-0.28,0.59) cmd=(r=0.02,p=0.13,yaw_rate=20.00,z=3.40) gate_found=1 gate_area=0.0125
+[STEP 21] Collision detected
+
+[RESET] Episode 26 starting
+[RESET] Armed
+[RESET] Moved to hard pose (0.81, -0.09, 2.52)
+[RESET] Distance to gate 0: 2.21
+[STEP 10] active_gate=0 closest_gate=0 dist=3.72 reward=-0.448 vel=(2.62,-0.45,0.13) cmd=(r=0.00,p=0.19,yaw_rate=20.00,z=2.65) gate_found=1 gate_area=0.0063
+[STEP 20] active_gate=0 closest_gate=11 dist=8.32 reward=-1.744 vel=(4.75,-0.85,0.69) cmd=(r=-0.01,p=0.23,yaw_rate=-20.00,z=2.89) gate_found=1 gate_area=0.0132
+[STEP 23] Collision detected
+
+[RESET] Episode 27 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.20, -4.13, 1.87)
+[RESET] Distance to gate 0: 2.15
+[STEP 10] active_gate=0 closest_gate=0 dist=4.03 reward=-0.875 vel=(3.27,-0.17,0.44) cmd=(r=-0.04,p=0.08,yaw_rate=-20.00,z=2.77) gate_found=0 gate_area=0.0000
+[STEP 18] Collision detected
+
+[RESET] Episode 28 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.65, -2.95, 2.19)
+[RESET] Distance to gate 0: 2.33
+[STEP 10] active_gate=0 closest_gate=0 dist=4.36 reward=-0.606 vel=(3.25,-0.52,0.25) cmd=(r=0.10,p=0.25,yaw_rate=15.59,z=3.09) gate_found=1 gate_area=0.0058
+[STEP 20] active_gate=0 closest_gate=0 dist=2.24 reward=0.708 vel=(0.00,0.00,4.11) cmd=(r=-0.08,p=0.24,yaw_rate=20.00,z=0.57) gate_found=1 gate_area=0.0170
+[STEP 30] active_gate=0 closest_gate=0 dist=3.27 reward=-0.439 vel=(2.65,-0.57,0.07) cmd=(r=-0.10,p=0.14,yaw_rate=-20.00,z=3.08) gate_found=1 gate_area=0.0054
+[STEP 40] Collision detected
+[STEP 40] active_gate=0 closest_gate=11 dist=7.96 reward=-101.935 vel=(4.78,-1.07,0.64) cmd=(r=0.04,p=0.14,yaw_rate=9.03,z=3.29) gate_found=0 gate_area=0.0000
+
+[RESET] Episode 29 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.71, -2.93, 2.21)
+[RESET] Distance to gate 0: 2.26
+[STEP 10] active_gate=0 closest_gate=0 dist=3.55 reward=-0.433 vel=(2.76,-0.00,0.52) cmd=(r=0.10,p=0.25,yaw_rate=14.95,z=3.23) gate_found=1 gate_area=0.0059
+[STEP 20] active_gate=0 closest_gate=0 dist=2.28 reward=0.763 vel=(0.00,0.00,3.97) cmd=(r=0.09,p=0.08,yaw_rate=-12.09,z=0.40) gate_found=1 gate_area=0.0178
+[STEP 30] active_gate=0 closest_gate=0 dist=2.71 reward=-0.120 vel=(2.32,0.08,0.41) cmd=(r=-0.04,p=0.22,yaw_rate=-4.12,z=3.35) gate_found=1 gate_area=0.0050
+[STEP 40] active_gate=0 closest_gate=0 dist=2.54 reward=0.749 vel=(0.00,0.00,3.01) cmd=(r=0.10,p=0.08,yaw_rate=4.16,z=0.34) gate_found=1 gate_area=0.0169
+[STEP 50] active_gate=0 closest_gate=0 dist=2.46 reward=-0.405 vel=(2.31,0.14,0.26) cmd=(r=0.04,p=0.25,yaw_rate=16.94,z=2.75) gate_found=0 gate_area=0.0000
+[STEP 60] active_gate=0 closest_gate=0 dist=5.70 reward=-1.051 vel=(4.14,0.26,0.42) cmd=(r=-0.10,p=0.08,yaw_rate=9.56,z=2.99) gate_found=0 gate_area=0.0000
+[STEP 70] active_gate=0 closest_gate=0 dist=2.11 reward=0.020 vel=(0.65,-0.08,1.58) cmd=(r=0.10,p=0.13,yaw_rate=-3.55,z=2.62) gate_found=1 gate_area=0.0054
+[STEP 80] active_gate=0 closest_gate=0 dist=3.48 reward=-0.740 vel=(2.99,0.34,0.50) cmd=(r=0.02,p=0.25,yaw_rate=10.05,z=2.81) gate_found=0 gate_area=0.0000
+[STEP 87] Collision detected
+
+[RESET] Episode 30 starting
+[RESET] Armed
+[RESET] Moved to hard pose (0.77, 0.02, 2.75)
+[RESET] Distance to gate 0: 2.17
+[STEP 10] active_gate=0 closest_gate=0 dist=4.74 reward=-1.004 vel=(3.78,-0.60,0.64) cmd=(r=0.07,p=0.15,yaw_rate=-1.22,z=2.71) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=0 dist=2.59 reward=0.623 vel=(0.00,0.00,2.79) cmd=(r=0.10,p=0.25,yaw_rate=8.72,z=-0.17) gate_found=1 gate_area=0.0174
+[STEP 30] active_gate=0 closest_gate=0 dist=2.61 reward=-0.091 vel=(2.41,0.02,0.12) cmd=(r=-0.00,p=0.22,yaw_rate=-4.20,z=2.90) gate_found=1 gate_area=0.0056
+[STEP 40] active_gate=0 closest_gate=0 dist=5.44 reward=-0.313 vel=(1.40,-0.30,0.05) cmd=(r=-0.04,p=0.25,yaw_rate=20.00,z=3.68) gate_found=1 gate_area=0.0089
+[STEP 45] Collision detected
+
+[RESET] Episode 31 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.18, -3.54, 2.10)
+[RESET] Distance to gate 0: 2.13
+[STEP 10] active_gate=0 closest_gate=0 dist=4.05 reward=-0.820 vel=(3.41,0.17,0.76) cmd=(r=0.04,p=0.08,yaw_rate=-20.00,z=3.47) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=0 dist=5.47 reward=-0.151 vel=(0.64,0.11,-0.18) cmd=(r=-0.10,p=0.08,yaw_rate=5.52,z=3.29) gate_found=0 gate_area=0.0000
+[STEP 30] active_gate=0 closest_gate=0 dist=2.00 reward=0.153 vel=(0.50,0.05,2.56) cmd=(r=-0.10,p=0.08,yaw_rate=7.63,z=2.32) gate_found=1 gate_area=0.0050
+[STEP 40] active_gate=0 closest_gate=0 dist=3.95 reward=-0.623 vel=(3.21,-0.53,0.56) cmd=(r=0.07,p=0.09,yaw_rate=-19.16,z=3.18) gate_found=1 gate_area=0.0063
+[STEP 50] active_gate=0 closest_gate=0 dist=2.57 reward=0.548 vel=(0.00,0.00,2.85) cmd=(r=-0.05,p=0.25,yaw_rate=-18.25,z=-0.16) gate_found=1 gate_area=0.0172
+[STEP 60] active_gate=0 closest_gate=0 dist=2.41 reward=-0.333 vel=(2.67,0.60,0.25) cmd=(r=0.02,p=0.08,yaw_rate=-1.55,z=2.85) gate_found=0 gate_area=0.0000
+[STEP 70] active_gate=0 closest_gate=0 dist=6.66 reward=-1.177 vel=(4.76,0.25,1.00) cmd=(r=0.10,p=0.24,yaw_rate=-10.42,z=3.41) gate_found=0 gate_area=0.0000
+[STEP 72] Collision detected
+
+[RESET] Episode 32 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.77, -3.92, 2.00)
+[RESET] Distance to gate 0: 2.06
+[STEP 10] active_gate=0 closest_gate=0 dist=2.69 reward=-0.443 vel=(2.85,1.35,0.30) cmd=(r=0.03,p=0.25,yaw_rate=-13.40,z=3.07) gate_found=1 gate_area=0.0064
+[STEP 12] Collision detected
+
+[RESET] Episode 33 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.91, -3.30, 1.85)
+[RESET] Distance to gate 0: 2.16
+[STEP 10] active_gate=0 closest_gate=0 dist=4.43 reward=-0.847 vel=(3.44,-0.15,0.64) cmd=(r=-0.05,p=0.11,yaw_rate=-15.50,z=3.36) gate_found=0 gate_area=0.0000
+[STEP 18] Collision detected
+
+[RESET] Episode 34 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.81, -4.01, 1.99)
+[RESET] Distance to gate 0: 2.24
+[STEP 10] active_gate=0 closest_gate=0 dist=4.29 reward=-0.983 vel=(3.46,-0.27,0.51) cmd=(r=0.09,p=0.20,yaw_rate=15.23,z=3.29) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=0 dist=2.07 reward=0.077 vel=(1.09,-0.19,1.55) cmd=(r=0.06,p=0.20,yaw_rate=0.38,z=2.26) gate_found=1 gate_area=0.0055
+[STEP 30] active_gate=0 closest_gate=0 dist=4.37 reward=-0.725 vel=(3.62,-0.34,0.79) cmd=(r=0.08,p=0.25,yaw_rate=-16.28,z=2.99) gate_found=1 gate_area=0.0063
+[STEP 40] active_gate=0 closest_gate=0 dist=2.00 reward=0.221 vel=(0.46,0.15,2.88) cmd=(r=0.10,p=0.09,yaw_rate=-6.92,z=1.62) gate_found=1 gate_area=0.0051
+[STEP 50] active_gate=0 closest_gate=0 dist=3.04 reward=-0.509 vel=(2.96,0.62,0.72) cmd=(r=0.01,p=0.18,yaw_rate=20.00,z=3.21) gate_found=1 gate_area=0.0062
+[STEP 57] Collision detected
+
+[RESET] Episode 35 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.28, -3.94, 2.11)
+[RESET] Distance to gate 0: 2.15
+[STEP 10] active_gate=0 closest_gate=0 dist=4.23 reward=-0.596 vel=(3.62,-0.42,0.76) cmd=(r=0.06,p=0.19,yaw_rate=5.26,z=3.11) gate_found=1 gate_area=0.0817
+[STEP 14] Collision detected
+
+[RESET] Episode 36 starting
+[RESET] Armed
+[RESET] Moved to hard pose (1.87, -0.06, 2.87)
+[RESET] Distance to gate 0: 2.11
+[STEP 10] active_gate=0 closest_gate=0 dist=4.48 reward=-0.837 vel=(3.81,0.16,0.56) cmd=(r=-0.10,p=0.08,yaw_rate=-20.00,z=3.26) gate_found=1 gate_area=0.0068
+[STEP 20] active_gate=0 closest_gate=0 dist=2.18 reward=0.976 vel=(0.00,-0.00,4.20) cmd=(r=-0.10,p=0.25,yaw_rate=0.81,z=0.66) gate_found=1 gate_area=0.0197
+[STEP 30] active_gate=0 closest_gate=0 dist=2.61 reward=-0.208 vel=(2.01,0.04,-0.14) cmd=(r=0.02,p=0.11,yaw_rate=-16.29,z=2.61) gate_found=1 gate_area=0.0054
+[STEP 40] active_gate=0 closest_gate=0 dist=5.80 reward=-0.795 vel=(3.90,0.08,0.78) cmd=(r=-0.02,p=0.25,yaw_rate=-14.01,z=3.31) gate_found=1 gate_area=0.0095
+[STEP 45] Collision detected
+
+[RESET] Episode 37 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.02, -4.44, 2.18)
+[RESET] Distance to gate 0: 2.40
+[STEP 10] active_gate=0 closest_gate=0 dist=4.65 reward=-0.862 vel=(3.26,-0.58,0.41) cmd=(r=0.10,p=0.09,yaw_rate=-15.09,z=3.33) gate_found=0 gate_area=0.0000
+[STEP 14] Collision detected
+
+[RESET] Episode 38 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.21, -4.24, 2.08)
+[RESET] Distance to gate 0: 2.27
+[STEP 10] active_gate=0 closest_gate=0 dist=4.05 reward=-0.746 vel=(3.22,-0.15,0.36) cmd=(r=0.10,p=0.08,yaw_rate=11.74,z=2.94) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=0 dist=2.91 reward=11.392 vel=(0.00,0.00,0.00) cmd=(r=0.10,p=0.08,yaw_rate=16.51,z=3.23) gate_found=1 gate_area=0.0179
+[STEP 30] active_gate=0 closest_gate=0 dist=2.33 reward=-0.056 vel=(1.00,0.59,0.59) cmd=(r=0.10,p=0.23,yaw_rate=1.37,z=3.10) gate_found=0 gate_area=0.0000
+[STEP 40] active_gate=0 closest_gate=0 dist=3.16 reward=-0.644 vel=(2.65,0.73,0.24) cmd=(r=0.10,p=0.20,yaw_rate=20.00,z=3.24) gate_found=0 gate_area=0.0000
+[STEP 50] active_gate=0 closest_gate=0 dist=2.04 reward=0.625 vel=(0.09,-0.01,3.82) cmd=(r=-0.02,p=0.25,yaw_rate=-6.83,z=1.34) gate_found=1 gate_area=0.0056
+[STEP 60] active_gate=0 closest_gate=0 dist=3.30 reward=-0.467 vel=(3.07,0.18,0.71) cmd=(r=0.01,p=0.08,yaw_rate=0.13,z=3.06) gate_found=1 gate_area=0.0055
+[STEP 70] active_gate=0 closest_gate=0 dist=2.27 reward=0.797 vel=(0.00,0.00,4.01) cmd=(r=-0.10,p=0.25,yaw_rate=6.50,z=0.87) gate_found=1 gate_area=0.0178
+[STEP 80] active_gate=0 closest_gate=0 dist=2.94 reward=-0.389 vel=(2.75,0.35,0.47) cmd=(r=-0.07,p=0.11,yaw_rate=-19.59,z=3.43) gate_found=1 gate_area=0.0052
+[STEP 90] active_gate=0 closest_gate=0 dist=2.58 reward=0.609 vel=(0.00,0.00,2.83) cmd=(r=-0.07,p=0.11,yaw_rate=-11.89,z=0.25) gate_found=1 gate_area=0.0174
+[STEP 100] active_gate=0 closest_gate=0 dist=2.31 reward=-0.317 vel=(1.81,0.19,0.13) cmd=(r=0.02,p=0.08,yaw_rate=-20.00,z=3.19) gate_found=0 gate_area=0.0000
+[STEP 110] active_gate=0 closest_gate=0 dist=5.45 reward=-1.094 vel=(3.98,0.32,0.52) cmd=(r=-0.07,p=0.25,yaw_rate=-20.00,z=3.65) gate_found=0 gate_area=0.0000
+[STEP 111] Collision detected
+
+[RESET] Episode 39 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.67, -3.14, 1.88)
+[RESET] Distance to gate 0: 2.34
+[STEP 10] active_gate=0 closest_gate=0 dist=4.05 reward=-0.692 vel=(3.27,0.60,0.70) cmd=(r=0.10,p=0.25,yaw_rate=-6.16,z=3.51) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=0 dist=2.82 reward=0.209 vel=(0.00,0.00,1.50) cmd=(r=0.01,p=0.08,yaw_rate=-20.00,z=0.22) gate_found=1 gate_area=0.0178
+[STEP 30] active_gate=0 closest_gate=0 dist=2.53 reward=-0.107 vel=(2.24,0.10,0.36) cmd=(r=-0.01,p=0.08,yaw_rate=-5.50,z=3.37) gate_found=1 gate_area=0.0053
+[STEP 40] active_gate=0 closest_gate=0 dist=5.73 reward=-1.103 vel=(4.14,0.19,0.59) cmd=(r=-0.01,p=0.18,yaw_rate=-5.17,z=3.38) gate_found=0 gate_area=0.0000
+[STEP 41] Collision detected
+
+[RESET] Episode 40 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.75, -4.02, 2.16)
+[RESET] Distance to gate 0: 2.31
+[STEP 10] active_gate=0 closest_gate=0 dist=3.96 reward=-0.376 vel=(3.00,-0.25,0.37) cmd=(r=0.10,p=0.19,yaw_rate=4.06,z=3.76) gate_found=1 gate_area=0.0054
+[STEP 20] active_gate=0 closest_gate=0 dist=2.06 reward=-0.067 vel=(1.27,-0.12,-0.21) cmd=(r=-0.07,p=0.09,yaw_rate=-20.00,z=2.37) gate_found=1 gate_area=0.0049
+[STEP 30] active_gate=0 closest_gate=0 dist=4.07 reward=-0.720 vel=(3.18,-0.13,0.60) cmd=(r=0.01,p=0.16,yaw_rate=-18.22,z=2.60) gate_found=0 gate_area=0.0000
+[STEP 40] active_gate=0 closest_gate=11 dist=9.38 reward=-1.740 vel=(5.15,0.30,0.54) cmd=(r=0.09,p=0.25,yaw_rate=0.59,z=3.06) gate_found=0 gate_area=0.0000
+[STEP 50] active_gate=0 closest_gate=0 dist=2.13 reward=-0.082 vel=(2.02,0.25,0.28) cmd=(r=-0.06,p=0.25,yaw_rate=20.00,z=2.49) gate_found=1 gate_area=0.0048
+[STEP 60] active_gate=0 closest_gate=0 dist=4.99 reward=-0.747 vel=(4.01,-0.17,0.61) cmd=(r=-0.06,p=0.08,yaw_rate=-0.67,z=3.15) gate_found=1 gate_area=0.0079
+[STEP 63] Collision detected
+
+[RESET] Episode 41 starting
+[RESET] Armed
+[RESET] Moved to start pose (-2.00, -3.79, 2.04)
+[RESET] Distance to gate 0: 2.36
+[STEP 10] active_gate=0 closest_gate=0 dist=4.33 reward=-0.672 vel=(3.56,0.37,0.49) cmd=(r=-0.10,p=0.25,yaw_rate=-8.98,z=2.98) gate_found=1 gate_area=0.0742
+[STEP 12] Collision detected
+
+[RESET] Episode 42 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.52, -4.40, 1.93)
+[RESET] Distance to gate 0: 2.80
+[STEP 10] active_gate=0 closest_gate=0 dist=2.11 reward=-0.066 vel=(0.71,-0.01,0.55) cmd=(r=-0.05,p=0.25,yaw_rate=17.14,z=2.31) gate_found=1 gate_area=0.0049
+[STEP 20] active_gate=0 closest_gate=0 dist=3.47 reward=-0.588 vel=(2.95,0.21,0.66) cmd=(r=-0.08,p=0.17,yaw_rate=20.00,z=3.00) gate_found=1 gate_area=0.0037
+[STEP 30] active_gate=0 closest_gate=11 dist=7.83 reward=-1.780 vel=(4.89,0.36,0.68) cmd=(r=0.09,p=0.18,yaw_rate=-20.00,z=3.41) gate_found=0 gate_area=0.0000
+[STEP 40] active_gate=0 closest_gate=0 dist=2.32 reward=-0.162 vel=(1.74,-0.43,0.10) cmd=(r=0.05,p=0.25,yaw_rate=-16.94,z=2.66) gate_found=1 gate_area=0.0048
+[STEP 50] active_gate=0 closest_gate=0 dist=5.03 reward=-1.015 vel=(3.95,-0.34,0.32) cmd=(r=0.01,p=0.16,yaw_rate=13.61,z=3.00) gate_found=0 gate_area=0.0000
+[STEP 55] Collision detected
+
+[RESET] Episode 43 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.91, -3.92, 1.87)
+[RESET] Distance to gate 0: 2.23
+[STEP 10] active_gate=0 closest_gate=0 dist=4.87 reward=-0.723 vel=(3.64,-0.55,0.29) cmd=(r=-0.08,p=0.08,yaw_rate=-0.73,z=3.09) gate_found=0 gate_area=0.0000
+[STEP 17] Collision detected
+
+[RESET] Episode 44 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.08, -3.51, 1.86)
+[RESET] Distance to gate 0: 2.01
+[STEP 10] active_gate=0 closest_gate=0 dist=4.14 reward=-0.871 vel=(3.62,0.08,0.72) cmd=(r=-0.09,p=0.25,yaw_rate=-20.00,z=2.96) gate_found=1 gate_area=0.0067
+[STEP 18] Collision detected
+
+[RESET] Episode 45 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.18, -3.26, 1.96)
+[RESET] Distance to gate 0: 2.15
+[STEP 10] active_gate=0 closest_gate=0 dist=3.91 reward=-0.521 vel=(3.10,0.04,0.55) cmd=(r=0.00,p=0.21,yaw_rate=-10.37,z=2.82) gate_found=1 gate_area=0.0064
+[STEP 18] Collision detected
+
+[RESET] Episode 46 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.24, -4.04, 2.12)
+[RESET] Distance to gate 0: 2.08
+[STEP 10] active_gate=0 closest_gate=0 dist=3.93 reward=-0.776 vel=(3.39,0.10,0.37) cmd=(r=-0.01,p=0.15,yaw_rate=20.00,z=3.30) gate_found=1 gate_area=0.0067
+[STEP 20] active_gate=0 closest_gate=0 dist=2.04 reward=0.497 vel=(0.07,0.04,3.79) cmd=(r=0.10,p=0.20,yaw_rate=0.64,z=1.44) gate_found=0 gate_area=0.0000
+[STEP 30] active_gate=0 closest_gate=0 dist=2.90 reward=-0.627 vel=(2.63,-0.04,0.31) cmd=(r=-0.10,p=0.20,yaw_rate=20.00,z=2.85) gate_found=0 gate_area=0.0000
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 46.9     |
+|    ep_rew_mean     | -114     |
+| time/              |          |
+|    fps             | 6        |
+|    iterations      | 1        |
+|    time_elapsed    | 332      |
+|    total_timesteps | 2048     |
+---------------------------------
+[STEP 40] active_gate=0 closest_gate=0 dist=2.57 reward=-0.155 vel=(0.45,-0.05,-0.09) cmd=(r=-0.03,p=0.08,yaw_rate=-15.45,z=3.42) gate_found=0 gate_area=0.0000
+[STEP 50] active_gate=0 closest_gate=0 dist=3.39 reward=-0.465 vel=(2.30,-0.16,0.60) cmd=(r=-0.10,p=0.25,yaw_rate=-2.63,z=3.70) gate_found=0 gate_area=0.0000
+[STEP 51] Collision detected
+
+[RESET] Episode 47 starting
+[RESET] Armed
+[RESET] Moved to hard pose (4.33, -0.91, 3.02)
+[RESET] Distance to gate 0: 1.97
+[STEP 10] active_gate=0 closest_gate=0 dist=3.70 reward=-0.533 vel=(3.57,0.79,0.43) cmd=(r=-0.06,p=0.21,yaw_rate=-1.51,z=2.66) gate_found=1 gate_area=0.0071
+[STEP 18] Collision detected
+
+[RESET] Episode 48 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.42, -4.47, 1.87)
+[RESET] Distance to gate 0: 2.32
+[STEP 10] active_gate=0 closest_gate=0 dist=4.53 reward=-0.850 vel=(3.58,0.00,0.83) cmd=(r=-0.03,p=0.23,yaw_rate=20.00,z=3.43) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=0 dist=2.20 reward=-0.406 vel=(1.51,-0.36,0.40) cmd=(r=-0.10,p=0.14,yaw_rate=-20.00,z=2.72) gate_found=0 gate_area=0.0000
+[STEP 30] active_gate=0 closest_gate=0 dist=4.76 reward=-0.868 vel=(3.59,-0.61,0.53) cmd=(r=0.10,p=0.23,yaw_rate=20.00,z=2.79) gate_found=0 gate_area=0.0000
+[STEP 39] Collision detected
+
+[RESET] Episode 49 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.18, -4.71, 2.04)
+[RESET] Distance to gate 0: 2.00
+[STEP 10] active_gate=0 closest_gate=0 dist=4.52 reward=-0.749 vel=(4.06,0.53,0.88) cmd=(r=0.06,p=0.08,yaw_rate=-12.99,z=3.09) gate_found=1 gate_area=0.0582
+[STEP 20] active_gate=0 closest_gate=0 dist=2.05 reward=-0.033 vel=(0.82,0.30,2.08) cmd=(r=-0.07,p=0.23,yaw_rate=14.84,z=2.12) gate_found=1 gate_area=0.0048
+[STEP 30] active_gate=0 closest_gate=0 dist=3.80 reward=-0.715 vel=(3.52,0.15,0.16) cmd=(r=0.06,p=0.21,yaw_rate=8.42,z=3.28) gate_found=0 gate_area=0.0000
+[STEP 40] active_gate=0 closest_gate=0 dist=2.03 reward=0.216 vel=(0.28,-0.23,2.79) cmd=(r=-0.10,p=0.22,yaw_rate=-1.97,z=2.05) gate_found=1 gate_area=0.0053
+[STEP 50] active_gate=0 closest_gate=0 dist=3.65 reward=-0.637 vel=(3.00,-0.32,0.04) cmd=(r=-0.10,p=0.09,yaw_rate=17.70,z=2.80) gate_found=0 gate_area=0.0000
+[STEP 60] active_gate=0 closest_gate=11 dist=8.64 reward=-1.757 vel=(4.90,-0.01,0.19) cmd=(r=-0.08,p=0.16,yaw_rate=-13.33,z=3.12) gate_found=0 gate_area=0.0000
+[STEP 62] Collision detected
+
+[RESET] Episode 50 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.27, -4.57, 2.01)
+[RESET] Distance to gate 0: 2.20
+[STEP 10] active_gate=0 closest_gate=0 dist=4.08 reward=-0.606 vel=(3.31,0.31,0.57) cmd=(r=0.06,p=0.23,yaw_rate=8.26,z=3.13) gate_found=1 gate_area=0.0073
+[STEP 18] Collision detected
+
+[RESET] Episode 51 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.58, -4.47, 1.97)
+[RESET] Distance to gate 0: 2.21
+[STEP 10] active_gate=0 closest_gate=0 dist=3.57 reward=-0.673 vel=(2.86,0.08,0.33) cmd=(r=0.04,p=0.08,yaw_rate=-2.79,z=3.28) gate_found=0 gate_area=0.0000
+[STEP 15] Collision detected
+
+[RESET] Episode 52 starting
+[RESET] Armed
+[RESET] Moved to hard pose (4.47, -0.68, 3.13)
+[RESET] Distance to gate 0: 2.23
+[STEP 10] active_gate=0 closest_gate=0 dist=3.92 reward=-0.779 vel=(3.34,0.11,0.01) cmd=(r=-0.10,p=0.08,yaw_rate=-7.53,z=2.40) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=11 dist=9.20 reward=-2.039 vel=(5.09,0.37,0.74) cmd=(r=-0.10,p=0.08,yaw_rate=-5.43,z=3.13) gate_found=0 gate_area=0.0000
+[STEP 30] active_gate=0 closest_gate=0 dist=2.07 reward=-0.082 vel=(1.34,0.04,0.63) cmd=(r=0.10,p=0.25,yaw_rate=20.00,z=2.54) gate_found=1 gate_area=0.0048
+[STEP 40] active_gate=0 closest_gate=0 dist=3.91 reward=-0.870 vel=(3.51,0.49,0.32) cmd=(r=-0.05,p=0.08,yaw_rate=20.00,z=3.11) gate_found=0 gate_area=0.0000
+[STEP 50] active_gate=0 closest_gate=11 dist=9.25 reward=-1.317 vel=(4.21,0.31,0.39) cmd=(r=-0.07,p=0.25,yaw_rate=6.91,z=3.65) gate_found=0 gate_area=0.0000
+[STEP 60] active_gate=0 closest_gate=0 dist=2.33 reward=-0.123 vel=(1.74,-0.42,-0.27) cmd=(r=0.10,p=0.21,yaw_rate=-8.55,z=2.48) gate_found=1 gate_area=0.0053
+[STEP 70] active_gate=0 closest_gate=0 dist=4.93 reward=-1.225 vel=(3.59,-0.25,0.16) cmd=(r=0.01,p=0.17,yaw_rate=20.00,z=2.49) gate_found=0 gate_area=0.0000
+[STEP 80] active_gate=0 closest_gate=0 dist=2.91 reward=14.394 vel=(0.00,0.00,0.00) cmd=(r=-0.04,p=0.25,yaw_rate=-14.69,z=3.59) gate_found=1 gate_area=0.0179
+[STEP 90] active_gate=0 closest_gate=0 dist=2.34 reward=-0.243 vel=(2.17,0.24,-0.04) cmd=(r=-0.03,p=0.25,yaw_rate=10.46,z=2.48) gate_found=0 gate_area=0.0000
+[STEP 100] active_gate=0 closest_gate=0 dist=5.53 reward=-0.973 vel=(4.29,0.21,0.52) cmd=(r=0.06,p=0.08,yaw_rate=-20.00,z=3.15) gate_found=1 gate_area=0.0757
+[STEP 110] active_gate=0 closest_gate=0 dist=1.99 reward=-0.003 vel=(1.23,0.28,1.41) cmd=(r=-0.10,p=0.19,yaw_rate=20.00,z=1.92) gate_found=1 gate_area=0.0051
+[STEP 120] active_gate=0 closest_gate=0 dist=4.16 reward=-0.552 vel=(3.70,-0.04,0.21) cmd=(r=-0.10,p=0.19,yaw_rate=-5.16,z=2.82) gate_found=1 gate_area=0.0766
+[STEP 130] active_gate=0 closest_gate=0 dist=2.58 reward=0.555 vel=(0.00,0.00,2.83) cmd=(r=0.10,p=0.25,yaw_rate=-17.56,z=0.15) gate_found=1 gate_area=0.0175
+[STEP 140] active_gate=0 closest_gate=0 dist=2.55 reward=-0.247 vel=(2.35,0.22,0.00) cmd=(r=-0.05,p=0.14,yaw_rate=-6.98,z=3.31) gate_found=0 gate_area=0.0000
+[STEP 150] active_gate=0 closest_gate=0 dist=2.84 reward=0.175 vel=(0.00,0.00,1.37) cmd=(r=-0.10,p=0.20,yaw_rate=-20.00,z=-0.17) gate_found=1 gate_area=0.0182
+[STEP 160] active_gate=0 closest_gate=0 dist=2.42 reward=-0.357 vel=(1.73,-0.37,0.22) cmd=(r=-0.06,p=0.25,yaw_rate=-10.52,z=2.93) gate_found=0 gate_area=0.0000
+[STEP 170] active_gate=0 closest_gate=0 dist=5.32 reward=-0.938 vel=(3.81,-0.61,0.68) cmd=(r=-0.09,p=0.13,yaw_rate=-11.58,z=2.91) gate_found=0 gate_area=0.0000
+[STEP 180] active_gate=0 closest_gate=0 dist=2.04 reward=0.328 vel=(0.19,0.04,3.24) cmd=(r=-0.02,p=0.25,yaw_rate=10.96,z=1.21) gate_found=0 gate_area=0.0000
+[STEP 190] active_gate=0 closest_gate=0 dist=3.03 reward=-0.452 vel=(2.72,0.05,-0.07) cmd=(r=0.03,p=0.16,yaw_rate=-15.77,z=2.16) gate_found=1 gate_area=0.0052
+[STEP 200] active_gate=0 closest_gate=11 dist=7.53 reward=-1.481 vel=(4.70,0.09,0.88) cmd=(r=0.02,p=0.12,yaw_rate=20.00,z=3.26) gate_found=1 gate_area=0.0039
+[STEP 210] active_gate=0 closest_gate=0 dist=1.98 reward=0.162 vel=(0.53,0.12,2.04) cmd=(r=0.08,p=0.16,yaw_rate=17.27,z=1.69) gate_found=1 gate_area=0.0054
+[STEP 220] active_gate=0 closest_gate=0 dist=3.32 reward=-0.635 vel=(3.11,0.14,0.50) cmd=(r=0.00,p=0.17,yaw_rate=-20.00,z=2.79) gate_found=1 gate_area=0.0061
+[STEP 230] Collision detected
+[STEP 230] active_gate=0 closest_gate=11 dist=8.83 reward=-102.151 vel=(5.42,-0.01,1.49) cmd=(r=0.10,p=0.25,yaw_rate=-18.87,z=3.78) gate_found=0 gate_area=0.0000
+
+[RESET] Episode 53 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.53, -4.41, 1.88)
+[RESET] Distance to gate 0: 2.23
+[STEP 10] active_gate=0 closest_gate=0 dist=4.38 reward=-0.931 vel=(3.52,-0.00,0.61) cmd=(r=0.08,p=0.25,yaw_rate=13.58,z=2.64) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=0 dist=2.83 reward=0.189 vel=(0.00,0.00,1.43) cmd=(r=0.10,p=0.11,yaw_rate=-20.00,z=0.02) gate_found=1 gate_area=0.0182
+[STEP 30] active_gate=0 closest_gate=0 dist=2.33 reward=-0.158 vel=(2.20,0.27,-0.48) cmd=(r=0.03,p=0.13,yaw_rate=-16.35,z=2.45) gate_found=1 gate_area=0.0052
+[STEP 40] active_gate=0 closest_gate=0 dist=5.78 reward=-1.142 vel=(4.18,0.45,0.60) cmd=(r=0.01,p=0.22,yaw_rate=1.03,z=3.05) gate_found=1 gate_area=0.0088
+[STEP 50] active_gate=0 closest_gate=0 dist=2.05 reward=0.492 vel=(0.07,0.06,3.12) cmd=(r=0.02,p=0.08,yaw_rate=16.57,z=1.51) gate_found=1 gate_area=0.0050
+[STEP 60] active_gate=0 closest_gate=0 dist=2.78 reward=-0.580 vel=(2.91,0.41,0.33) cmd=(r=-0.10,p=0.25,yaw_rate=-20.00,z=2.69) gate_found=0 gate_area=0.0000
+[STEP 70] active_gate=0 closest_gate=11 dist=7.49 reward=-1.979 vel=(5.00,-0.05,1.12) cmd=(r=-0.08,p=0.21,yaw_rate=-20.00,z=3.61) gate_found=0 gate_area=0.0000
+[STEP 80] active_gate=0 closest_gate=0 dist=2.23 reward=-0.317 vel=(2.13,0.30,0.19) cmd=(r=0.05,p=0.10,yaw_rate=20.00,z=2.82) gate_found=0 gate_area=0.0000
+[STEP 90] active_gate=0 closest_gate=0 dist=5.14 reward=-0.886 vel=(4.03,0.30,0.59) cmd=(r=-0.03,p=0.12,yaw_rate=-18.84,z=2.85) gate_found=1 gate_area=0.0083
+[STEP 100] active_gate=0 closest_gate=0 dist=1.97 reward=0.338 vel=(0.42,0.20,2.02) cmd=(r=0.02,p=0.14,yaw_rate=1.79,z=1.45) gate_found=1 gate_area=0.0052
+[STEP 110] active_gate=0 closest_gate=0 dist=2.92 reward=-0.515 vel=(2.89,0.40,0.32) cmd=(r=-0.10,p=0.25,yaw_rate=-20.00,z=2.76) gate_found=1 gate_area=0.0063
+[STEP 120] Collision detected
+[STEP 120] active_gate=0 closest_gate=11 dist=8.21 reward=-101.703 vel=(5.21,0.73,0.97) cmd=(r=-0.08,p=0.25,yaw_rate=-2.33,z=3.17) gate_found=0 gate_area=0.0000
+
+[RESET] Episode 54 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.33, -3.39, 2.09)
+[RESET] Distance to gate 0: 2.24
+[STEP 10] active_gate=0 closest_gate=0 dist=4.69 reward=-0.802 vel=(3.89,0.33,0.61) cmd=(r=-0.00,p=0.25,yaw_rate=-20.00,z=3.40) gate_found=1 gate_area=0.0093
+[STEP 20] active_gate=0 closest_gate=0 dist=2.01 reward=0.248 vel=(0.42,-0.06,2.93) cmd=(r=0.02,p=0.25,yaw_rate=2.70,z=1.80) gate_found=1 gate_area=0.0053
+[STEP 30] active_gate=0 closest_gate=0 dist=3.71 reward=-0.671 vel=(3.34,-0.20,0.60) cmd=(r=-0.06,p=0.08,yaw_rate=-20.00,z=3.25) gate_found=1 gate_area=0.0056
+[STEP 37] Collision detected
+
+[RESET] Episode 55 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.64, -3.64, 2.03)
+[RESET] Distance to gate 0: 2.24
+[STEP 10] active_gate=0 closest_gate=0 dist=4.30 reward=-0.720 vel=(3.35,-0.32,0.30) cmd=(r=-0.05,p=0.25,yaw_rate=-7.73,z=3.19) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=0 dist=2.55 reward=0.692 vel=(0.00,0.00,2.95) cmd=(r=0.06,p=0.13,yaw_rate=-8.57,z=-0.08) gate_found=1 gate_area=0.0173
+[STEP 30] active_gate=0 closest_gate=0 dist=2.77 reward=-0.153 vel=(2.02,-0.37,-0.22) cmd=(r=0.05,p=0.17,yaw_rate=-10.95,z=3.05) gate_found=1 gate_area=0.0054
+[STEP 38] Collision detected
+
+[RESET] Episode 56 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.40, -4.44, 2.15)
+[RESET] Distance to gate 0: 2.04
+[STEP 10] active_gate=0 closest_gate=0 dist=3.44 reward=-0.550 vel=(2.76,-0.30,0.31) cmd=(r=-0.10,p=0.14,yaw_rate=-20.00,z=2.95) gate_found=1 gate_area=0.0056
+[STEP 20] Collision detected
+[STEP 20] active_gate=0 closest_gate=11 dist=7.83 reward=-101.637 vel=(4.62,-0.71,0.83) cmd=(r=-0.10,p=0.08,yaw_rate=-4.42,z=3.65) gate_found=0 gate_area=0.0000
+
+[RESET] Episode 57 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.25, -4.64, 1.95)
+[RESET] Distance to gate 0: 2.14
+[STEP 10] active_gate=0 closest_gate=0 dist=3.50 reward=-0.364 vel=(2.72,-0.45,0.24) cmd=(r=0.04,p=0.25,yaw_rate=9.48,z=2.59) gate_found=1 gate_area=0.0061
+[STEP 20] active_gate=0 closest_gate=11 dist=8.28 reward=-1.520 vel=(4.77,-0.63,0.50) cmd=(r=-0.03,p=0.08,yaw_rate=20.00,z=2.93) gate_found=1 gate_area=0.0132
+[STEP 30] active_gate=0 closest_gate=0 dist=2.06 reward=-0.007 vel=(0.88,-0.01,1.78) cmd=(r=-0.10,p=0.21,yaw_rate=9.54,z=2.19) gate_found=1 gate_area=0.0051
+[STEP 40] active_gate=0 closest_gate=0 dist=4.10 reward=-0.824 vel=(3.62,-0.07,0.83) cmd=(r=-0.10,p=0.21,yaw_rate=10.80,z=3.45) gate_found=0 gate_area=0.0000
+[STEP 46] Collision detected
+
+[RESET] Episode 58 starting
+[RESET] Armed
+[RESET] Moved to hard pose (1.55, -0.05, 2.79)
+[RESET] Distance to gate 0: 2.27
+[STEP 10] active_gate=0 closest_gate=0 dist=6.41 reward=-1.541 vel=(4.38,0.30,0.30) cmd=(r=-0.00,p=0.12,yaw_rate=16.87,z=3.01) gate_found=1 gate_area=0.0104
+[STEP 15] Collision detected
+
+[RESET] Episode 59 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.23, -3.37, 2.04)
+[RESET] Distance to gate 0: 2.10
+[STEP 10] active_gate=0 closest_gate=0 dist=4.00 reward=-0.879 vel=(3.52,0.37,0.41) cmd=(r=0.10,p=0.13,yaw_rate=3.67,z=3.14) gate_found=0 gate_area=0.0000
+[STEP 14] Collision detected
+
+[RESET] Episode 60 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.06, -4.35, 1.98)
+[RESET] Distance to gate 0: 2.19
+[STEP 10] active_gate=0 closest_gate=0 dist=3.87 reward=-0.502 vel=(3.36,0.63,0.82) cmd=(r=0.02,p=0.25,yaw_rate=-5.65,z=2.79) gate_found=1 gate_area=0.0081
+[STEP 16] Collision detected
+
+[RESET] Episode 61 starting
+[RESET] Armed
+[RESET] Moved to hard pose (2.90, -0.22, 2.82)
+[RESET] Distance to gate 0: 2.12
+[STEP 10] active_gate=0 closest_gate=0 dist=4.63 reward=-0.747 vel=(4.17,0.31,0.50) cmd=(r=0.10,p=0.21,yaw_rate=2.35,z=3.08) gate_found=1 gate_area=0.0093
+[STEP 20] active_gate=0 closest_gate=0 dist=2.58 reward=0.509 vel=(0.00,0.00,2.81) cmd=(r=-0.10,p=0.19,yaw_rate=20.00,z=0.07) gate_found=1 gate_area=0.0175
+[STEP 30] active_gate=0 closest_gate=0 dist=2.43 reward=-0.170 vel=(2.20,0.19,0.02) cmd=(r=0.01,p=0.25,yaw_rate=-16.84,z=2.71) gate_found=1 gate_area=0.0054
+[STEP 40] active_gate=0 closest_gate=0 dist=6.06 reward=-1.173 vel=(4.27,0.07,0.55) cmd=(r=0.00,p=0.25,yaw_rate=10.39,z=3.02) gate_found=0 gate_area=0.0000
+[STEP 42] Collision detected
+
+[RESET] Episode 62 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.21, -4.57, 2.08)
+[RESET] Distance to gate 0: 2.25
+[STEP 10] active_gate=0 closest_gate=0 dist=4.25 reward=-0.925 vel=(3.37,-0.58,0.34) cmd=(r=-0.10,p=0.25,yaw_rate=20.00,z=2.75) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=0 dist=2.27 reward=0.864 vel=(0.00,0.00,3.99) cmd=(r=-0.10,p=0.13,yaw_rate=4.11,z=0.51) gate_found=1 gate_area=0.0177
+[STEP 30] active_gate=0 closest_gate=0 dist=2.52 reward=-0.328 vel=(2.03,-0.04,0.20) cmd=(r=-0.01,p=0.13,yaw_rate=-12.31,z=2.95) gate_found=0 gate_area=0.0000
+[STEP 40] active_gate=0 closest_gate=0 dist=5.62 reward=-1.069 vel=(3.90,-0.14,0.38) cmd=(r=-0.10,p=0.13,yaw_rate=16.66,z=3.03) gate_found=0 gate_area=0.0000
+[STEP 50] active_gate=0 closest_gate=0 dist=2.16 reward=-0.214 vel=(0.80,0.03,1.13) cmd=(r=-0.10,p=0.22,yaw_rate=7.02,z=2.95) gate_found=0 gate_area=0.0000
+[STEP 60] active_gate=0 closest_gate=0 dist=3.62 reward=-0.512 vel=(3.24,0.03,0.50) cmd=(r=0.01,p=0.08,yaw_rate=-20.00,z=3.23) gate_found=1 gate_area=0.0687
+[STEP 70] Collision detected
+[STEP 70] active_gate=0 closest_gate=11 dist=7.03 reward=-100.911 vel=(0.43,0.02,-0.02) cmd=(r=-0.00,p=0.21,yaw_rate=20.00,z=3.45) gate_found=0 gate_area=0.0000
+
+[RESET] Episode 63 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.98, -3.57, 2.11)
+[RESET] Distance to gate 0: 2.13
+[STEP 10] active_gate=0 closest_gate=0 dist=3.37 reward=-0.720 vel=(2.86,0.35,0.11) cmd=(r=-0.10,p=0.25,yaw_rate=-20.00,z=3.10) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=0 dist=2.04 reward=0.624 vel=(0.08,0.03,3.81) cmd=(r=0.10,p=0.25,yaw_rate=10.47,z=1.47) gate_found=1 gate_area=0.0048
+[STEP 30] active_gate=0 closest_gate=0 dist=3.06 reward=-0.593 vel=(2.87,-0.09,0.13) cmd=(r=-0.08,p=0.18,yaw_rate=-20.00,z=2.69) gate_found=0 gate_area=0.0000
+[STEP 40] active_gate=0 closest_gate=11 dist=7.30 reward=-1.964 vel=(4.69,-0.28,0.72) cmd=(r=0.10,p=0.24,yaw_rate=-14.56,z=3.44) gate_found=0 gate_area=0.0000
+[STEP 50] active_gate=0 closest_gate=0 dist=2.28 reward=0.030 vel=(1.60,-0.10,0.30) cmd=(r=0.03,p=0.15,yaw_rate=-4.07,z=2.73) gate_found=1 gate_area=0.0047
+[STEP 60] active_gate=0 closest_gate=0 dist=4.17 reward=-0.641 vel=(3.33,-0.30,0.72) cmd=(r=0.00,p=0.09,yaw_rate=-5.38,z=3.40) gate_found=0 gate_area=0.0000
+[STEP 65] Collision detected
+
+[RESET] Episode 64 starting
+[RESET] Armed
+[RESET] Moved to hard pose (2.17, -0.01, 3.08)
+[RESET] Distance to gate 0: 2.10
+[STEP 10] active_gate=0 closest_gate=0 dist=3.77 reward=-0.776 vel=(3.23,-0.33,0.19) cmd=(r=0.02,p=0.08,yaw_rate=20.00,z=2.63) gate_found=0 gate_area=0.0000
+[STEP 18] Collision detected
+
+[RESET] Episode 65 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.58, -3.36, 2.13)
+[RESET] Distance to gate 0: 2.08
+[STEP 10] active_gate=0 closest_gate=0 dist=3.48 reward=-0.671 vel=(3.03,-0.19,0.55) cmd=(r=0.04,p=0.25,yaw_rate=14.80,z=3.11) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=11 dist=7.49 reward=-1.060 vel=(0.74,0.02,-0.09) cmd=(r=-0.03,p=0.14,yaw_rate=-10.30,z=3.37) gate_found=0 gate_area=0.0000
+[STEP 30] active_gate=0 closest_gate=11 dist=7.80 reward=-0.775 vel=(0.67,0.09,-0.08) cmd=(r=-0.10,p=0.08,yaw_rate=-16.99,z=3.27) gate_found=0 gate_area=0.0000
+[STEP 40] active_gate=0 closest_gate=0 dist=1.98 reward=0.252 vel=(0.23,0.20,2.62) cmd=(r=0.10,p=0.24,yaw_rate=8.23,z=1.53) gate_found=1 gate_area=0.0050
+[STEP 50] active_gate=0 closest_gate=0 dist=2.75 reward=-0.539 vel=(2.97,0.82,0.41) cmd=(r=-0.10,p=0.12,yaw_rate=-2.48,z=2.95) gate_found=0 gate_area=0.0000
+[STEP 60] active_gate=0 closest_gate=0 dist=7.06 reward=-1.205 vel=(4.83,0.60,0.67) cmd=(r=-0.10,p=0.23,yaw_rate=20.00,z=3.59) gate_found=0 gate_area=0.0000
+[STEP 61] Collision detected
+
+[RESET] Episode 66 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.87, -3.84, 1.95)
+[RESET] Distance to gate 0: 1.93
+[STEP 10] active_gate=0 closest_gate=0 dist=3.22 reward=-0.417 vel=(3.16,0.87,0.40) cmd=(r=0.10,p=0.20,yaw_rate=-4.24,z=2.54) gate_found=1 gate_area=0.0069
+[STEP 20] active_gate=0 closest_gate=11 dist=8.06 reward=-1.615 vel=(5.06,0.84,1.04) cmd=(r=-0.02,p=0.08,yaw_rate=-7.09,z=3.65) gate_found=0 gate_area=0.0000
+[STEP 30] active_gate=0 closest_gate=0 dist=2.09 reward=0.033 vel=(1.18,0.35,0.21) cmd=(r=-0.01,p=0.25,yaw_rate=-18.54,z=3.04) gate_found=1 gate_area=0.0045
+[STEP 40] active_gate=0 closest_gate=0 dist=3.63 reward=-0.601 vel=(3.04,0.08,0.24) cmd=(r=0.06,p=0.13,yaw_rate=5.32,z=2.59) gate_found=0 gate_area=0.0000
+[STEP 50] active_gate=0 closest_gate=11 dist=8.19 reward=-1.474 vel=(4.81,-0.24,0.80) cmd=(r=0.09,p=0.18,yaw_rate=20.00,z=3.81) gate_found=1 gate_area=0.0122
+[STEP 52] Collision detected
+
+[RESET] Episode 67 starting
+[RESET] Armed
+[RESET] Moved to hard pose (0.45, 0.09, 2.80)
+[RESET] Distance to gate 0: 2.09
+[STEP 10] active_gate=0 closest_gate=0 dist=2.85 reward=-0.137 vel=(2.41,0.12,0.12) cmd=(r=-0.05,p=0.25,yaw_rate=-3.42,z=2.50) gate_found=1 gate_area=0.0048
+[STEP 20] active_gate=0 closest_gate=0 dist=6.16 reward=-1.041 vel=(4.10,0.20,0.70) cmd=(r=0.01,p=0.25,yaw_rate=-2.20,z=3.26) gate_found=0 gate_area=0.0000
+[STEP 22] Collision detected
+
+[RESET] Episode 68 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.61, -3.34, 2.21)
+[RESET] Distance to gate 0: 2.30
+[STEP 10] active_gate=0 closest_gate=0 dist=4.12 reward=-0.758 vel=(3.23,-0.57,0.44) cmd=(r=-0.10,p=0.18,yaw_rate=10.43,z=3.24) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=11 dist=8.45 reward=-1.540 vel=(4.94,-0.72,0.66) cmd=(r=-0.10,p=0.24,yaw_rate=-6.08,z=3.41) gate_found=0 gate_area=0.0000
+[STEP 30] active_gate=0 closest_gate=0 dist=2.33 reward=-0.321 vel=(1.75,-0.20,0.48) cmd=(r=-0.01,p=0.08,yaw_rate=12.40,z=2.77) gate_found=0 gate_area=0.0000
+[STEP 40] active_gate=0 closest_gate=0 dist=4.54 reward=-0.722 vel=(3.72,-0.44,0.21) cmd=(r=0.09,p=0.08,yaw_rate=11.37,z=2.91) gate_found=0 gate_area=0.0000
+[STEP 46] Collision detected
+
+[RESET] Episode 69 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.08, -4.49, 2.12)
+[RESET] Distance to gate 0: 2.24
+[STEP 10] active_gate=0 closest_gate=0 dist=4.38 reward=-0.586 vel=(3.41,-0.68,0.20) cmd=(r=-0.08,p=0.25,yaw_rate=-17.23,z=2.69) gate_found=1 gate_area=0.0057
+[STEP 20] active_gate=0 closest_gate=0 dist=2.91 reward=10.921 vel=(0.00,0.00,0.00) cmd=(r=-0.10,p=0.15,yaw_rate=20.00,z=3.86) gate_found=1 gate_area=0.0179
+[STEP 30] active_gate=0 closest_gate=0 dist=2.11 reward=-0.153 vel=(1.21,0.37,-0.07) cmd=(r=0.04,p=0.23,yaw_rate=-20.00,z=3.06) gate_found=0 gate_area=0.0000
+[STEP 40] active_gate=0 closest_gate=0 dist=3.26 reward=-0.316 vel=(2.91,0.40,0.27) cmd=(r=-0.10,p=0.08,yaw_rate=-9.06,z=2.58) gate_found=1 gate_area=0.0496
+[STEP 50] Collision detected
+[STEP 50] active_gate=0 closest_gate=11 dist=7.44 reward=-101.817 vel=(4.92,0.65,0.56) cmd=(r=0.10,p=0.08,yaw_rate=-20.00,z=3.22) gate_found=0 gate_area=0.0000
+
+[RESET] Episode 70 starting
+[RESET] Armed
+[RESET] Moved to hard pose (0.54, -0.16, 2.82)
+[RESET] Distance to gate 0: 2.22
+[STEP 10] active_gate=0 closest_gate=0 dist=3.62 reward=-0.437 vel=(2.56,-0.84,0.08) cmd=(r=-0.10,p=0.20,yaw_rate=-20.00,z=2.57) gate_found=1 gate_area=0.0059
+[STEP 20] active_gate=0 closest_gate=11 dist=7.69 reward=-1.577 vel=(4.47,-1.26,1.16) cmd=(r=-0.10,p=0.14,yaw_rate=-20.00,z=3.61) gate_found=0 gate_area=0.0000
+[STEP 22] Collision detected
+
+[RESET] Episode 71 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.07, -3.56, 1.90)
+[RESET] Distance to gate 0: 2.12
+[STEP 10] active_gate=0 closest_gate=0 dist=3.36 reward=-0.444 vel=(3.10,0.02,0.49) cmd=(r=0.06,p=0.08,yaw_rate=15.30,z=3.05) gate_found=1 gate_area=0.0060
+[STEP 19] Collision detected
+
+[RESET] Episode 72 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.36, -3.94, 1.87)
+[RESET] Distance to gate 0: 2.08
+[STEP 10] active_gate=0 closest_gate=0 dist=2.98 reward=-0.446 vel=(2.44,-0.12,0.21) cmd=(r=-0.10,p=0.25,yaw_rate=6.07,z=2.62) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=11 dist=6.61 reward=-1.468 vel=(4.26,-0.39,1.29) cmd=(r=0.03,p=0.20,yaw_rate=-3.18,z=3.66) gate_found=0 gate_area=0.0000
+[STEP 21] Collision detected
+
+[RESET] Episode 73 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.17, -3.17, 1.87)
+[RESET] Distance to gate 0: 2.18
+[STEP 10] active_gate=0 closest_gate=0 dist=3.86 reward=-0.989 vel=(3.32,0.23,0.57) cmd=(r=-0.10,p=0.16,yaw_rate=-20.00,z=3.16) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=11 dist=7.28 reward=-0.762 vel=(1.15,0.02,-0.01) cmd=(r=0.08,p=0.24,yaw_rate=-4.96,z=3.38) gate_found=0 gate_area=0.0000
+[STEP 30] active_gate=0 closest_gate=0 dist=2.01 reward=0.111 vel=(0.27,0.09,3.20) cmd=(r=-0.10,p=0.17,yaw_rate=-3.82,z=1.74) gate_found=0 gate_area=0.0000
+[STEP 40] active_gate=0 closest_gate=0 dist=2.78 reward=-0.343 vel=(2.51,0.12,0.12) cmd=(r=0.10,p=0.25,yaw_rate=3.47,z=2.94) gate_found=0 gate_area=0.0000
+[STEP 50] active_gate=0 closest_gate=0 dist=6.28 reward=-1.128 vel=(4.37,0.16,0.90) cmd=(r=0.10,p=0.20,yaw_rate=20.00,z=3.43) gate_found=0 gate_area=0.0000
+[STEP 60] active_gate=0 closest_gate=0 dist=2.13 reward=-0.087 vel=(1.47,0.29,0.03) cmd=(r=-0.10,p=0.21,yaw_rate=-7.42,z=2.83) gate_found=0 gate_area=0.0000
+[STEP 70] active_gate=0 closest_gate=0 dist=3.82 reward=-0.765 vel=(3.52,0.32,0.11) cmd=(r=-0.01,p=0.16,yaw_rate=14.78,z=2.64) gate_found=1 gate_area=0.0740
+[STEP 79] Collision detected
+
+[RESET] Episode 74 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.25, -3.19, 2.20)
+[RESET] Distance to gate 0: 2.18
+[STEP 10] active_gate=0 closest_gate=0 dist=3.65 reward=-0.531 vel=(2.80,-0.50,0.75) cmd=(r=0.01,p=0.25,yaw_rate=-20.00,z=3.37) gate_found=1 gate_area=0.0055
+[STEP 20] active_gate=0 closest_gate=0 dist=2.62 reward=0.564 vel=(0.00,0.00,2.67) cmd=(r=0.04,p=0.19,yaw_rate=10.52,z=0.17) gate_found=1 gate_area=0.0175
+[STEP 30] active_gate=0 closest_gate=0 dist=2.65 reward=-0.341 vel=(2.16,-0.31,-0.01) cmd=(r=0.10,p=0.08,yaw_rate=12.09,z=3.21) gate_found=0 gate_area=0.0000
+[STEP 40] active_gate=0 closest_gate=0 dist=5.28 reward=-0.867 vel=(3.58,-0.18,0.51) cmd=(r=0.07,p=0.19,yaw_rate=20.00,z=3.26) gate_found=0 gate_area=0.0000
+[STEP 46] Collision detected
+
+[RESET] Episode 75 starting
+[RESET] Armed
+[RESET] Moved to hard pose (4.60, 0.46, 3.10)
+[RESET] Distance to gate 0: 2.17
+[STEP 10] active_gate=0 closest_gate=0 dist=3.57 reward=-0.540 vel=(3.19,0.43,0.06) cmd=(r=-0.05,p=0.15,yaw_rate=6.47,z=2.97) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=0 dist=2.91 reward=8.977 vel=(0.00,0.00,0.00) cmd=(r=-0.00,p=0.22,yaw_rate=-4.11,z=3.61) gate_found=1 gate_area=0.0179
+[STEP 30] active_gate=0 closest_gate=0 dist=2.28 reward=-0.245 vel=(1.70,0.15,0.20) cmd=(r=0.05,p=0.08,yaw_rate=16.90,z=3.03) gate_found=0 gate_area=0.0000
+[STEP 40] active_gate=0 closest_gate=0 dist=4.19 reward=-0.628 vel=(3.43,0.53,0.55) cmd=(r=0.08,p=0.09,yaw_rate=-16.23,z=2.91) gate_found=1 gate_area=0.0090
+[STEP 50] active_gate=0 closest_gate=11 dist=8.86 reward=-1.531 vel=(4.98,0.64,0.87) cmd=(r=-0.09,p=0.25,yaw_rate=2.26,z=3.52) gate_found=0 gate_area=0.0000
+[STEP 60] active_gate=0 closest_gate=0 dist=2.47 reward=-0.171 vel=(1.89,-0.08,0.10) cmd=(r=0.03,p=0.23,yaw_rate=-4.05,z=2.92) gate_found=0 gate_area=0.0000
+[STEP 70] active_gate=0 closest_gate=0 dist=4.73 reward=-0.827 vel=(3.76,-0.33,0.30) cmd=(r=-0.10,p=0.10,yaw_rate=20.00,z=3.00) gate_found=0 gate_area=0.0000
+[STEP 80] active_gate=0 closest_gate=0 dist=2.00 reward=0.024 vel=(0.45,0.08,2.56) cmd=(r=0.10,p=0.08,yaw_rate=-3.50,z=1.81) gate_found=0 gate_area=0.0000
+[STEP 90] active_gate=0 closest_gate=0 dist=2.79 reward=-0.565 vel=(2.84,0.66,0.19) cmd=(r=-0.08,p=0.25,yaw_rate=-20.00,z=2.73) gate_found=0 gate_area=0.0000
+[STEP 100] active_gate=0 closest_gate=0 dist=2.84 reward=0.192 vel=(0.00,0.00,1.38) cmd=(r=-0.03,p=0.08,yaw_rate=-18.56,z=-0.39) gate_found=1 gate_area=0.0181
+[STEP 110] active_gate=0 closest_gate=0 dist=2.25 reward=-0.138 vel=(1.76,-0.07,-0.15) cmd=(r=0.10,p=0.08,yaw_rate=4.59,z=2.55) gate_found=0 gate_area=0.0000
+[STEP 120] active_gate=0 closest_gate=0 dist=4.58 reward=-0.685 vel=(3.67,0.52,0.80) cmd=(r=0.01,p=0.11,yaw_rate=-4.07,z=3.32) gate_found=1 gate_area=0.0087
+[STEP 130] active_gate=0 closest_gate=0 dist=1.99 reward=0.102 vel=(0.35,0.14,2.97) cmd=(r=-0.00,p=0.24,yaw_rate=-20.00,z=2.17) gate_found=1 gate_area=0.0052
+[STEP 140] active_gate=0 closest_gate=0 dist=3.23 reward=-0.607 vel=(3.04,-0.03,0.32) cmd=(r=-0.10,p=0.25,yaw_rate=10.32,z=2.89) gate_found=0 gate_area=0.0000
+[STEP 146] Collision detected
+
+[RESET] Episode 76 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.18, -3.78, 1.82)
+[RESET] Distance to gate 0: 2.07
+[STEP 10] active_gate=0 closest_gate=0 dist=3.71 reward=-0.654 vel=(3.31,-0.05,0.21) cmd=(r=-0.07,p=0.15,yaw_rate=20.00,z=2.53) gate_found=1 gate_area=0.0058
+[STEP 20] active_gate=0 closest_gate=11 dist=8.03 reward=-0.540 vel=(0.89,0.02,-0.05) cmd=(r=0.10,p=0.17,yaw_rate=5.32,z=3.35) gate_found=1 gate_area=0.0140
+[STEP 24] Collision detected
+
+[RESET] Episode 77 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.33, -3.15, 2.14)
+[RESET] Distance to gate 0: 2.26
+[STEP 10] active_gate=0 closest_gate=0 dist=4.13 reward=-0.683 vel=(3.44,-0.15,0.61) cmd=(r=0.03,p=0.19,yaw_rate=-0.85,z=3.11) gate_found=0 gate_area=0.0000
+[STEP 16] Collision detected
+
+[RESET] Episode 78 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.68, -4.38, 2.14)
+[RESET] Distance to gate 0: 2.16
+[STEP 10] active_gate=0 closest_gate=0 dist=3.60 reward=-0.650 vel=(3.02,0.01,0.29) cmd=(r=-0.05,p=0.25,yaw_rate=-6.07,z=3.06) gate_found=0 gate_area=0.0000
+[STEP 20] Collision detected
+[STEP 20] active_gate=0 closest_gate=11 dist=8.19 reward=-101.961 vel=(4.97,0.45,0.97) cmd=(r=-0.09,p=0.12,yaw_rate=20.00,z=3.34) gate_found=0 gate_area=0.0000
+
+[RESET] Episode 79 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.16, -4.15, 2.09)
+[RESET] Distance to gate 0: 2.09
+[STEP 10] active_gate=0 closest_gate=0 dist=4.07 reward=-0.817 vel=(3.57,0.37,0.62) cmd=(r=-0.00,p=0.25,yaw_rate=-8.11,z=3.00) gate_found=0 gate_area=0.0000
+[STEP 16] Collision detected
+
+[RESET] Episode 80 starting
+[RESET] Armed
+[RESET] Moved to start pose (-2.07, -3.39, 1.82)
+[RESET] Distance to gate 0: 2.02
+[STEP 10] active_gate=0 closest_gate=0 dist=3.71 reward=-0.795 vel=(3.19,-0.02,0.33) cmd=(r=-0.03,p=0.08,yaw_rate=-20.00,z=2.73) gate_found=0 gate_area=0.0000
+[STEP 19] Collision detected
+
+[RESET] Episode 81 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.72, -4.37, 1.96)
+[RESET] Distance to gate 0: 2.15
+[STEP 10] active_gate=0 closest_gate=0 dist=3.17 reward=-0.658 vel=(2.75,0.39,0.76) cmd=(r=0.05,p=0.17,yaw_rate=20.00,z=3.05) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=11 dist=7.13 reward=-1.791 vel=(4.56,0.85,0.53) cmd=(r=-0.00,p=0.15,yaw_rate=20.00,z=3.33) gate_found=0 gate_area=0.0000
+[STEP 30] active_gate=0 closest_gate=0 dist=2.21 reward=-0.103 vel=(2.02,-0.03,0.32) cmd=(r=-0.03,p=0.25,yaw_rate=-13.98,z=2.75) gate_found=1 gate_area=0.0051
+[STEP 40] active_gate=0 closest_gate=0 dist=5.12 reward=-0.851 vel=(4.31,0.10,0.44) cmd=(r=-0.04,p=0.16,yaw_rate=-4.33,z=3.03) gate_found=1 gate_area=0.0103
+[STEP 47] Collision detected
+
+[RESET] Episode 82 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.94, -4.51, 2.07)
+[RESET] Distance to gate 0: 2.11
+[STEP 10] active_gate=0 closest_gate=0 dist=4.15 reward=-0.622 vel=(3.58,0.05,0.32) cmd=(r=-0.10,p=0.25,yaw_rate=-20.00,z=2.66) gate_found=1 gate_area=0.0056
+[STEP 20] active_gate=0 closest_gate=0 dist=2.91 reward=11.774 vel=(0.00,0.00,0.00) cmd=(r=0.02,p=0.24,yaw_rate=20.00,z=3.84) gate_found=1 gate_area=0.0179
+[STEP 30] active_gate=0 closest_gate=0 dist=2.44 reward=-0.115 vel=(1.91,-0.04,0.03) cmd=(r=0.06,p=0.08,yaw_rate=16.83,z=2.74) gate_found=1 gate_area=0.0051
+[STEP 40] active_gate=0 closest_gate=0 dist=5.17 reward=-0.917 vel=(3.86,-0.51,0.76) cmd=(r=-0.02,p=0.25,yaw_rate=20.00,z=3.45) gate_found=0 gate_area=0.0000
+[STEP 44] Collision detected
+
+[RESET] Episode 83 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.80, -4.27, 2.07)
+[RESET] Distance to gate 0: 1.96
+[STEP 10] active_gate=0 closest_gate=0 dist=3.42 reward=-0.527 vel=(3.22,0.59,0.74) cmd=(r=0.01,p=0.25,yaw_rate=3.85,z=2.90) gate_found=1 gate_area=0.0064
+[STEP 20] active_gate=0 closest_gate=0 dist=2.91 reward=10.544 vel=(0.00,0.00,0.01) cmd=(r=0.10,p=0.18,yaw_rate=-13.92,z=3.23) gate_found=1 gate_area=0.0179
+[STEP 30] active_gate=0 closest_gate=0 dist=2.51 reward=0.029 vel=(2.32,0.14,-0.01) cmd=(r=0.10,p=0.25,yaw_rate=-4.47,z=3.05) gate_found=1 gate_area=0.0055
+[STEP 40] active_gate=0 closest_gate=0 dist=5.56 reward=-1.250 vel=(4.22,0.48,0.50) cmd=(r=-0.04,p=0.12,yaw_rate=20.00,z=3.22) gate_found=0 gate_area=0.0000
+[STEP 50] active_gate=0 closest_gate=0 dist=2.11 reward=-0.370 vel=(0.69,-0.10,1.56) cmd=(r=-0.05,p=0.08,yaw_rate=20.00,z=2.40) gate_found=0 gate_area=0.0000
+[STEP 60] active_gate=0 closest_gate=0 dist=3.17 reward=-0.210 vel=(2.55,-0.14,0.21) cmd=(r=0.09,p=0.21,yaw_rate=2.98,z=2.56) gate_found=1 gate_area=0.0055
+[STEP 70] active_gate=0 closest_gate=11 dist=6.90 reward=-1.322 vel=(4.31,0.24,0.36) cmd=(r=0.03,p=0.10,yaw_rate=-12.75,z=3.07) gate_found=1 gate_area=0.0109
+[STEP 74] Collision detected
+
+[RESET] Episode 84 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.30, -3.25, 2.00)
+[RESET] Distance to gate 0: 2.14
+[STEP 10] active_gate=0 closest_gate=0 dist=4.02 reward=-0.782 vel=(3.44,0.24,0.12) cmd=(r=-0.07,p=0.16,yaw_rate=20.00,z=3.17) gate_found=1 gate_area=0.0576
+[STEP 20] active_gate=0 closest_gate=0 dist=2.82 reward=0.215 vel=(0.00,0.00,1.53) cmd=(r=-0.10,p=0.08,yaw_rate=-20.00,z=-0.24) gate_found=1 gate_area=0.0179
+[STEP 30] active_gate=0 closest_gate=0 dist=2.48 reward=-0.208 vel=(2.17,-0.10,0.19) cmd=(r=-0.10,p=0.18,yaw_rate=20.00,z=2.90) gate_found=1 gate_area=0.0053
+[STEP 40] active_gate=0 closest_gate=0 dist=5.55 reward=-1.081 vel=(4.35,-0.24,0.38) cmd=(r=0.10,p=0.22,yaw_rate=17.60,z=2.97) gate_found=0 gate_area=0.0000
+[STEP 50] active_gate=0 closest_gate=0 dist=1.98 reward=0.091 vel=(0.71,0.24,2.26) cmd=(r=0.06,p=0.22,yaw_rate=-20.00,z=2.10) gate_found=1 gate_area=0.0052
+[STEP 60] active_gate=0 closest_gate=0 dist=3.42 reward=-0.774 vel=(3.31,0.23,0.34) cmd=(r=-0.10,p=0.12,yaw_rate=-20.00,z=3.10) gate_found=0 gate_area=0.0000
+[STEP 70] Collision detected
+[STEP 70] active_gate=0 closest_gate=11 dist=7.89 reward=-101.777 vel=(4.93,0.37,0.99) cmd=(r=-0.05,p=0.08,yaw_rate=-20.00,z=3.52) gate_found=0 gate_area=0.0000
+
+[RESET] Episode 85 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.60, -4.73, 2.14)
+[RESET] Distance to gate 0: 2.38
+[STEP 10] active_gate=0 closest_gate=0 dist=4.59 reward=-0.760 vel=(3.19,-1.24,0.44) cmd=(r=-0.05,p=0.08,yaw_rate=18.40,z=3.27) gate_found=1 gate_area=0.0076
+[STEP 20] active_gate=0 closest_gate=0 dist=2.83 reward=0.298 vel=(0.00,0.00,1.45) cmd=(r=0.10,p=0.08,yaw_rate=9.74,z=0.08) gate_found=1 gate_area=0.0180
+[STEP 30] active_gate=0 closest_gate=0 dist=2.44 reward=-0.316 vel=(1.46,-0.30,0.06) cmd=(r=-0.07,p=0.12,yaw_rate=20.00,z=2.96) gate_found=0 gate_area=0.0000
+[STEP 40] active_gate=0 closest_gate=0 dist=4.14 reward=-0.562 vel=(3.23,-0.13,0.25) cmd=(r=0.08,p=0.08,yaw_rate=20.00,z=2.62) gate_found=1 gate_area=0.0718
+[STEP 50] active_gate=0 closest_gate=11 dist=8.05 reward=-1.597 vel=(4.78,0.28,1.04) cmd=(r=-0.10,p=0.08,yaw_rate=-20.00,z=3.54) gate_found=0 gate_area=0.0000
+[STEP 51] Collision detected
+
+[RESET] Episode 86 starting
+[RESET] Armed
+[RESET] Moved to hard pose (2.48, -0.11, 2.88)
+[RESET] Distance to gate 0: 2.02
+[STEP 10] active_gate=0 closest_gate=0 dist=3.01 reward=-0.285 vel=(2.54,0.36,0.11) cmd=(r=-0.10,p=0.15,yaw_rate=3.04,z=2.25) gate_found=1 gate_area=0.0060
+[STEP 20] active_gate=0 closest_gate=11 dist=6.68 reward=-1.328 vel=(4.15,-0.16,0.63) cmd=(r=-0.03,p=0.08,yaw_rate=20.00,z=2.81) gate_found=1 gate_area=0.0093
+[STEP 27] Collision detected
+
+[RESET] Episode 87 starting
+[RESET] Armed
+[RESET] Moved to hard pose (2.48, -0.11, 2.88)
+[RESET] Distance to gate 0: 2.11
+[STEP 10] active_gate=0 closest_gate=0 dist=3.40 reward=-0.482 vel=(3.33,0.77,0.48) cmd=(r=-0.04,p=0.14,yaw_rate=-15.37,z=3.23) gate_found=1 gate_area=0.0642
+[STEP 19] Collision detected
+
+[RESET] Episode 88 starting
+[RESET] Armed
+[RESET] Moved to hard pose (1.16, -0.34, 2.71)
+[RESET] Distance to gate 0: 2.40
+[STEP 10] active_gate=0 closest_gate=0 dist=4.62 reward=-0.537 vel=(3.22,-0.76,0.59) cmd=(r=-0.04,p=0.12,yaw_rate=-20.00,z=3.13) gate_found=1 gate_area=0.0664
+[STEP 20] active_gate=0 closest_gate=0 dist=2.91 reward=11.323 vel=(0.00,0.00,0.00) cmd=(r=0.01,p=0.19,yaw_rate=-20.00,z=3.82) gate_found=1 gate_area=0.0179
+[STEP 30] active_gate=0 closest_gate=0 dist=2.24 reward=-0.135 vel=(2.15,0.32,-0.23) cmd=(r=0.04,p=0.08,yaw_rate=-5.71,z=2.48) gate_found=0 gate_area=0.0000
+[STEP 40] active_gate=0 closest_gate=0 dist=5.11 reward=-0.853 vel=(4.06,0.13,0.75) cmd=(r=-0.06,p=0.16,yaw_rate=-20.00,z=3.11) gate_found=1 gate_area=0.0089
+[STEP 50] active_gate=0 closest_gate=0 dist=2.60 reward=0.511 vel=(0.00,0.00,2.74) cmd=(r=-0.10,p=0.13,yaw_rate=-18.93,z=0.10) gate_found=1 gate_area=0.0175
+[STEP 60] active_gate=0 closest_gate=0 dist=2.40 reward=-0.480 vel=(2.74,0.85,0.04) cmd=(r=-0.10,p=0.08,yaw_rate=10.79,z=2.79) gate_found=0 gate_area=0.0000
+[STEP 70] active_gate=0 closest_gate=11 dist=7.37 reward=-1.667 vel=(4.90,0.34,0.81) cmd=(r=0.06,p=0.25,yaw_rate=20.00,z=3.49) gate_found=1 gate_area=0.0104
+[STEP 80] active_gate=0 closest_gate=0 dist=2.23 reward=-0.354 vel=(1.56,-0.07,1.10) cmd=(r=-0.04,p=0.25,yaw_rate=12.58,z=2.94) gate_found=0 gate_area=0.0000
+[STEP 90] active_gate=0 closest_gate=0 dist=4.61 reward=-0.833 vel=(4.00,-0.03,0.23) cmd=(r=-0.00,p=0.16,yaw_rate=-6.19,z=2.88) gate_found=0 gate_area=0.0000
+[STEP 100] active_gate=0 closest_gate=0 dist=2.01 reward=0.112 vel=(0.15,0.07,3.23) cmd=(r=-0.01,p=0.13,yaw_rate=20.00,z=1.77) gate_found=1 gate_area=0.0051
+[STEP 110] active_gate=0 closest_gate=0 dist=2.60 reward=-0.426 vel=(1.71,-0.27,0.17) cmd=(r=-0.04,p=0.08,yaw_rate=20.00,z=2.96) gate_found=0 gate_area=0.0000
+[STEP 120] active_gate=0 closest_gate=0 dist=5.26 reward=-0.854 vel=(3.45,-0.34,0.89) cmd=(r=0.03,p=0.25,yaw_rate=-20.00,z=3.39) gate_found=0 gate_area=0.0000
+[STEP 126] Collision detected
+
+[RESET] Episode 89 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.98, -3.36, 2.10)
+[RESET] Distance to gate 0: 2.19
+[STEP 10] active_gate=0 closest_gate=0 dist=3.99 reward=-0.565 vel=(3.26,-0.27,0.63) cmd=(r=-0.10,p=0.20,yaw_rate=-1.24,z=3.05) gate_found=1 gate_area=0.0663
+[STEP 18] Collision detected
+
+[RESET] Episode 90 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.57, -3.74, 1.93)
+[RESET] Distance to gate 0: 2.33
+[STEP 10] active_gate=0 closest_gate=0 dist=4.12 reward=-0.480 vel=(3.16,-0.50,0.04) cmd=(r=0.10,p=0.25,yaw_rate=11.28,z=2.56) gate_found=1 gate_area=0.0053
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 47           |
+|    ep_rew_mean          | -114         |
+| time/                   |              |
+|    fps                  | 6            |
+|    iterations           | 2            |
+|    time_elapsed         | 656          |
+|    total_timesteps      | 4096         |
+| train/                  |              |
+|    approx_kl            | 0.0053376434 |
+|    clip_fraction        | 0.0415       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -5.69        |
+|    explained_variance   | -0.00308     |
+|    learning_rate        | 0.0003       |
+|    loss                 | 762          |
+|    n_updates            | 10           |
+|    policy_gradient_loss | -0.00502     |
+|    std                  | 1.01         |
+|    value_loss           | 1.74e+03     |
+------------------------------------------
+[STEP 20] active_gate=0 closest_gate=0 dist=2.51 reward=-0.275 vel=(1.48,0.23,0.28) cmd=(r=-0.07,p=0.25,yaw_rate=-20.00,z=3.15) gate_found=0 gate_area=0.0000
+[STEP 25] Collision detected
+
+[RESET] Episode 91 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.33, -4.30, 1.86)
+[RESET] Distance to gate 0: 1.93
+[STEP 10] active_gate=0 closest_gate=0 dist=3.15 reward=-0.423 vel=(3.24,1.06,0.63) cmd=(r=-0.10,p=0.08,yaw_rate=6.97,z=2.86) gate_found=1 gate_area=0.0067
+[STEP 19] Collision detected
+
+[RESET] Episode 92 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.52, -4.32, 2.06)
+[RESET] Distance to gate 0: 2.17
+[STEP 10] active_gate=0 closest_gate=0 dist=3.54 reward=-0.425 vel=(3.03,0.29,0.50) cmd=(r=0.08,p=0.25,yaw_rate=9.60,z=3.01) gate_found=1 gate_area=0.0062
+[STEP 20] active_gate=0 closest_gate=0 dist=2.91 reward=8.874 vel=(0.00,0.00,0.00) cmd=(r=0.04,p=0.21,yaw_rate=9.47,z=3.81) gate_found=1 gate_area=0.0179
+[STEP 30] active_gate=0 closest_gate=0 dist=2.42 reward=0.028 vel=(1.52,-0.26,0.25) cmd=(r=0.10,p=0.11,yaw_rate=-5.64,z=3.07) gate_found=1 gate_area=0.0054
+[STEP 40] active_gate=0 closest_gate=0 dist=4.66 reward=-0.985 vel=(3.52,-0.60,0.47) cmd=(r=0.01,p=0.16,yaw_rate=17.26,z=2.95) gate_found=0 gate_area=0.0000
+[STEP 50] active_gate=0 closest_gate=0 dist=2.82 reward=0.247 vel=(0.00,0.00,1.50) cmd=(r=0.08,p=0.21,yaw_rate=-16.05,z=0.05) gate_found=1 gate_area=0.0179
+[STEP 60] active_gate=0 closest_gate=0 dist=2.34 reward=-0.194 vel=(2.74,0.46,0.22) cmd=(r=0.06,p=0.20,yaw_rate=15.56,z=2.27) gate_found=1 gate_area=0.0054
+[STEP 70] active_gate=0 closest_gate=0 dist=6.78 reward=-1.123 vel=(4.91,0.28,0.93) cmd=(r=0.06,p=0.10,yaw_rate=11.58,z=2.98) gate_found=1 gate_area=0.0100
+[STEP 80] active_gate=0 closest_gate=0 dist=2.05 reward=0.071 vel=(0.45,0.14,1.36) cmd=(r=0.00,p=0.25,yaw_rate=4.20,z=2.65) gate_found=1 gate_area=0.0047
+[STEP 90] active_gate=0 closest_gate=0 dist=3.21 reward=-0.504 vel=(2.87,-0.18,0.45) cmd=(r=0.10,p=0.20,yaw_rate=-20.00,z=2.96) gate_found=1 gate_area=0.0054
+[STEP 100] active_gate=0 closest_gate=11 dist=7.60 reward=-1.553 vel=(4.74,-0.38,0.45) cmd=(r=0.10,p=0.08,yaw_rate=-8.39,z=3.08) gate_found=0 gate_area=0.0000
+[STEP 110] active_gate=0 closest_gate=0 dist=2.10 reward=0.019 vel=(0.67,-0.06,2.04) cmd=(r=-0.04,p=0.19,yaw_rate=4.26,z=2.00) gate_found=1 gate_area=0.0046
+[STEP 120] active_gate=0 closest_gate=0 dist=3.50 reward=-0.601 vel=(3.00,-0.12,-0.11) cmd=(r=0.05,p=0.25,yaw_rate=14.71,z=2.77) gate_found=0 gate_area=0.0000
+[STEP 129] Collision detected
+
+[RESET] Episode 93 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.33, -3.31, 1.88)
+[RESET] Distance to gate 0: 2.30
+[STEP 10] active_gate=0 closest_gate=0 dist=4.21 reward=-0.792 vel=(3.32,-0.38,0.26) cmd=(r=0.10,p=0.08,yaw_rate=-12.07,z=2.80) gate_found=0 gate_area=0.0000
+[STEP 19] Collision detected
+
+[RESET] Episode 94 starting
+[RESET] Armed
+[RESET] Moved to hard pose (2.17, -0.46, 2.85)
+[RESET] Distance to gate 0: 2.22
+[STEP 10] active_gate=0 closest_gate=0 dist=4.20 reward=-0.836 vel=(3.64,0.33,0.33) cmd=(r=-0.04,p=0.09,yaw_rate=20.00,z=3.07) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=0 dist=2.81 reward=0.321 vel=(0.00,0.00,1.55) cmd=(r=0.03,p=0.19,yaw_rate=-10.02,z=-0.38) gate_found=1 gate_area=0.0179
+[STEP 30] active_gate=0 closest_gate=0 dist=2.18 reward=-0.258 vel=(1.89,0.29,0.20) cmd=(r=0.10,p=0.24,yaw_rate=15.14,z=2.85) gate_found=0 gate_area=0.0000
+[STEP 40] active_gate=0 closest_gate=0 dist=4.71 reward=-0.747 vel=(3.81,0.49,0.70) cmd=(r=-0.02,p=0.22,yaw_rate=-13.00,z=2.94) gate_found=1 gate_area=0.0083
+[STEP 47] Collision detected
+
+[RESET] Episode 95 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.15, -3.60, 2.06)
+[RESET] Distance to gate 0: 2.44
+[STEP 10] active_gate=0 closest_gate=0 dist=4.58 reward=-0.493 vel=(3.13,-0.98,0.42) cmd=(r=0.07,p=0.11,yaw_rate=14.28,z=2.95) gate_found=1 gate_area=0.0072
+[STEP 20] active_gate=0 closest_gate=0 dist=2.91 reward=9.220 vel=(0.00,0.00,0.00) cmd=(r=-0.07,p=0.08,yaw_rate=-20.00,z=3.47) gate_found=1 gate_area=0.0177
+[STEP 30] active_gate=0 closest_gate=0 dist=2.49 reward=-0.098 vel=(2.21,-0.14,0.42) cmd=(r=0.10,p=0.12,yaw_rate=-7.67,z=2.88) gate_found=1 gate_area=0.0057
+[STEP 40] active_gate=0 closest_gate=0 dist=5.26 reward=-0.831 vel=(3.87,0.20,0.56) cmd=(r=0.01,p=0.08,yaw_rate=2.76,z=3.09) gate_found=1 gate_area=0.0666
+[STEP 46] Collision detected
+
+[RESET] Episode 96 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.90, -4.73, 1.90)
+[RESET] Distance to gate 0: 2.39
+[STEP 10] active_gate=0 closest_gate=0 dist=4.38 reward=-0.758 vel=(3.46,0.01,0.25) cmd=(r=-0.01,p=0.25,yaw_rate=-20.00,z=2.79) gate_found=0 gate_area=0.0000
+[STEP 17] Collision detected
+
+[RESET] Episode 97 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.62, -4.30, 1.98)
+[RESET] Distance to gate 0: 2.15
+[STEP 10] active_gate=0 closest_gate=0 dist=4.42 reward=-0.775 vel=(3.68,0.28,0.76) cmd=(r=0.10,p=0.22,yaw_rate=-11.54,z=3.45) gate_found=1 gate_area=0.0074
+[STEP 20] active_gate=0 closest_gate=0 dist=2.04 reward=-0.247 vel=(1.38,0.32,0.62) cmd=(r=0.08,p=0.14,yaw_rate=-20.00,z=2.25) gate_found=0 gate_area=0.0000
+[STEP 30] active_gate=0 closest_gate=0 dist=4.00 reward=-0.739 vel=(3.56,0.31,0.57) cmd=(r=0.05,p=0.17,yaw_rate=20.00,z=2.95) gate_found=1 gate_area=0.0728
+[STEP 37] Collision detected
+
+[RESET] Episode 98 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.37, -4.34, 2.13)
+[RESET] Distance to gate 0: 2.33
+[STEP 10] active_gate=0 closest_gate=0 dist=3.84 reward=-0.558 vel=(3.17,-0.24,0.45) cmd=(r=0.01,p=0.08,yaw_rate=-2.20,z=2.68) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=0 dist=2.60 reward=0.506 vel=(0.00,0.00,2.76) cmd=(r=-0.10,p=0.16,yaw_rate=20.00,z=-0.05) gate_found=1 gate_area=0.0174
+[STEP 30] active_gate=0 closest_gate=0 dist=2.23 reward=-0.268 vel=(2.06,0.41,-0.20) cmd=(r=0.06,p=0.08,yaw_rate=17.93,z=2.71) gate_found=0 gate_area=0.0000
+[STEP 40] active_gate=0 closest_gate=0 dist=5.07 reward=-0.742 vel=(4.10,0.57,0.54) cmd=(r=-0.10,p=0.16,yaw_rate=-8.20,z=2.85) gate_found=1 gate_area=0.0076
+[STEP 43] Collision detected
+
+[RESET] Episode 99 starting
+[RESET] Armed
+[RESET] Moved to hard pose (7.32, -0.20, 3.50)
+[RESET] Distance to gate 0: 2.07
+[STEP 10] active_gate=0 closest_gate=0 dist=3.73 reward=-0.938 vel=(3.36,-0.03,0.43) cmd=(r=0.04,p=0.21,yaw_rate=-20.00,z=2.83) gate_found=0 gate_area=0.0000
+[STEP 18] Collision detected
+
+[RESET] Episode 100 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.34, -3.40, 1.97)
+[RESET] Distance to gate 0: 2.21
+[STEP 10] active_gate=0 closest_gate=0 dist=4.56 reward=-0.880 vel=(3.38,-0.59,0.56) cmd=(r=-0.10,p=0.25,yaw_rate=-20.00,z=3.06) gate_found=0 gate_area=0.0000
+[STEP 19] Collision detected
+
+[RESET] Episode 101 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.93, -3.83, 1.88)
+[RESET] Distance to gate 0: 2.33
+[STEP 10] active_gate=0 closest_gate=0 dist=4.48 reward=-0.964 vel=(3.74,-0.03,0.51) cmd=(r=-0.10,p=0.15,yaw_rate=-20.00,z=3.49) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=0 dist=2.05 reward=0.152 vel=(0.20,-0.28,2.32) cmd=(r=0.01,p=0.08,yaw_rate=0.01,z=1.79) gate_found=1 gate_area=0.0050
+[STEP 30] active_gate=0 closest_gate=0 dist=3.39 reward=-0.599 vel=(2.73,-0.38,0.07) cmd=(r=0.04,p=0.22,yaw_rate=-20.00,z=2.66) gate_found=0 gate_area=0.0000
+[STEP 40] active_gate=0 closest_gate=11 dist=7.54 reward=-1.541 vel=(4.77,-0.40,0.40) cmd=(r=-0.10,p=0.08,yaw_rate=-1.79,z=3.30) gate_found=0 gate_area=0.0000
+[STEP 50] active_gate=0 closest_gate=0 dist=1.98 reward=0.265 vel=(0.29,0.16,2.43) cmd=(r=0.02,p=0.08,yaw_rate=-9.28,z=1.57) gate_found=1 gate_area=0.0050
+[STEP 60] active_gate=0 closest_gate=0 dist=2.36 reward=-0.486 vel=(2.34,0.35,0.28) cmd=(r=-0.10,p=0.15,yaw_rate=-17.02,z=2.64) gate_found=0 gate_area=0.0000
+[STEP 70] active_gate=0 closest_gate=0 dist=6.18 reward=-0.792 vel=(4.28,0.42,0.80) cmd=(r=0.10,p=0.13,yaw_rate=6.74,z=3.52) gate_found=1 gate_area=0.0103
+[STEP 74] Collision detected
+
+[RESET] Episode 102 starting
+[RESET] Armed
+[RESET] Moved to hard pose (3.97, 0.12, 3.04)
+[RESET] Distance to gate 0: 1.99
+[STEP 10] active_gate=0 closest_gate=0 dist=4.08 reward=-1.001 vel=(3.42,0.23,-0.09) cmd=(r=0.10,p=0.20,yaw_rate=20.00,z=2.20) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=11 dist=9.85 reward=-2.092 vel=(5.41,0.31,0.99) cmd=(r=0.10,p=0.08,yaw_rate=-17.62,z=3.53) gate_found=0 gate_area=0.0000
+[STEP 30] active_gate=0 closest_gate=0 dist=1.97 reward=0.058 vel=(1.57,0.38,0.04) cmd=(r=-0.10,p=0.25,yaw_rate=-15.05,z=2.60) gate_found=1 gate_area=0.0053
+[STEP 40] active_gate=0 closest_gate=0 dist=4.67 reward=-0.943 vel=(3.76,0.15,0.84) cmd=(r=0.02,p=0.08,yaw_rate=-20.00,z=3.20) gate_found=1 gate_area=0.0083
+[STEP 50] active_gate=0 closest_gate=0 dist=2.25 reward=0.871 vel=(0.00,0.00,4.05) cmd=(r=-0.10,p=0.25,yaw_rate=-4.59,z=0.73) gate_found=1 gate_area=0.0168
+[STEP 60] active_gate=0 closest_gate=0 dist=2.87 reward=-0.210 vel=(2.97,0.42,0.02) cmd=(r=-0.09,p=0.24,yaw_rate=-0.36,z=2.96) gate_found=1 gate_area=0.0055
+[STEP 65] Collision detected
+
+[RESET] Episode 103 starting
+[RESET] Armed
+[RESET] Moved to hard pose (3.62, 0.71, 2.79)
+[RESET] Distance to gate 0: 2.23
+[STEP 10] active_gate=0 closest_gate=0 dist=4.37 reward=-0.484 vel=(3.39,-0.16,0.32) cmd=(r=-0.09,p=0.09,yaw_rate=-7.58,z=2.68) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=0 dist=2.82 reward=0.380 vel=(0.00,0.00,1.50) cmd=(r=0.02,p=0.08,yaw_rate=2.85,z=-0.38) gate_found=1 gate_area=0.0179
+[STEP 30] active_gate=0 closest_gate=0 dist=2.60 reward=-0.434 vel=(1.80,-0.44,-0.07) cmd=(r=0.09,p=0.14,yaw_rate=20.00,z=2.47) gate_found=0 gate_area=0.0000
+[STEP 40] active_gate=0 closest_gate=0 dist=5.62 reward=-0.693 vel=(3.89,0.17,0.43) cmd=(r=-0.03,p=0.13,yaw_rate=-6.11,z=2.96) gate_found=1 gate_area=0.0096
+[STEP 45] Collision detected
+
+[RESET] Episode 104 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.97, -4.80, 1.86)
+[RESET] Distance to gate 0: 2.16
+[STEP 10] active_gate=0 closest_gate=0 dist=5.01 reward=-0.954 vel=(3.69,-0.52,0.49) cmd=(r=0.03,p=0.20,yaw_rate=-5.05,z=2.93) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=0 dist=2.23 reward=0.723 vel=(0.00,0.00,4.14) cmd=(r=0.09,p=0.08,yaw_rate=-16.54,z=0.64) gate_found=1 gate_area=0.0174
+[STEP 30] active_gate=0 closest_gate=0 dist=2.44 reward=-0.302 vel=(2.31,0.02,0.15) cmd=(r=-0.00,p=0.25,yaw_rate=-0.71,z=2.30) gate_found=0 gate_area=0.0000
+[STEP 40] active_gate=0 closest_gate=0 dist=6.20 reward=-1.057 vel=(4.28,-0.06,0.16) cmd=(r=0.05,p=0.08,yaw_rate=-2.65,z=2.87) gate_found=1 gate_area=0.0672
+[STEP 50] active_gate=0 closest_gate=0 dist=2.03 reward=0.113 vel=(0.45,-0.18,2.27) cmd=(r=-0.09,p=0.20,yaw_rate=11.71,z=1.59) gate_found=1 gate_area=0.0054
+[STEP 60] active_gate=0 closest_gate=0 dist=4.23 reward=-1.030 vel=(3.25,-0.42,0.52) cmd=(r=-0.02,p=0.08,yaw_rate=-8.69,z=2.69) gate_found=0 gate_area=0.0000
+[STEP 68] Collision detected
+
+[RESET] Episode 105 starting
+[RESET] Armed
+[RESET] Moved to hard pose (2.52, 0.20, 2.69)
+[RESET] Distance to gate 0: 2.30
+[STEP 10] active_gate=0 closest_gate=0 dist=4.35 reward=-0.870 vel=(3.57,0.48,0.58) cmd=(r=0.10,p=0.17,yaw_rate=19.59,z=3.84) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=0 dist=2.32 reward=-0.160 vel=(1.81,0.02,-0.32) cmd=(r=0.10,p=0.08,yaw_rate=-4.99,z=2.66) gate_found=0 gate_area=0.0000
+[STEP 30] active_gate=0 closest_gate=0 dist=5.34 reward=-0.925 vel=(3.98,0.24,0.40) cmd=(r=0.09,p=0.14,yaw_rate=-12.88,z=2.78) gate_found=1 gate_area=0.0609
+[STEP 35] Collision detected
+
+[RESET] Episode 106 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.22, -3.39, 2.07)
+[RESET] Distance to gate 0: 2.18
+[STEP 10] active_gate=0 closest_gate=0 dist=4.14 reward=-0.857 vel=(3.31,-0.05,0.76) cmd=(r=-0.09,p=0.08,yaw_rate=-10.49,z=3.09) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=0 dist=2.04 reward=0.503 vel=(0.16,-0.10,2.89) cmd=(r=-0.06,p=0.08,yaw_rate=-7.09,z=1.62) gate_found=1 gate_area=0.0056
+[STEP 30] active_gate=0 closest_gate=0 dist=2.54 reward=-0.299 vel=(2.33,0.48,-0.16) cmd=(r=-0.02,p=0.19,yaw_rate=-4.04,z=2.45) gate_found=0 gate_area=0.0000
+[STEP 40] active_gate=0 closest_gate=0 dist=6.70 reward=-1.078 vel=(4.57,0.58,0.82) cmd=(r=-0.07,p=0.25,yaw_rate=-2.65,z=3.40) gate_found=1 gate_area=0.0118
+[STEP 41] Collision detected
+
+[RESET] Episode 107 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.29, -3.12, 2.10)
+[RESET] Distance to gate 0: 2.18
+[STEP 10] active_gate=0 closest_gate=0 dist=4.26 reward=-0.688 vel=(2.83,-0.78,0.25) cmd=(r=0.02,p=0.16,yaw_rate=-1.88,z=2.68) gate_found=0 gate_area=0.0000
+[STEP 19] Collision detected
+
+[RESET] Episode 108 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.69, -4.43, 2.13)
+[RESET] Distance to gate 0: 2.19
+[STEP 10] active_gate=0 closest_gate=0 dist=5.23 reward=-1.318 vel=(4.28,0.28,0.66) cmd=(r=-0.10,p=0.13,yaw_rate=20.00,z=3.40) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=0 dist=2.10 reward=-0.237 vel=(0.51,0.17,2.35) cmd=(r=0.09,p=0.17,yaw_rate=-8.68,z=2.84) gate_found=0 gate_area=0.0000
+[STEP 23] Collision detected
+
+[RESET] Episode 109 starting
+[RESET] Armed
+[RESET] Moved to start pose (-2.04, -3.81, 2.08)
+[RESET] Distance to gate 0: 2.19
+[STEP 10] active_gate=0 closest_gate=0 dist=3.85 reward=-0.642 vel=(3.02,-0.07,0.43) cmd=(r=-0.09,p=0.13,yaw_rate=0.29,z=2.90) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=0 dist=2.91 reward=11.038 vel=(0.00,0.00,0.00) cmd=(r=0.04,p=0.24,yaw_rate=8.80,z=3.44) gate_found=1 gate_area=0.0179
+[STEP 30] active_gate=0 closest_gate=0 dist=2.32 reward=0.084 vel=(1.51,0.02,-0.16) cmd=(r=-0.00,p=0.08,yaw_rate=2.59,z=2.96) gate_found=1 gate_area=0.0036
+[STEP 40] active_gate=0 closest_gate=0 dist=4.62 reward=-0.606 vel=(3.65,0.37,0.49) cmd=(r=0.00,p=0.18,yaw_rate=-8.71,z=3.22) gate_found=1 gate_area=0.0086
+[STEP 46] Collision detected
+
+[RESET] Episode 110 starting
+[RESET] Armed
+[RESET] Moved to hard pose (6.46, 0.98, 3.45)
+[RESET] Distance to gate 0: 2.16
+[STEP 10] active_gate=0 closest_gate=0 dist=4.68 reward=-0.679 vel=(3.79,0.05,0.33) cmd=(r=0.02,p=0.24,yaw_rate=9.66,z=2.67) gate_found=1 gate_area=0.0719
+[STEP 20] active_gate=0 closest_gate=0 dist=2.57 reward=0.522 vel=(0.00,0.00,2.88) cmd=(r=-0.10,p=0.16,yaw_rate=19.45,z=-0.15) gate_found=1 gate_area=0.0173
+[STEP 30] active_gate=0 closest_gate=0 dist=2.73 reward=-0.333 vel=(2.17,0.00,0.03) cmd=(r=0.10,p=0.15,yaw_rate=10.03,z=3.22) gate_found=0 gate_area=0.0000
+[STEP 40] active_gate=0 closest_gate=0 dist=6.04 reward=-0.933 vel=(4.12,0.39,0.46) cmd=(r=0.10,p=0.08,yaw_rate=-20.00,z=3.13) gate_found=1 gate_area=0.0095
+[STEP 43] Collision detected
+
+[RESET] Episode 111 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.13, -3.45, 2.21)
+[RESET] Distance to gate 0: 2.10
+[STEP 10] active_gate=0 closest_gate=0 dist=3.87 reward=-0.967 vel=(3.41,0.67,0.38) cmd=(r=0.06,p=0.12,yaw_rate=0.69,z=3.18) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=0 dist=2.05 reward=0.129 vel=(0.88,0.10,1.65) cmd=(r=0.05,p=0.25,yaw_rate=-0.38,z=1.95) gate_found=1 gate_area=0.0048
+[STEP 30] active_gate=0 closest_gate=0 dist=3.35 reward=-0.748 vel=(3.18,0.14,0.15) cmd=(r=0.10,p=0.25,yaw_rate=-20.00,z=2.59) gate_found=0 gate_area=0.0000
+[STEP 40] active_gate=0 closest_gate=0 dist=2.83 reward=0.196 vel=(0.00,0.00,1.45) cmd=(r=-0.01,p=0.19,yaw_rate=-20.00,z=-0.18) gate_found=1 gate_area=0.0181
+[STEP 50] active_gate=0 closest_gate=0 dist=2.16 reward=-0.082 vel=(1.75,0.15,0.19) cmd=(r=0.04,p=0.25,yaw_rate=17.64,z=2.78) gate_found=1 gate_area=0.0052
+[STEP 60] active_gate=0 closest_gate=0 dist=4.86 reward=-0.719 vel=(3.70,-0.18,0.21) cmd=(r=0.07,p=0.25,yaw_rate=-7.90,z=2.66) gate_found=1 gate_area=0.0085
+[STEP 67] Collision detected
+
+[RESET] Episode 112 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.57, -3.42, 1.84)
+[RESET] Distance to gate 0: 2.23
+[STEP 10] active_gate=0 closest_gate=0 dist=3.25 reward=-0.355 vel=(2.65,0.13,0.16) cmd=(r=-0.04,p=0.25,yaw_rate=-20.00,z=3.10) gate_found=1 gate_area=0.0711
+[STEP 20] active_gate=0 closest_gate=11 dist=7.42 reward=-1.614 vel=(4.67,0.56,0.37) cmd=(r=-0.00,p=0.15,yaw_rate=-16.54,z=3.24) gate_found=0 gate_area=0.0000
+[STEP 30] active_gate=0 closest_gate=0 dist=2.13 reward=-0.047 vel=(1.59,0.32,-0.10) cmd=(r=0.06,p=0.25,yaw_rate=-1.08,z=2.38) gate_found=0 gate_area=0.0000
+[STEP 40] active_gate=0 closest_gate=0 dist=4.56 reward=-0.870 vel=(3.98,0.83,0.64) cmd=(r=0.01,p=0.25,yaw_rate=-7.11,z=2.95) gate_found=1 gate_area=0.0080
+[STEP 45] Collision detected
+
+[RESET] Episode 113 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.26, -4.81, 2.21)
+[RESET] Distance to gate 0: 2.05
+[STEP 10] active_gate=0 closest_gate=0 dist=3.29 reward=-0.467 vel=(3.24,0.59,0.91) cmd=(r=0.07,p=0.25,yaw_rate=-9.79,z=3.10) gate_found=1 gate_area=0.0064
+[STEP 20] active_gate=0 closest_gate=0 dist=2.21 reward=0.880 vel=(0.00,-0.00,4.09) cmd=(r=-0.03,p=0.23,yaw_rate=-7.31,z=0.80) gate_found=1 gate_area=0.0198
+[STEP 30] active_gate=0 closest_gate=0 dist=2.36 reward=-0.128 vel=(2.45,0.55,0.16) cmd=(r=0.10,p=0.08,yaw_rate=7.41,z=2.81) gate_found=1 gate_area=0.0051
+[STEP 40] active_gate=0 closest_gate=0 dist=6.09 reward=-0.859 vel=(4.43,0.91,0.27) cmd=(r=0.03,p=0.08,yaw_rate=5.92,z=2.81) gate_found=1 gate_area=0.0094
+[STEP 45] Collision detected
+
+[RESET] Episode 114 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.99, -3.80, 1.82)
+[RESET] Distance to gate 0: 2.14
+[STEP 10] active_gate=0 closest_gate=0 dist=4.40 reward=-0.737 vel=(3.71,0.22,0.52) cmd=(r=-0.00,p=0.25,yaw_rate=-20.00,z=2.63) gate_found=1 gate_area=0.0070
+[STEP 20] active_gate=0 closest_gate=0 dist=2.28 reward=0.748 vel=(0.00,0.00,3.95) cmd=(r=-0.00,p=0.25,yaw_rate=10.21,z=0.85) gate_found=1 gate_area=0.0177
+[STEP 30] active_gate=0 closest_gate=0 dist=3.10 reward=-0.278 vel=(2.60,-0.45,0.24) cmd=(r=0.07,p=0.15,yaw_rate=0.04,z=2.92) gate_found=1 gate_area=0.0027
+[STEP 40] active_gate=0 closest_gate=0 dist=2.91 reward=7.781 vel=(0.00,0.00,0.00) cmd=(r=-0.02,p=0.16,yaw_rate=16.23,z=3.25) gate_found=1 gate_area=0.0178
+[STEP 50] active_gate=0 closest_gate=0 dist=2.28 reward=0.144 vel=(1.32,0.04,-0.21) cmd=(r=-0.06,p=0.24,yaw_rate=2.19,z=2.51) gate_found=1 gate_area=0.0051
+[STEP 60] active_gate=0 closest_gate=0 dist=4.13 reward=-0.364 vel=(3.20,0.27,-0.07) cmd=(r=-0.06,p=0.08,yaw_rate=2.30,z=2.50) gate_found=1 gate_area=0.0622
+[STEP 70] active_gate=0 closest_gate=0 dist=2.91 reward=11.027 vel=(0.00,0.00,0.01) cmd=(r=-0.05,p=0.25,yaw_rate=9.79,z=3.72) gate_found=1 gate_area=0.0178
+[STEP 80] active_gate=0 closest_gate=0 dist=2.49 reward=-0.431 vel=(1.83,-0.33,0.01) cmd=(r=0.04,p=0.20,yaw_rate=-20.00,z=2.41) gate_found=0 gate_area=0.0000
+[STEP 90] active_gate=0 closest_gate=0 dist=5.01 reward=-0.565 vel=(3.67,-0.35,0.34) cmd=(r=0.09,p=0.18,yaw_rate=3.72,z=2.73) gate_found=1 gate_area=0.0778
+[STEP 100] active_gate=0 closest_gate=0 dist=2.28 reward=0.712 vel=(0.00,0.00,3.95) cmd=(r=0.10,p=0.19,yaw_rate=-14.87,z=0.77) gate_found=1 gate_area=0.0177
+[STEP 110] active_gate=0 closest_gate=0 dist=2.98 reward=-0.127 vel=(1.75,-0.92,-0.11) cmd=(r=-0.10,p=0.18,yaw_rate=-4.61,z=2.65) gate_found=1 gate_area=0.0061
+[STEP 120] active_gate=0 closest_gate=11 dist=6.50 reward=-1.480 vel=(3.93,-1.19,0.45) cmd=(r=0.10,p=0.08,yaw_rate=-18.84,z=2.94) gate_found=1 gate_area=0.0099
+[STEP 130] active_gate=0 closest_gate=0 dist=2.02 reward=0.133 vel=(0.20,-0.09,3.36) cmd=(r=0.09,p=0.16,yaw_rate=-16.70,z=1.83) gate_found=1 gate_area=0.0056
+[STEP 140] active_gate=0 closest_gate=0 dist=3.00 reward=-0.117 vel=(2.14,-0.51,-0.31) cmd=(r=0.10,p=0.11,yaw_rate=-0.48,z=2.61) gate_found=1 gate_area=0.0056
+[STEP 150] active_gate=0 closest_gate=11 dist=6.26 reward=-1.472 vel=(3.71,-0.97,0.15) cmd=(r=-0.08,p=0.16,yaw_rate=-20.00,z=2.99) gate_found=0 gate_area=0.0000
+[STEP 160] active_gate=0 closest_gate=0 dist=1.99 reward=0.196 vel=(0.49,0.15,2.82) cmd=(r=-0.04,p=0.21,yaw_rate=13.79,z=1.83) gate_found=1 gate_area=0.0054
+[STEP 170] active_gate=0 closest_gate=0 dist=3.35 reward=-0.772 vel=(3.19,0.25,0.23) cmd=(r=-0.02,p=0.17,yaw_rate=20.00,z=3.01) gate_found=0 gate_area=0.0000
+[STEP 174] Collision detected
+
+[RESET] Episode 115 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.39, -4.66, 2.20)
+[RESET] Distance to gate 0: 2.21
+[STEP 10] active_gate=0 closest_gate=0 dist=4.29 reward=-0.650 vel=(3.19,-0.72,0.26) cmd=(r=0.08,p=0.15,yaw_rate=20.00,z=2.72) gate_found=1 gate_area=0.0064
+[STEP 20] active_gate=0 closest_gate=11 dist=9.46 reward=-1.742 vel=(5.05,-0.71,0.81) cmd=(r=0.10,p=0.18,yaw_rate=17.72,z=3.14) gate_found=1 gate_area=0.0040
+[STEP 23] Collision detected
+
+[RESET] Episode 116 starting
+[RESET] Armed
+[RESET] Moved to hard pose (7.36, -1.60, 3.00)
+[RESET] Distance to gate 0: 2.16
+[STEP 10] active_gate=0 closest_gate=0 dist=3.67 reward=-0.794 vel=(3.05,-0.12,0.58) cmd=(r=-0.01,p=0.13,yaw_rate=-19.89,z=2.97) gate_found=0 gate_area=0.0000
+[STEP 16] Collision detected
+
+[RESET] Episode 117 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.17, -4.84, 1.94)
+[RESET] Distance to gate 0: 2.14
+[STEP 10] active_gate=0 closest_gate=0 dist=4.61 reward=-0.853 vel=(3.80,-0.18,-0.02) cmd=(r=-0.10,p=0.21,yaw_rate=8.91,z=2.60) gate_found=0 gate_area=0.0000
+[STEP 17] Collision detected
+
+[RESET] Episode 118 starting
+[RESET] Armed
+[RESET] Moved to hard pose (3.65, -0.89, 2.50)
+[RESET] Distance to gate 0: 1.97
+[STEP 10] active_gate=0 closest_gate=0 dist=2.86 reward=-0.622 vel=(2.85,0.69,0.35) cmd=(r=-0.02,p=0.19,yaw_rate=20.00,z=2.75) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=0 dist=6.94 reward=-1.027 vel=(4.58,0.96,0.84) cmd=(r=0.02,p=0.25,yaw_rate=-3.97,z=3.41) gate_found=0 gate_area=0.0000
+[STEP 30] active_gate=0 closest_gate=0 dist=2.20 reward=-0.084 vel=(1.47,-0.00,1.20) cmd=(r=0.10,p=0.25,yaw_rate=-6.47,z=2.96) gate_found=1 gate_area=0.0053
+[STEP 40] active_gate=0 closest_gate=0 dist=4.28 reward=-0.801 vel=(3.83,0.13,0.42) cmd=(r=0.10,p=0.15,yaw_rate=5.98,z=2.92) gate_found=0 gate_area=0.0000
+[STEP 50] active_gate=0 closest_gate=0 dist=2.02 reward=0.126 vel=(0.19,-0.01,3.22) cmd=(r=0.03,p=0.08,yaw_rate=-20.00,z=1.97) gate_found=1 gate_area=0.0051
+[STEP 60] active_gate=0 closest_gate=0 dist=2.94 reward=-0.271 vel=(2.71,-0.15,0.06) cmd=(r=-0.05,p=0.25,yaw_rate=-4.78,z=2.36) gate_found=1 gate_area=0.0058
+[STEP 70] active_gate=0 closest_gate=11 dist=6.71 reward=-1.272 vel=(4.46,-0.36,0.24) cmd=(r=0.06,p=0.12,yaw_rate=-1.23,z=2.91) gate_found=1 gate_area=0.0098
+[STEP 76] Collision detected
+
+[RESET] Episode 119 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.64, -3.03, 2.06)
+[RESET] Distance to gate 0: 2.31
+[STEP 10] active_gate=0 closest_gate=0 dist=4.28 reward=-0.303 vel=(2.85,-0.99,0.19) cmd=(r=0.10,p=0.12,yaw_rate=1.40,z=2.85) gate_found=1 gate_area=0.0062
+[STEP 19] Collision detected
+
+[RESET] Episode 120 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.67, -3.68, 2.03)
+[RESET] Distance to gate 0: 2.18
+[STEP 10] active_gate=0 closest_gate=0 dist=3.46 reward=-0.508 vel=(3.04,0.31,0.16) cmd=(r=-0.07,p=0.23,yaw_rate=-5.12,z=2.97) gate_found=0 gate_area=0.0000
+[STEP 19] Collision detected
+
+[RESET] Episode 121 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.20, -2.96, 1.90)
+[RESET] Distance to gate 0: 2.37
+[STEP 10] active_gate=0 closest_gate=0 dist=4.64 reward=-0.527 vel=(3.64,-0.32,0.58) cmd=(r=-0.02,p=0.25,yaw_rate=-3.46,z=3.27) gate_found=1 gate_area=0.0059
+[STEP 20] active_gate=0 closest_gate=0 dist=2.60 reward=0.505 vel=(0.00,0.00,2.76) cmd=(r=-0.05,p=0.25,yaw_rate=-20.00,z=0.15) gate_found=1 gate_area=0.0175
+[STEP 30] active_gate=0 closest_gate=0 dist=2.52 reward=-0.235 vel=(2.82,0.11,0.08) cmd=(r=0.10,p=0.08,yaw_rate=-11.53,z=2.54) gate_found=1 gate_area=0.0050
+[STEP 40] active_gate=0 closest_gate=0 dist=6.25 reward=-1.083 vel=(4.66,0.41,1.09) cmd=(r=0.10,p=0.25,yaw_rate=-3.58,z=3.44) gate_found=0 gate_area=0.0000
+[STEP 42] Collision detected
+
+[RESET] Episode 122 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.31, -4.79, 1.83)
+[RESET] Distance to gate 0: 2.25
+[STEP 10] active_gate=0 closest_gate=0 dist=3.69 reward=-0.527 vel=(2.81,-0.47,0.30) cmd=(r=0.06,p=0.21,yaw_rate=-6.30,z=2.74) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=0 dist=2.91 reward=8.868 vel=(0.00,0.00,0.01) cmd=(r=0.10,p=0.18,yaw_rate=-0.01,z=3.61) gate_found=1 gate_area=0.0179
+[STEP 30] active_gate=0 closest_gate=0 dist=2.12 reward=-0.119 vel=(2.16,0.34,0.25) cmd=(r=0.10,p=0.17,yaw_rate=20.00,z=2.53) gate_found=1 gate_area=0.0050
+[STEP 40] active_gate=0 closest_gate=0 dist=5.08 reward=-0.817 vel=(4.06,0.17,0.56) cmd=(r=0.00,p=0.09,yaw_rate=-20.00,z=2.77) gate_found=1 gate_area=0.0076
+[STEP 48] Collision detected
+
+[RESET] Episode 123 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.65, -3.28, 2.13)
+[RESET] Distance to gate 0: 2.23
+[STEP 10] active_gate=0 closest_gate=0 dist=3.72 reward=-0.801 vel=(3.46,0.26,0.41) cmd=(r=-0.05,p=0.11,yaw_rate=20.00,z=3.37) gate_found=0 gate_area=0.0000
+[STEP 16] Collision detected
+
+[RESET] Episode 124 starting
+[RESET] Armed
+[RESET] Moved to hard pose (0.51, -0.23, 2.79)
+[RESET] Distance to gate 0: 2.11
+[STEP 10] active_gate=0 closest_gate=0 dist=3.63 reward=-0.784 vel=(3.10,-0.00,0.47) cmd=(r=0.06,p=0.25,yaw_rate=20.00,z=2.34) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=11 dist=7.98 reward=-1.660 vel=(4.79,0.28,0.80) cmd=(r=-0.09,p=0.11,yaw_rate=-14.10,z=3.49) gate_found=0 gate_area=0.0000
+[STEP 30] active_gate=0 closest_gate=0 dist=2.05 reward=0.067 vel=(1.45,0.55,0.85) cmd=(r=0.10,p=0.17,yaw_rate=-9.28,z=2.61) gate_found=1 gate_area=0.0055
+[STEP 40] active_gate=0 closest_gate=0 dist=3.48 reward=-0.606 vel=(3.32,0.92,0.53) cmd=(r=0.10,p=0.13,yaw_rate=14.83,z=3.33) gate_found=1 gate_area=0.0065
+[STEP 46] Collision detected
+
+[RESET] Episode 125 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.16, -4.26, 2.16)
+[RESET] Distance to gate 0: 2.24
+[STEP 10] active_gate=0 closest_gate=0 dist=4.22 reward=-0.851 vel=(3.59,0.11,0.12) cmd=(r=-0.04,p=0.22,yaw_rate=-20.00,z=3.10) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=0 dist=2.01 reward=0.090 vel=(0.99,0.35,1.84) cmd=(r=0.10,p=0.25,yaw_rate=-8.52,z=2.12) gate_found=1 gate_area=0.0056
+[STEP 30] active_gate=0 closest_gate=0 dist=3.73 reward=-0.468 vel=(3.63,0.36,0.56) cmd=(r=0.02,p=0.25,yaw_rate=1.89,z=3.20) gate_found=1 gate_area=0.0071
+[STEP 40] active_gate=0 closest_gate=0 dist=2.28 reward=0.640 vel=(0.00,0.00,3.95) cmd=(r=0.07,p=0.09,yaw_rate=20.00,z=0.83) gate_found=1 gate_area=0.0178
+[STEP 50] active_gate=0 closest_gate=0 dist=2.55 reward=-0.412 vel=(2.57,0.08,0.42) cmd=(r=-0.04,p=0.23,yaw_rate=-5.54,z=2.92) gate_found=0 gate_area=0.0000
+[STEP 60] active_gate=0 closest_gate=0 dist=6.20 reward=-1.136 vel=(4.35,0.14,0.39) cmd=(r=0.03,p=0.24,yaw_rate=20.00,z=3.05) gate_found=0 gate_area=0.0000
+[STEP 63] Collision detected
+
+[RESET] Episode 126 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.65, -4.32, 2.22)
+[RESET] Distance to gate 0: 2.25
+[STEP 10] active_gate=0 closest_gate=0 dist=4.50 reward=-0.664 vel=(3.36,0.02,0.18) cmd=(r=-0.10,p=0.08,yaw_rate=0.99,z=2.31) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=11 dist=9.28 reward=-1.655 vel=(4.94,0.06,0.57) cmd=(r=-0.02,p=0.24,yaw_rate=-12.95,z=3.05) gate_found=0 gate_area=0.0000
+[STEP 30] active_gate=0 closest_gate=0 dist=2.31 reward=-0.425 vel=(2.03,-0.33,0.07) cmd=(r=-0.03,p=0.25,yaw_rate=20.00,z=2.46) gate_found=0 gate_area=0.0000
+[STEP 40] active_gate=0 closest_gate=0 dist=5.40 reward=-1.124 vel=(4.27,-0.49,0.91) cmd=(r=-0.01,p=0.21,yaw_rate=-4.09,z=3.35) gate_found=0 gate_area=0.0000
+[STEP 50] active_gate=0 closest_gate=0 dist=2.11 reward=-0.033 vel=(0.69,-0.02,1.71) cmd=(r=-0.01,p=0.10,yaw_rate=-8.39,z=2.54) gate_found=1 gate_area=0.0049
+[STEP 60] active_gate=0 closest_gate=0 dist=2.80 reward=-0.477 vel=(2.51,0.60,0.35) cmd=(r=0.10,p=0.08,yaw_rate=9.97,z=2.71) gate_found=0 gate_area=0.0000
+[STEP 70] Collision detected
+[STEP 70] active_gate=0 closest_gate=0 dist=6.93 reward=-101.114 vel=(4.38,0.85,0.82) cmd=(r=-0.08,p=0.24,yaw_rate=-13.09,z=3.26) gate_found=0 gate_area=0.0000
+
+[RESET] Episode 127 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.36, -4.88, 1.85)
+[RESET] Distance to gate 0: 2.36
+[STEP 10] active_gate=0 closest_gate=0 dist=4.53 reward=-0.777 vel=(3.45,-0.26,0.13) cmd=(r=0.10,p=0.25,yaw_rate=2.64,z=2.94) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=0 dist=2.02 reward=-0.066 vel=(0.19,0.02,3.10) cmd=(r=0.06,p=0.16,yaw_rate=-20.00,z=1.74) gate_found=0 gate_area=0.0000
+[STEP 30] active_gate=0 closest_gate=0 dist=3.38 reward=-0.363 vel=(3.09,0.24,0.47) cmd=(r=-0.10,p=0.19,yaw_rate=3.77,z=3.18) gate_found=1 gate_area=0.0036
+[STEP 40] active_gate=0 closest_gate=0 dist=2.82 reward=0.210 vel=(0.00,0.00,1.50) cmd=(r=-0.02,p=0.08,yaw_rate=-20.00,z=0.13) gate_found=1 gate_area=0.0180
+[STEP 50] active_gate=0 closest_gate=0 dist=2.51 reward=-0.376 vel=(2.32,0.22,-0.06) cmd=(r=-0.04,p=0.16,yaw_rate=-20.00,z=2.76) gate_found=0 gate_area=0.0000
+[STEP 57] Collision detected
+
+[RESET] Episode 128 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.68, -3.68, 2.12)
+[RESET] Distance to gate 0: 2.10
+[STEP 10] active_gate=0 closest_gate=0 dist=3.77 reward=-0.495 vel=(3.16,0.20,0.57) cmd=(r=0.07,p=0.08,yaw_rate=-7.89,z=2.67) gate_found=1 gate_area=0.0063
+[STEP 20] active_gate=0 closest_gate=0 dist=2.03 reward=0.333 vel=(0.16,-0.06,3.20) cmd=(r=-0.10,p=0.08,yaw_rate=-11.51,z=1.61) gate_found=0 gate_area=0.0000
+[STEP 30] active_gate=0 closest_gate=0 dist=3.36 reward=-0.565 vel=(3.02,-0.17,0.30) cmd=(r=-0.01,p=0.25,yaw_rate=6.54,z=2.64) gate_found=0 gate_area=0.0000
+[STEP 40] active_gate=0 closest_gate=0 dist=2.82 reward=0.275 vel=(0.00,0.00,1.48) cmd=(r=-0.10,p=0.08,yaw_rate=12.76,z=-0.09) gate_found=1 gate_area=0.0179
+[STEP 50] active_gate=0 closest_gate=0 dist=2.25 reward=-0.180 vel=(2.36,0.75,0.01) cmd=(r=-0.03,p=0.18,yaw_rate=20.00,z=2.67) gate_found=1 gate_area=0.0049
+[STEP 60] active_gate=0 closest_gate=0 dist=5.76 reward=-1.075 vel=(4.12,0.92,1.03) cmd=(r=0.10,p=0.08,yaw_rate=16.64,z=3.02) gate_found=1 gate_area=0.0100
+[STEP 65] Collision detected
+
+[RESET] Episode 129 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.09, -3.46, 2.13)
+[RESET] Distance to gate 0: 2.24
+[STEP 10] active_gate=0 closest_gate=0 dist=4.62 reward=-0.952 vel=(3.51,-0.39,0.56) cmd=(r=-0.05,p=0.09,yaw_rate=20.00,z=2.94) gate_found=0 gate_area=0.0000
+[STEP 16] Collision detected
+
+[RESET] Episode 130 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.45, -3.62, 1.84)
+[RESET] Distance to gate 0: 1.94
+[STEP 10] active_gate=0 closest_gate=0 dist=3.39 reward=-0.501 vel=(3.07,0.91,0.35) cmd=(r=0.02,p=0.25,yaw_rate=1.97,z=2.65) gate_found=1 gate_area=0.0074
+[STEP 20] active_gate=0 closest_gate=11 dist=9.07 reward=-1.861 vel=(5.20,1.26,1.14) cmd=(r=-0.10,p=0.10,yaw_rate=-7.70,z=3.69) gate_found=0 gate_area=0.0000
+[STEP 30] active_gate=0 closest_gate=0 dist=2.25 reward=-0.047 vel=(1.79,0.06,-0.02) cmd=(r=0.09,p=0.11,yaw_rate=20.00,z=2.58) gate_found=1 gate_area=0.0117
+[STEP 40] active_gate=0 closest_gate=0 dist=2.91 reward=4.356 vel=(0.00,0.00,0.01) cmd=(r=-0.06,p=0.10,yaw_rate=-9.21,z=3.24) gate_found=1 gate_area=0.0179
+[STEP 50] active_gate=0 closest_gate=0 dist=2.38 reward=0.013 vel=(2.21,0.03,-0.38) cmd=(r=0.00,p=0.25,yaw_rate=-0.63,z=2.33) gate_found=1 gate_area=0.0054
+[STEP 60] active_gate=0 closest_gate=0 dist=5.64 reward=-1.282 vel=(4.12,0.10,0.86) cmd=(r=0.09,p=0.25,yaw_rate=-20.00,z=2.85) gate_found=1 gate_area=0.0091
+[STEP 70] active_gate=0 closest_gate=11 dist=9.24 reward=-0.469 vel=(0.00,0.00,0.00) cmd=(r=-0.00,p=0.15,yaw_rate=-16.18,z=3.86) gate_found=1 gate_area=0.0110
+[STEP 80] active_gate=0 closest_gate=11 dist=9.32 reward=-0.722 vel=(0.13,0.04,0.05) cmd=(r=-0.05,p=0.20,yaw_rate=-20.00,z=3.49) gate_found=0 gate_area=0.0000
+[STEP 90] active_gate=0 closest_gate=0 dist=2.23 reward=0.715 vel=(0.00,0.00,4.13) cmd=(r=0.03,p=0.25,yaw_rate=17.20,z=0.32) gate_found=1 gate_area=0.0168
+[STEP 100] active_gate=0 closest_gate=0 dist=2.29 reward=-0.197 vel=(2.48,0.93,-0.08) cmd=(r=-0.10,p=0.23,yaw_rate=-5.17,z=2.29) gate_found=1 gate_area=0.0055
+[STEP 110] active_gate=0 closest_gate=0 dist=6.84 reward=-1.074 vel=(4.48,1.22,1.00) cmd=(r=0.10,p=0.08,yaw_rate=-6.91,z=3.60) gate_found=1 gate_area=0.0089
+[STEP 120] active_gate=0 closest_gate=0 dist=2.42 reward=-0.405 vel=(1.26,-0.62,0.12) cmd=(r=-0.10,p=0.14,yaw_rate=20.00,z=2.97) gate_found=0 gate_area=0.0000
+[STEP 130] active_gate=0 closest_gate=0 dist=5.13 reward=-0.943 vel=(3.72,-0.50,0.09) cmd=(r=-0.07,p=0.19,yaw_rate=-20.00,z=2.64) gate_found=0 gate_area=0.0000
+[STEP 138] Collision detected
+
+[RESET] Episode 131 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.67, -3.08, 1.94)
+[RESET] Distance to gate 0: 2.29
+[STEP 10] active_gate=0 closest_gate=0 dist=4.79 reward=-0.782 vel=(3.60,-0.54,0.20) cmd=(r=0.07,p=0.24,yaw_rate=4.22,z=2.80) gate_found=0 gate_area=0.0000
+[STEP 17] Collision detected
+
+[RESET] Episode 132 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.89, -3.39, 1.82)
+[RESET] Distance to gate 0: 2.39
+[STEP 9] Collision detected
+
+[RESET] Episode 133 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.82, -4.79, 2.18)
+[RESET] Distance to gate 0: 2.01
+[STEP 10] active_gate=0 closest_gate=0 dist=4.48 reward=-0.986 vel=(3.65,-0.18,0.55) cmd=(r=0.05,p=0.17,yaw_rate=-20.00,z=2.52) gate_found=1 gate_area=0.0070
+[STEP 20] active_gate=0 closest_gate=0 dist=2.63 reward=0.467 vel=(0.00,0.00,2.60) cmd=(r=0.10,p=0.09,yaw_rate=-20.00,z=-0.05) gate_found=1 gate_area=0.0176
+[STEP 30] active_gate=0 closest_gate=0 dist=2.32 reward=-0.179 vel=(2.39,0.35,-0.14) cmd=(r=0.01,p=0.22,yaw_rate=-20.00,z=2.61) gate_found=1 gate_area=0.0051
+[STEP 40] active_gate=0 closest_gate=0 dist=6.10 reward=-1.069 vel=(4.44,0.43,0.91) cmd=(r=-0.08,p=0.25,yaw_rate=-20.00,z=3.47) gate_found=1 gate_area=0.0094
+[STEP 50] active_gate=0 closest_gate=0 dist=2.16 reward=0.052 vel=(1.26,0.01,0.25) cmd=(r=0.10,p=0.25,yaw_rate=-9.50,z=2.83) gate_found=1 gate_area=0.0050
+[STEP 60] active_gate=0 closest_gate=0 dist=4.30 reward=-0.605 vel=(3.69,0.08,0.30) cmd=(r=-0.10,p=0.23,yaw_rate=9.35,z=2.75) gate_found=1 gate_area=0.0063
+[STEP 69] Collision detected
+
+[RESET] Episode 134 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.18, -3.66, 2.11)
+[RESET] Distance to gate 0: 2.30
+[STEP 10] active_gate=0 closest_gate=0 dist=4.38 reward=-0.783 vel=(3.27,-0.17,0.74) cmd=(r=-0.10,p=0.25,yaw_rate=-7.23,z=3.14) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=0 dist=2.26 reward=0.803 vel=(0.00,0.00,4.03) cmd=(r=-0.03,p=0.20,yaw_rate=6.08,z=0.28) gate_found=1 gate_area=0.0172
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 45.7         |
+|    ep_rew_mean          | -113         |
+| time/                   |              |
+|    fps                  | 6            |
+|    iterations           | 3            |
+|    time_elapsed         | 992          |
+|    total_timesteps      | 6144         |
+| train/                  |              |
+|    approx_kl            | 0.0058982265 |
+|    clip_fraction        | 0.05         |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -5.7         |
+|    explained_variance   | 0.00239      |
+|    learning_rate        | 0.0003       |
+|    loss                 | 809          |
+|    n_updates            | 20           |
+|    policy_gradient_loss | -0.00624     |
+|    std                  | 1.01         |
+|    value_loss           | 1.62e+03     |
+------------------------------------------
+[STEP 30] active_gate=0 closest_gate=0 dist=2.37 reward=-0.329 vel=(1.88,0.16,0.11) cmd=(r=-0.04,p=0.18,yaw_rate=-20.00,z=3.12) gate_found=0 gate_area=0.0000
+[STEP 39] Collision detected
+
+[RESET] Episode 135 starting
+[RESET] Armed
+[RESET] Moved to hard pose (1.34, 0.10, 2.45)
+[RESET] Distance to gate 0: 2.16
+[STEP 10] active_gate=0 closest_gate=0 dist=3.99 reward=-0.755 vel=(3.39,0.08,0.24) cmd=(r=0.07,p=0.09,yaw_rate=3.36,z=2.70) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=0 dist=2.86 reward=0.162 vel=(0.00,0.00,1.09) cmd=(r=0.03,p=0.25,yaw_rate=-15.30,z=0.23) gate_found=1 gate_area=0.0180
+[STEP 30] active_gate=0 closest_gate=0 dist=2.25 reward=-0.222 vel=(2.30,0.61,-0.16) cmd=(r=0.10,p=0.19,yaw_rate=-7.80,z=2.49) gate_found=0 gate_area=0.0000
+[STEP 40] active_gate=0 closest_gate=0 dist=5.94 reward=-1.055 vel=(4.25,0.50,0.83) cmd=(r=0.10,p=0.12,yaw_rate=-20.00,z=3.44) gate_found=1 gate_area=0.0093
+[STEP 44] Collision detected
+
+[RESET] Episode 136 starting
+[RESET] Armed
+[RESET] Moved to hard pose (0.59, 0.10, 2.94)
+[RESET] Distance to gate 0: 1.95
+[STEP 10] active_gate=0 closest_gate=0 dist=3.62 reward=-0.556 vel=(3.24,0.86,0.08) cmd=(r=0.10,p=0.09,yaw_rate=5.49,z=2.49) gate_found=1 gate_area=0.0065
+[STEP 20] active_gate=0 closest_gate=11 dist=8.95 reward=-1.946 vel=(4.91,0.59,0.92) cmd=(r=-0.05,p=0.20,yaw_rate=-20.00,z=3.42) gate_found=0 gate_area=0.0000
+[STEP 30] active_gate=0 closest_gate=0 dist=2.16 reward=-0.010 vel=(1.30,0.48,0.32) cmd=(r=0.07,p=0.15,yaw_rate=-20.00,z=3.05) gate_found=1 gate_area=0.0051
+[STEP 40] active_gate=0 closest_gate=0 dist=2.91 reward=2.658 vel=(0.00,0.00,0.00) cmd=(r=0.10,p=0.16,yaw_rate=4.70,z=3.61) gate_found=1 gate_area=0.0179
+[STEP 50] active_gate=0 closest_gate=0 dist=2.21 reward=-0.203 vel=(1.32,-0.08,0.05) cmd=(r=0.10,p=0.09,yaw_rate=-13.54,z=2.83) gate_found=0 gate_area=0.0000
+[STEP 60] active_gate=0 closest_gate=0 dist=4.56 reward=-0.945 vel=(3.62,-0.30,0.50) cmd=(r=0.06,p=0.08,yaw_rate=20.00,z=2.91) gate_found=0 gate_area=0.0000
+[STEP 70] Collision detected
+[STEP 70] active_gate=0 closest_gate=11 dist=10.66 reward=-101.902 vel=(5.46,-0.59,0.78) cmd=(r=-0.10,p=0.25,yaw_rate=-6.40,z=3.81) gate_found=0 gate_area=0.0000
+
+[RESET] Episode 137 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.54, -4.29, 1.96)
+[RESET] Distance to gate 0: 2.00
+[STEP 10] active_gate=0 closest_gate=0 dist=3.66 reward=-0.736 vel=(3.23,0.57,0.24) cmd=(r=-0.07,p=0.13,yaw_rate=-20.00,z=2.92) gate_found=1 gate_area=0.0063
+[STEP 20] active_gate=0 closest_gate=0 dist=2.82 reward=0.215 vel=(0.00,0.00,1.52) cmd=(r=-0.10,p=0.08,yaw_rate=20.00,z=0.06) gate_found=1 gate_area=0.0180
+[STEP 30] active_gate=0 closest_gate=0 dist=2.38 reward=-0.201 vel=(1.91,0.07,-0.17) cmd=(r=0.01,p=0.24,yaw_rate=-20.00,z=2.64) gate_found=1 gate_area=0.0054
+[STEP 40] active_gate=0 closest_gate=0 dist=5.74 reward=-0.990 vel=(4.19,-0.13,0.65) cmd=(r=0.10,p=0.08,yaw_rate=20.00,z=3.10) gate_found=1 gate_area=0.0761
+[STEP 50] active_gate=0 closest_gate=0 dist=2.25 reward=-0.301 vel=(1.08,-0.13,1.29) cmd=(r=0.10,p=0.25,yaw_rate=-5.11,z=2.56) gate_found=0 gate_area=0.0000
+[STEP 60] active_gate=0 closest_gate=0 dist=2.91 reward=2.250 vel=(0.00,0.00,0.01) cmd=(r=0.10,p=0.17,yaw_rate=12.90,z=3.63) gate_found=1 gate_area=0.0179
+[STEP 70] active_gate=0 closest_gate=0 dist=2.29 reward=-0.215 vel=(2.18,0.19,-0.17) cmd=(r=0.01,p=0.08,yaw_rate=20.00,z=2.16) gate_found=1 gate_area=0.0052
+[STEP 80] active_gate=0 closest_gate=0 dist=6.01 reward=-1.130 vel=(4.53,0.21,0.88) cmd=(r=0.00,p=0.20,yaw_rate=-4.77,z=2.97) gate_found=0 gate_area=0.0000
+[STEP 86] Collision detected
+
+[RESET] Episode 138 starting
+[RESET] Armed
+[RESET] Moved to hard pose (9.50, 2.42, 3.49)
+[RESET] Distance to gate 0: 2.22
+[STEP 10] active_gate=0 closest_gate=0 dist=4.61 reward=-0.655 vel=(3.62,-0.27,0.54) cmd=(r=0.10,p=0.08,yaw_rate=19.51,z=3.27) gate_found=1 gate_area=0.0755
+[STEP 15] Collision detected
+
+[RESET] Episode 139 starting
+[RESET] Armed
+[RESET] Moved to hard pose (5.24, 0.04, 3.29)
+[RESET] Distance to gate 0: 2.23
+[STEP 10] active_gate=0 closest_gate=0 dist=3.88 reward=-0.769 vel=(3.03,0.21,0.62) cmd=(r=-0.05,p=0.08,yaw_rate=18.78,z=3.39) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=0 dist=2.27 reward=0.781 vel=(0.00,0.00,3.99) cmd=(r=0.10,p=0.08,yaw_rate=13.52,z=0.26) gate_found=1 gate_area=0.0176
+[STEP 30] active_gate=0 closest_gate=0 dist=3.03 reward=-0.441 vel=(2.18,-0.26,0.28) cmd=(r=0.10,p=0.08,yaw_rate=17.40,z=3.11) gate_found=0 gate_area=0.0000
+[STEP 40] active_gate=0 closest_gate=0 dist=2.25 reward=0.853 vel=(0.00,0.00,4.05) cmd=(r=0.10,p=0.22,yaw_rate=4.32,z=0.29) gate_found=1 gate_area=0.0166
+[STEP 50] active_gate=0 closest_gate=0 dist=2.74 reward=-0.450 vel=(2.46,-0.02,-0.06) cmd=(r=-0.10,p=0.08,yaw_rate=19.27,z=2.20) gate_found=1 gate_area=0.0054
+[STEP 60] active_gate=0 closest_gate=11 dist=7.80 reward=-1.844 vel=(4.60,-0.40,0.76) cmd=(r=-0.08,p=0.22,yaw_rate=-7.33,z=3.11) gate_found=0 gate_area=0.0000
+[STEP 63] Collision detected
+
+[RESET] Episode 140 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.57, -3.36, 2.22)
+[RESET] Distance to gate 0: 2.21
+[STEP 10] active_gate=0 closest_gate=0 dist=5.15 reward=-0.825 vel=(3.78,-0.38,0.43) cmd=(r=0.04,p=0.14,yaw_rate=-5.12,z=3.27) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=0 dist=2.01 reward=0.568 vel=(0.22,0.10,3.07) cmd=(r=0.07,p=0.08,yaw_rate=1.20,z=1.29) gate_found=1 gate_area=0.0054
+[STEP 30] active_gate=0 closest_gate=0 dist=2.89 reward=-0.603 vel=(2.54,-0.01,0.26) cmd=(r=0.10,p=0.08,yaw_rate=-12.73,z=2.69) gate_found=0 gate_area=0.0000
+[STEP 40] active_gate=0 closest_gate=11 dist=6.78 reward=-1.685 vel=(4.33,0.28,0.72) cmd=(r=0.08,p=0.08,yaw_rate=20.00,z=3.16) gate_found=0 gate_area=0.0000
+[STEP 42] Collision detected
+
+[RESET] Episode 141 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.87, -4.75, 1.95)
+[RESET] Distance to gate 0: 2.21
+[STEP 10] active_gate=0 closest_gate=0 dist=3.73 reward=-0.737 vel=(3.03,0.20,0.55) cmd=(r=-0.10,p=0.25,yaw_rate=12.97,z=2.54) gate_found=0 gate_area=0.0000
+[STEP 18] Collision detected
+
+[RESET] Episode 142 starting
+[RESET] Armed
+[RESET] Moved to hard pose (3.85, 0.12, 2.45)
+[RESET] Distance to gate 0: 2.06
+[STEP 10] active_gate=0 closest_gate=0 dist=3.90 reward=-0.765 vel=(3.36,-0.22,0.69) cmd=(r=0.06,p=0.08,yaw_rate=8.20,z=3.39) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=0 dist=2.04 reward=0.056 vel=(0.18,-0.07,3.13) cmd=(r=0.10,p=0.25,yaw_rate=11.73,z=1.81) gate_found=1 gate_area=0.0049
+[STEP 30] active_gate=0 closest_gate=0 dist=3.46 reward=-0.671 vel=(3.16,0.11,-0.01) cmd=(r=0.07,p=0.15,yaw_rate=20.00,z=3.06) gate_found=1 gate_area=0.0051
+[STEP 40] active_gate=0 closest_gate=0 dist=2.04 reward=-0.089 vel=(0.53,0.02,1.77) cmd=(r=-0.09,p=0.18,yaw_rate=20.00,z=2.03) gate_found=1 gate_area=0.0049
+[STEP 50] active_gate=0 closest_gate=0 dist=3.71 reward=-0.490 vel=(3.31,-0.39,0.06) cmd=(r=-0.10,p=0.08,yaw_rate=1.57,z=2.61) gate_found=1 gate_area=0.0055
+[STEP 60] active_gate=0 closest_gate=0 dist=2.82 reward=0.217 vel=(0.00,0.00,1.50) cmd=(r=-0.03,p=0.20,yaw_rate=19.09,z=-0.38) gate_found=1 gate_area=0.0179
+[STEP 70] active_gate=0 closest_gate=0 dist=2.50 reward=-0.238 vel=(2.21,-0.16,-0.07) cmd=(r=0.06,p=0.23,yaw_rate=20.00,z=2.20) gate_found=1 gate_area=0.0058
+[STEP 80] active_gate=0 closest_gate=0 dist=5.74 reward=-0.794 vel=(4.04,-0.04,0.45) cmd=(r=0.00,p=0.25,yaw_rate=-18.78,z=2.74) gate_found=1 gate_area=0.0091
+[STEP 90] active_gate=0 closest_gate=0 dist=2.03 reward=0.693 vel=(0.07,0.03,3.82) cmd=(r=0.07,p=0.20,yaw_rate=0.04,z=1.50) gate_found=1 gate_area=0.0053
+[STEP 100] active_gate=0 closest_gate=0 dist=3.00 reward=-0.852 vel=(3.00,0.58,0.73) cmd=(r=0.10,p=0.22,yaw_rate=17.30,z=3.33) gate_found=0 gate_area=0.0000
+[STEP 108] Collision detected
+
+[RESET] Episode 143 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.16, -3.85, 1.89)
+[RESET] Distance to gate 0: 2.16
+[STEP 10] active_gate=0 closest_gate=0 dist=4.00 reward=-0.514 vel=(3.41,0.01,0.80) cmd=(r=-0.02,p=0.08,yaw_rate=2.16,z=3.37) gate_found=1 gate_area=0.0716
+[STEP 20] active_gate=0 closest_gate=0 dist=2.31 reward=0.775 vel=(0.00,0.00,3.87) cmd=(r=-0.06,p=0.22,yaw_rate=7.00,z=0.24) gate_found=1 gate_area=0.0176
+[STEP 30] active_gate=0 closest_gate=0 dist=2.03 reward=0.072 vel=(1.78,0.46,-0.34) cmd=(r=-0.08,p=0.17,yaw_rate=-6.69,z=2.41) gate_found=1 gate_area=0.0050
+[STEP 40] active_gate=0 closest_gate=0 dist=5.06 reward=-0.896 vel=(4.20,0.27,0.76) cmd=(r=0.05,p=0.15,yaw_rate=-12.25,z=2.91) gate_found=1 gate_area=0.0079
+[STEP 44] Collision detected
+
+[RESET] Episode 144 starting
+[RESET] Armed
+[RESET] Moved to hard pose (1.88, -0.19, 2.49)
+[RESET] Distance to gate 0: 2.15
+[STEP 10] active_gate=0 closest_gate=0 dist=3.80 reward=-0.610 vel=(2.88,-0.38,0.20) cmd=(r=-0.02,p=0.25,yaw_rate=-14.36,z=2.42) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=11 dist=8.40 reward=-1.487 vel=(4.92,-0.09,0.59) cmd=(r=0.09,p=0.15,yaw_rate=3.31,z=2.92) gate_found=1 gate_area=0.0142
+[STEP 30] active_gate=0 closest_gate=0 dist=2.29 reward=-0.495 vel=(1.36,-0.44,0.98) cmd=(r=-0.04,p=0.25,yaw_rate=-20.00,z=2.50) gate_found=0 gate_area=0.0000
+[STEP 40] active_gate=0 closest_gate=0 dist=4.79 reward=-0.724 vel=(3.76,-0.36,-0.00) cmd=(r=0.10,p=0.21,yaw_rate=-20.00,z=2.81) gate_found=1 gate_area=0.0723
+[STEP 50] active_gate=0 closest_gate=0 dist=2.83 reward=0.219 vel=(0.00,0.00,1.43) cmd=(r=-0.10,p=0.08,yaw_rate=-17.05,z=-0.38) gate_found=1 gate_area=0.0181
+[STEP 60] active_gate=0 closest_gate=0 dist=2.48 reward=-0.207 vel=(1.75,-0.21,-0.03) cmd=(r=0.10,p=0.18,yaw_rate=-5.62,z=3.29) gate_found=0 gate_area=0.0000
+[STEP 70] active_gate=0 closest_gate=0 dist=5.26 reward=-0.951 vel=(3.75,-0.51,0.89) cmd=(r=0.01,p=0.24,yaw_rate=8.25,z=3.40) gate_found=0 gate_area=0.0000
+[STEP 80] active_gate=0 closest_gate=0 dist=2.15 reward=-0.146 vel=(1.21,-0.12,0.73) cmd=(r=-0.05,p=0.25,yaw_rate=-20.00,z=2.63) gate_found=1 gate_area=0.0050
+[STEP 90] active_gate=0 closest_gate=0 dist=4.41 reward=-0.806 vel=(3.59,-0.57,0.33) cmd=(r=0.04,p=0.10,yaw_rate=10.61,z=2.88) gate_found=0 gate_area=0.0000
+[STEP 100] active_gate=0 closest_gate=0 dist=2.22 reward=0.670 vel=(0.00,-0.00,4.05) cmd=(r=-0.10,p=0.08,yaw_rate=-19.57,z=0.54) gate_found=1 gate_area=0.0194
+[STEP 110] active_gate=0 closest_gate=0 dist=3.26 reward=-0.462 vel=(2.65,-0.52,0.13) cmd=(r=0.10,p=0.25,yaw_rate=14.75,z=2.54) gate_found=1 gate_area=0.0058
+[STEP 120] active_gate=0 closest_gate=11 dist=7.58 reward=-1.791 vel=(4.71,-0.43,0.69) cmd=(r=-0.07,p=0.21,yaw_rate=4.70,z=3.44) gate_found=0 gate_area=0.0000
+[STEP 130] active_gate=0 closest_gate=0 dist=2.04 reward=-0.067 vel=(1.04,-0.05,1.43) cmd=(r=-0.10,p=0.08,yaw_rate=20.00,z=2.48) gate_found=1 gate_area=0.0050
+[STEP 140] active_gate=0 closest_gate=0 dist=3.80 reward=-0.428 vel=(3.00,-0.37,0.46) cmd=(r=-0.10,p=0.14,yaw_rate=-5.97,z=2.57) gate_found=1 gate_area=0.0055
+[STEP 150] active_gate=0 closest_gate=11 dist=8.98 reward=-1.712 vel=(4.57,-1.02,0.88) cmd=(r=-0.04,p=0.08,yaw_rate=13.65,z=3.30) gate_found=1 gate_area=0.0145
+[STEP 157] Collision detected
+
+[RESET] Episode 145 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.32, -4.61, 2.18)
+[RESET] Distance to gate 0: 2.12
+[STEP 10] active_gate=0 closest_gate=0 dist=3.41 reward=-0.563 vel=(3.09,0.27,0.55) cmd=(r=-0.10,p=0.25,yaw_rate=-19.23,z=2.47) gate_found=1 gate_area=0.0051
+[STEP 20] active_gate=0 closest_gate=0 dist=2.91 reward=10.211 vel=(0.00,0.00,0.00) cmd=(r=-0.02,p=0.08,yaw_rate=-3.18,z=3.84) gate_found=1 gate_area=0.0178
+[STEP 30] active_gate=0 closest_gate=0 dist=2.31 reward=-0.095 vel=(2.17,0.09,0.23) cmd=(r=0.09,p=0.25,yaw_rate=-12.76,z=2.52) gate_found=1 gate_area=0.0049
+[STEP 40] active_gate=0 closest_gate=0 dist=5.88 reward=-1.161 vel=(4.56,-0.03,0.67) cmd=(r=0.03,p=0.25,yaw_rate=-20.00,z=3.00) gate_found=1 gate_area=0.0094
+[STEP 43] Collision detected
+
+[RESET] Episode 146 starting
+[RESET] Armed
+[RESET] Moved to hard pose (1.06, -0.10, 2.53)
+[RESET] Distance to gate 0: 1.99
+[STEP 10] active_gate=0 closest_gate=0 dist=4.02 reward=-0.860 vel=(3.36,0.22,0.74) cmd=(r=0.00,p=0.23,yaw_rate=-20.00,z=3.11) gate_found=0 gate_area=0.0000
+[STEP 19] Collision detected
+
+[RESET] Episode 147 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.16, -3.62, 2.03)
+[RESET] Distance to gate 0: 2.12
+[STEP 10] active_gate=0 closest_gate=0 dist=4.46 reward=-0.738 vel=(3.74,0.82,0.93) cmd=(r=0.03,p=0.18,yaw_rate=11.89,z=3.40) gate_found=1 gate_area=0.0079
+[STEP 15] Collision detected
+
+[RESET] Episode 148 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.76, -3.47, 1.91)
+[RESET] Distance to gate 0: 2.30
+[STEP 10] active_gate=0 closest_gate=0 dist=4.89 reward=-1.110 vel=(3.49,0.46,0.26) cmd=(r=-0.10,p=0.08,yaw_rate=17.81,z=2.85) gate_found=0 gate_area=0.0000
+[STEP 17] Collision detected
+
+[RESET] Episode 149 starting
+[RESET] Armed
+[RESET] Moved to start pose (-2.00, -4.38, 2.17)
+[RESET] Distance to gate 0: 2.05
+[STEP 10] active_gate=0 closest_gate=0 dist=3.62 reward=-0.544 vel=(3.15,0.08,0.30) cmd=(r=0.01,p=0.13,yaw_rate=16.20,z=2.80) gate_found=1 gate_area=0.0636
+[STEP 19] Collision detected
+
+[RESET] Episode 150 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.70, -3.74, 1.83)
+[RESET] Distance to gate 0: 1.97
+[STEP 10] active_gate=0 closest_gate=0 dist=3.15 reward=-0.808 vel=(3.05,0.79,0.20) cmd=(r=0.10,p=0.08,yaw_rate=-20.00,z=2.66) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=11 dist=8.12 reward=-1.872 vel=(4.73,0.92,0.90) cmd=(r=0.01,p=0.08,yaw_rate=20.00,z=3.40) gate_found=0 gate_area=0.0000
+[STEP 30] active_gate=0 closest_gate=0 dist=2.28 reward=-0.011 vel=(1.80,-0.28,0.10) cmd=(r=-0.02,p=0.25,yaw_rate=-4.52,z=2.64) gate_found=1 gate_area=0.0054
+[STEP 40] active_gate=0 closest_gate=0 dist=5.37 reward=-1.212 vel=(4.08,-0.25,0.52) cmd=(r=0.07,p=0.25,yaw_rate=20.00,z=2.77) gate_found=0 gate_area=0.0000
+[STEP 45] Collision detected
+
+[RESET] Episode 151 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.55, -3.48, 1.84)
+[RESET] Distance to gate 0: 1.95
+[STEP 10] active_gate=0 closest_gate=0 dist=3.70 reward=-0.496 vel=(3.37,0.56,0.46) cmd=(r=0.10,p=0.25,yaw_rate=3.90,z=2.74) gate_found=1 gate_area=0.0067
+[STEP 20] active_gate=0 closest_gate=0 dist=2.83 reward=0.189 vel=(0.00,0.00,1.42) cmd=(r=-0.02,p=0.18,yaw_rate=-20.00,z=-0.36) gate_found=1 gate_area=0.0182
+[STEP 30] active_gate=0 closest_gate=0 dist=2.45 reward=-0.335 vel=(2.32,0.14,0.01) cmd=(r=-0.03,p=0.10,yaw_rate=9.10,z=2.69) gate_found=0 gate_area=0.0000
+[STEP 40] active_gate=0 closest_gate=11 dist=6.90 reward=-1.590 vel=(4.39,0.05,0.42) cmd=(r=0.07,p=0.08,yaw_rate=-13.56,z=3.38) gate_found=1 gate_area=0.0106
+[STEP 50] active_gate=0 closest_gate=0 dist=2.20 reward=-0.415 vel=(1.46,-0.04,1.06) cmd=(r=-0.08,p=0.25,yaw_rate=-20.00,z=2.49) gate_found=0 gate_area=0.0000
+[STEP 60] active_gate=0 closest_gate=0 dist=4.90 reward=-0.901 vel=(3.86,-0.25,0.81) cmd=(r=0.04,p=0.16,yaw_rate=-1.85,z=3.61) gate_found=0 gate_area=0.0000
+[STEP 70] active_gate=0 closest_gate=0 dist=2.11 reward=-0.105 vel=(0.70,-0.01,0.75) cmd=(r=-0.10,p=0.21,yaw_rate=-20.00,z=2.62) gate_found=1 gate_area=0.0048
+[STEP 80] active_gate=0 closest_gate=0 dist=2.94 reward=-0.520 vel=(2.36,0.15,0.22) cmd=(r=0.05,p=0.25,yaw_rate=20.00,z=2.67) gate_found=0 gate_area=0.0000
+[STEP 87] Collision detected
+
+[RESET] Episode 152 starting
+[RESET] Armed
+[RESET] Moved to hard pose (4.62, -0.33, 3.44)
+[RESET] Distance to gate 0: 2.15
+[STEP 10] active_gate=0 closest_gate=0 dist=4.18 reward=-0.626 vel=(3.08,-0.55,0.76) cmd=(r=-0.06,p=0.25,yaw_rate=12.66,z=2.82) gate_found=1 gate_area=0.0059
+[STEP 20] active_gate=0 closest_gate=0 dist=2.82 reward=0.202 vel=(0.00,0.00,1.48) cmd=(r=-0.01,p=0.24,yaw_rate=-20.00,z=0.22) gate_found=1 gate_area=0.0181
+[STEP 30] active_gate=0 closest_gate=0 dist=2.54 reward=-0.353 vel=(1.98,-0.16,0.21) cmd=(r=-0.09,p=0.21,yaw_rate=9.95,z=2.57) gate_found=0 gate_area=0.0000
+[STEP 40] active_gate=0 closest_gate=0 dist=5.69 reward=-0.962 vel=(3.93,-0.14,0.70) cmd=(r=-0.10,p=0.08,yaw_rate=20.00,z=3.24) gate_found=1 gate_area=0.0084
+[STEP 50] active_gate=0 closest_gate=0 dist=2.02 reward=0.445 vel=(0.08,0.01,3.21) cmd=(r=-0.10,p=0.11,yaw_rate=-17.40,z=1.08) gate_found=1 gate_area=0.0052
+[STEP 60] active_gate=0 closest_gate=0 dist=2.75 reward=-0.400 vel=(2.18,0.02,0.48) cmd=(r=-0.10,p=0.25,yaw_rate=8.58,z=2.94) gate_found=0 gate_area=0.0000
+[STEP 70] active_gate=0 closest_gate=0 dist=6.33 reward=-1.113 vel=(4.17,0.33,0.61) cmd=(r=0.07,p=0.20,yaw_rate=-6.46,z=3.19) gate_found=0 gate_area=0.0000
+[STEP 80] active_gate=0 closest_gate=0 dist=2.17 reward=-0.197 vel=(0.87,-0.33,2.19) cmd=(r=-0.10,p=0.12,yaw_rate=15.94,z=2.16) gate_found=1 gate_area=0.0047
+[STEP 85] Collision detected
+
+[RESET] Episode 153 starting
+[RESET] Armed
+[RESET] Moved to start pose (-2.06, -3.62, 1.99)
+[RESET] Distance to gate 0: 2.38
+[STEP 10] active_gate=0 closest_gate=0 dist=4.13 reward=-0.815 vel=(3.14,-0.23,0.74) cmd=(r=0.10,p=0.12,yaw_rate=20.00,z=3.50) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=0 dist=2.10 reward=-0.073 vel=(1.48,0.30,0.62) cmd=(r=0.04,p=0.08,yaw_rate=20.00,z=2.78) gate_found=1 gate_area=0.0054
+[STEP 30] active_gate=0 closest_gate=0 dist=4.14 reward=-0.703 vel=(3.40,0.25,0.13) cmd=(r=-0.03,p=0.24,yaw_rate=19.89,z=3.02) gate_found=1 gate_area=0.0060
+[STEP 40] active_gate=0 closest_gate=0 dist=2.08 reward=-0.072 vel=(0.64,0.07,1.77) cmd=(r=0.04,p=0.25,yaw_rate=15.76,z=2.36) gate_found=1 gate_area=0.0046
+[STEP 50] active_gate=0 closest_gate=0 dist=3.47 reward=-0.450 vel=(3.06,0.00,0.37) cmd=(r=0.08,p=0.25,yaw_rate=4.06,z=2.82) gate_found=1 gate_area=0.0058
+[STEP 58] Collision detected
+
+[RESET] Episode 154 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.75, -3.75, 1.97)
+[RESET] Distance to gate 0: 2.17
+[STEP 10] active_gate=0 closest_gate=0 dist=3.59 reward=-0.576 vel=(2.93,-0.03,0.65) cmd=(r=-0.00,p=0.08,yaw_rate=-7.64,z=2.83) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=11 dist=8.61 reward=-1.836 vel=(4.92,0.42,0.46) cmd=(r=-0.03,p=0.13,yaw_rate=20.00,z=3.18) gate_found=0 gate_area=0.0000
+[STEP 21] Collision detected
+
+[RESET] Episode 155 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.88, -3.78, 1.87)
+[RESET] Distance to gate 0: 2.29
+[STEP 10] active_gate=0 closest_gate=0 dist=4.56 reward=-0.795 vel=(3.71,-0.05,0.48) cmd=(r=-0.10,p=0.20,yaw_rate=2.42,z=2.69) gate_found=0 gate_area=0.0000
+[STEP 15] Collision detected
+
+[RESET] Episode 156 starting
+[RESET] Armed
+[RESET] Moved to hard pose (2.37, -0.25, 3.24)
+[RESET] Distance to gate 0: 2.08
+[STEP 10] active_gate=0 closest_gate=0 dist=4.68 reward=-0.734 vel=(3.85,0.02,0.20) cmd=(r=-0.04,p=0.25,yaw_rate=5.89,z=2.48) gate_found=1 gate_area=0.0078
+[STEP 17] Collision detected
+
+[RESET] Episode 157 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.97, -2.99, 2.17)
+[RESET] Distance to gate 0: 2.38
+[STEP 9] Collision detected
+
+[RESET] Episode 158 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.92, -4.59, 1.97)
+[RESET] Distance to gate 0: 2.23
+[STEP 10] active_gate=0 closest_gate=0 dist=4.28 reward=-1.122 vel=(3.38,0.06,1.16) cmd=(r=0.10,p=0.25,yaw_rate=20.00,z=3.54) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=0 dist=2.30 reward=-0.280 vel=(1.40,0.22,0.23) cmd=(r=-0.06,p=0.15,yaw_rate=20.00,z=2.82) gate_found=0 gate_area=0.0000
+[STEP 30] active_gate=0 closest_gate=0 dist=4.14 reward=-0.506 vel=(3.15,0.29,0.19) cmd=(r=0.04,p=0.16,yaw_rate=8.55,z=3.14) gate_found=1 gate_area=0.0710
+[STEP 36] Collision detected
+
+[RESET] Episode 159 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.35, -3.57, 1.98)
+[RESET] Distance to gate 0: 2.23
+[STEP 10] active_gate=0 closest_gate=0 dist=4.73 reward=-0.830 vel=(3.25,-0.63,0.82) cmd=(r=0.07,p=0.19,yaw_rate=-20.00,z=3.17) gate_found=1 gate_area=0.0068
+[STEP 20] active_gate=0 closest_gate=0 dist=2.55 reward=0.742 vel=(0.00,0.00,2.97) cmd=(r=-0.10,p=0.12,yaw_rate=1.85,z=-0.06) gate_found=1 gate_area=0.0168
+[STEP 30] active_gate=0 closest_gate=0 dist=2.55 reward=-0.282 vel=(2.05,0.20,0.22) cmd=(r=0.01,p=0.08,yaw_rate=5.11,z=2.91) gate_found=0 gate_area=0.0000
+[STEP 40] active_gate=0 closest_gate=0 dist=6.16 reward=-1.223 vel=(4.16,-0.17,0.90) cmd=(r=0.10,p=0.22,yaw_rate=5.10,z=3.49) gate_found=0 gate_area=0.0000
+[STEP 50] active_gate=0 closest_gate=0 dist=2.16 reward=-0.192 vel=(1.66,-0.06,0.24) cmd=(r=0.02,p=0.22,yaw_rate=6.60,z=2.92) gate_found=0 gate_area=0.0000
+[STEP 60] active_gate=0 closest_gate=0 dist=5.03 reward=-0.862 vel=(4.10,-0.25,0.51) cmd=(r=-0.03,p=0.25,yaw_rate=9.24,z=2.64) gate_found=1 gate_area=0.0077
+[STEP 65] Collision detected
+
+[RESET] Episode 160 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.28, -4.18, 2.08)
+[RESET] Distance to gate 0: 2.05
+[STEP 10] active_gate=0 closest_gate=0 dist=4.18 reward=-0.822 vel=(3.53,-0.02,0.61) cmd=(r=-0.04,p=0.17,yaw_rate=-6.80,z=3.48) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=0 dist=2.09 reward=-0.131 vel=(0.68,0.07,1.80) cmd=(r=-0.02,p=0.17,yaw_rate=-20.00,z=2.27) gate_found=1 gate_area=0.0047
+[STEP 30] active_gate=0 closest_gate=0 dist=3.48 reward=-0.355 vel=(3.16,0.29,0.15) cmd=(r=-0.02,p=0.25,yaw_rate=4.31,z=3.44) gate_found=1 gate_area=0.0768
+[STEP 33] Collision detected
+
+[RESET] Episode 161 starting
+[RESET] Armed
+[RESET] Moved to hard pose (2.67, 0.15, 3.06)
+[RESET] Distance to gate 0: 2.35
+[STEP 10] active_gate=0 closest_gate=0 dist=5.52 reward=-0.843 vel=(3.84,-0.57,0.75) cmd=(r=0.10,p=0.12,yaw_rate=-16.05,z=3.14) gate_found=1 gate_area=0.0073
+[STEP 20] active_gate=0 closest_gate=0 dist=2.27 reward=0.823 vel=(0.00,0.00,3.98) cmd=(r=-0.00,p=0.08,yaw_rate=6.24,z=0.86) gate_found=1 gate_area=0.0179
+[STEP 30] active_gate=0 closest_gate=0 dist=2.82 reward=-0.341 vel=(2.32,-0.25,-0.15) cmd=(r=-0.06,p=0.19,yaw_rate=-14.23,z=2.77) gate_found=1 gate_area=0.0055
+[STEP 40] active_gate=0 closest_gate=0 dist=2.91 reward=7.568 vel=(0.00,0.00,0.00) cmd=(r=-0.10,p=0.12,yaw_rate=18.29,z=3.53) gate_found=1 gate_area=0.0179
+[STEP 50] active_gate=0 closest_gate=0 dist=2.58 reward=-0.048 vel=(0.84,0.04,-0.17) cmd=(r=0.10,p=0.11,yaw_rate=4.38,z=3.68) gate_found=0 gate_area=0.0000
+[STEP 60] active_gate=0 closest_gate=0 dist=3.55 reward=-0.332 vel=(1.10,0.12,0.19) cmd=(r=0.04,p=0.25,yaw_rate=16.52,z=3.85) gate_found=0 gate_area=0.0000
+[STEP 70] active_gate=0 closest_gate=0 dist=2.27 reward=-0.431 vel=(1.85,-0.20,0.72) cmd=(r=0.10,p=0.25,yaw_rate=20.00,z=2.51) gate_found=0 gate_area=0.0000
+[STEP 80] Collision detected
+[STEP 80] active_gate=0 closest_gate=0 dist=5.47 reward=-101.047 vel=(4.56,0.58,0.65) cmd=(r=0.03,p=0.08,yaw_rate=-3.08,z=3.20) gate_found=0 gate_area=0.0000
+
+[RESET] Episode 162 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.79, -3.04, 2.16)
+[RESET] Distance to gate 0: 2.30
+[STEP 10] active_gate=0 closest_gate=0 dist=4.55 reward=-0.916 vel=(3.30,-0.43,0.40) cmd=(r=-0.05,p=0.25,yaw_rate=-20.00,z=2.73) gate_found=0 gate_area=0.0000
+[STEP 14] Collision detected
+
+[RESET] Episode 163 starting
+[RESET] Armed
+[RESET] Moved to hard pose (3.46, -0.77, 3.05)
+[RESET] Distance to gate 0: 2.15
+[STEP 10] active_gate=0 closest_gate=0 dist=3.66 reward=-0.597 vel=(3.12,0.48,-0.02) cmd=(r=-0.07,p=0.11,yaw_rate=20.00,z=2.41) gate_found=1 gate_area=0.0751
+[STEP 20] active_gate=0 closest_gate=0 dist=2.91 reward=11.760 vel=(0.00,0.00,0.00) cmd=(r=0.10,p=0.15,yaw_rate=-19.19,z=3.25) gate_found=1 gate_area=0.0179
+[STEP 30] active_gate=0 closest_gate=0 dist=2.48 reward=-0.177 vel=(1.76,-0.30,-0.26) cmd=(r=0.10,p=0.13,yaw_rate=2.44,z=2.86) gate_found=0 gate_area=0.0000
+[STEP 40] active_gate=0 closest_gate=0 dist=5.29 reward=-1.224 vel=(3.62,-0.42,0.39) cmd=(r=-0.08,p=0.20,yaw_rate=13.96,z=3.23) gate_found=0 gate_area=0.0000
+[STEP 44] Collision detected
+
+[RESET] Episode 164 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.84, -4.84, 2.03)
+[RESET] Distance to gate 0: 2.29
+[STEP 10] active_gate=0 closest_gate=0 dist=4.62 reward=-0.816 vel=(3.69,-0.24,0.48) cmd=(r=-0.03,p=0.25,yaw_rate=6.79,z=2.87) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=0 dist=2.26 reward=0.859 vel=(0.00,0.00,4.01) cmd=(r=0.02,p=0.25,yaw_rate=-0.44,z=0.70) gate_found=1 gate_area=0.0175
+[STEP 30] active_gate=0 closest_gate=0 dist=2.78 reward=-0.373 vel=(2.85,0.31,-0.06) cmd=(r=-0.06,p=0.20,yaw_rate=-20.00,z=2.58) gate_found=1 gate_area=0.0053
+[STEP 40] Collision detected
+[STEP 40] active_gate=0 closest_gate=11 dist=7.64 reward=-101.877 vel=(4.85,0.30,0.92) cmd=(r=0.08,p=0.22,yaw_rate=-20.00,z=3.82) gate_found=0 gate_area=0.0000
+
+[RESET] Episode 165 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.35, -4.50, 2.16)
+[RESET] Distance to gate 0: 2.15
+[STEP 10] active_gate=0 closest_gate=0 dist=4.02 reward=-0.348 vel=(2.76,-0.59,0.31) cmd=(r=0.10,p=0.19,yaw_rate=3.56,z=2.42) gate_found=1 gate_area=0.0063
+[STEP 20] active_gate=0 closest_gate=11 dist=8.74 reward=-1.813 vel=(4.74,-0.65,1.20) cmd=(r=-0.06,p=0.08,yaw_rate=20.00,z=3.61) gate_found=0 gate_area=0.0000
+[STEP 21] Collision detected
+
+[RESET] Episode 166 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.33, -4.70, 2.00)
+[RESET] Distance to gate 0: 2.27
+[STEP 10] active_gate=0 closest_gate=0 dist=3.38 reward=-0.603 vel=(2.75,0.34,0.60) cmd=(r=-0.00,p=0.25,yaw_rate=4.05,z=3.22) gate_found=0 gate_area=0.0000
+[STEP 17] Collision detected
+
+[RESET] Episode 167 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.90, -2.97, 2.14)
+[RESET] Distance to gate 0: 2.08
+[STEP 10] active_gate=0 closest_gate=0 dist=4.85 reward=-0.862 vel=(3.83,-0.08,0.64) cmd=(r=0.04,p=0.19,yaw_rate=20.00,z=2.83) gate_found=1 gate_area=0.0069
+[STEP 20] active_gate=0 closest_gate=0 dist=2.19 reward=0.824 vel=(0.00,-0.00,4.15) cmd=(r=-0.01,p=0.21,yaw_rate=-9.57,z=0.74) gate_found=1 gate_area=0.0197
+[STEP 30] active_gate=0 closest_gate=0 dist=3.11 reward=-0.272 vel=(2.67,-0.11,0.13) cmd=(r=-0.02,p=0.17,yaw_rate=3.79,z=2.80) gate_found=1 gate_area=0.0052
+[STEP 40] active_gate=0 closest_gate=11 dist=7.68 reward=-1.768 vel=(4.90,0.05,0.67) cmd=(r=0.01,p=0.19,yaw_rate=5.85,z=3.21) gate_found=0 gate_area=0.0000
+[STEP 50] active_gate=0 closest_gate=0 dist=2.65 reward=-0.290 vel=(2.11,-0.30,0.68) cmd=(r=0.08,p=0.08,yaw_rate=11.83,z=3.46) gate_found=0 gate_area=0.0000
+[STEP 60] active_gate=0 closest_gate=0 dist=2.19 reward=0.690 vel=(0.00,0.00,3.91) cmd=(r=0.08,p=0.08,yaw_rate=-20.00,z=0.61) gate_found=1 gate_area=0.0179
+[STEP 70] active_gate=0 closest_gate=0 dist=2.05 reward=-0.429 vel=(2.19,0.87,0.64) cmd=(r=0.04,p=0.13,yaw_rate=20.00,z=2.72) gate_found=0 gate_area=0.0000
+[STEP 80] active_gate=0 closest_gate=0 dist=6.04 reward=-1.626 vel=(4.47,1.01,0.62) cmd=(r=0.10,p=0.17,yaw_rate=-20.00,z=3.05) gate_found=0 gate_area=0.0000
+[STEP 90] active_gate=0 closest_gate=0 dist=2.00 reward=0.086 vel=(0.47,-0.03,2.35) cmd=(r=0.09,p=0.25,yaw_rate=20.00,z=1.97) gate_found=1 gate_area=0.0052
+[STEP 100] active_gate=0 closest_gate=0 dist=3.36 reward=-0.769 vel=(3.19,0.28,0.48) cmd=(r=0.10,p=0.25,yaw_rate=10.91,z=2.79) gate_found=0 gate_area=0.0000
+[STEP 110] active_gate=0 closest_gate=0 dist=2.83 reward=0.188 vel=(0.00,0.00,1.42) cmd=(r=-0.06,p=0.24,yaw_rate=20.00,z=0.22) gate_found=1 gate_area=0.0182
+[STEP 120] active_gate=0 closest_gate=0 dist=2.09 reward=-0.144 vel=(1.91,0.47,0.25) cmd=(r=-0.10,p=0.23,yaw_rate=20.00,z=2.86) gate_found=1 gate_area=0.0049
+[STEP 130] active_gate=0 closest_gate=0 dist=5.33 reward=-0.913 vel=(4.03,0.26,0.50) cmd=(r=-0.02,p=0.22,yaw_rate=-20.00,z=2.75) gate_found=1 gate_area=0.0080
+[STEP 136] Collision detected
+
+[RESET] Episode 168 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.76, -4.87, 1.91)
+[RESET] Distance to gate 0: 2.20
+[STEP 10] active_gate=0 closest_gate=0 dist=4.28 reward=-0.812 vel=(3.31,-0.27,-0.10) cmd=(r=0.05,p=0.16,yaw_rate=20.00,z=2.55) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=11 dist=9.29 reward=-1.903 vel=(4.64,-0.70,1.04) cmd=(r=-0.06,p=0.24,yaw_rate=-20.00,z=3.41) gate_found=0 gate_area=0.0000
+[STEP 22] Collision detected
+
+[RESET] Episode 169 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.66, -3.59, 2.15)
+[RESET] Distance to gate 0: 2.12
+[STEP 10] active_gate=0 closest_gate=0 dist=4.13 reward=-0.646 vel=(3.30,0.06,0.47) cmd=(r=0.10,p=0.25,yaw_rate=-4.63,z=3.09) gate_found=0 gate_area=0.0000
+[STEP 20] Collision detected
+[STEP 20] active_gate=0 closest_gate=11 dist=9.02 reward=-101.712 vel=(4.98,-0.12,0.86) cmd=(r=-0.02,p=0.25,yaw_rate=-1.73,z=3.34) gate_found=0 gate_area=0.0000
+
+[RESET] Episode 170 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.08, -3.02, 2.15)
+[RESET] Distance to gate 0: 2.39
+[STEP 10] active_gate=0 closest_gate=0 dist=4.66 reward=-0.564 vel=(1.62,0.26,-0.07) cmd=(r=-0.01,p=0.25,yaw_rate=-1.70,z=3.26) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=0 dist=2.06 reward=0.062 vel=(0.97,-0.01,1.46) cmd=(r=0.10,p=0.25,yaw_rate=-0.96,z=2.34) gate_found=1 gate_area=0.0050
+[STEP 30] active_gate=0 closest_gate=0 dist=4.30 reward=-0.894 vel=(3.54,-0.14,0.47) cmd=(r=0.06,p=0.14,yaw_rate=20.00,z=3.23) gate_found=0 gate_area=0.0000
+[STEP 38] Collision detected
+
+[RESET] Episode 171 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.43, -2.96, 1.90)
+[RESET] Distance to gate 0: 2.25
+[STEP 10] active_gate=0 closest_gate=0 dist=3.54 reward=-0.464 vel=(2.82,-0.13,-0.01) cmd=(r=-0.08,p=0.25,yaw_rate=-8.51,z=2.70) gate_found=1 gate_area=0.0057
+[STEP 18] Collision detected
+
+[RESET] Episode 172 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.29, -3.24, 2.19)
+[RESET] Distance to gate 0: 2.22
+[STEP 10] active_gate=0 closest_gate=0 dist=3.85 reward=-0.441 vel=(2.94,-0.60,0.20) cmd=(r=-0.10,p=0.21,yaw_rate=-6.10,z=2.85) gate_found=1 gate_area=0.0063
+[STEP 15] Collision detected
+
+[RESET] Episode 173 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.08, -3.65, 1.89)
+[RESET] Distance to gate 0: 2.29
+[STEP 10] active_gate=0 closest_gate=0 dist=4.92 reward=-0.943 vel=(3.15,-1.30,0.44) cmd=(r=-0.10,p=0.25,yaw_rate=20.00,z=3.02) gate_found=1 gate_area=0.0072
+[STEP 20] active_gate=0 closest_gate=0 dist=2.55 reward=0.722 vel=(0.00,0.00,2.95) cmd=(r=-0.04,p=0.13,yaw_rate=2.93,z=0.47) gate_found=1 gate_area=0.0169
+[STEP 30] active_gate=0 closest_gate=0 dist=2.74 reward=-0.437 vel=(2.02,-0.43,0.08) cmd=(r=-0.04,p=0.08,yaw_rate=-15.38,z=2.83) gate_found=0 gate_area=0.0000
+[STEP 40] active_gate=0 closest_gate=0 dist=6.00 reward=-0.885 vel=(4.01,-0.40,0.49) cmd=(r=-0.10,p=0.10,yaw_rate=1.97,z=3.07) gate_found=0 gate_area=0.0000
+[STEP 50] active_gate=0 closest_gate=0 dist=2.27 reward=-0.269 vel=(1.26,-0.05,1.04) cmd=(r=0.00,p=0.19,yaw_rate=-4.45,z=2.60) gate_found=0 gate_area=0.0000
+[STEP 60] active_gate=0 closest_gate=0 dist=4.43 reward=-0.808 vel=(3.63,-0.05,0.70) cmd=(r=-0.10,p=0.15,yaw_rate=3.56,z=3.33) gate_found=0 gate_area=0.0000
+[STEP 70] active_gate=0 closest_gate=0 dist=2.12 reward=-0.028 vel=(0.46,-0.02,2.11) cmd=(r=-0.10,p=0.15,yaw_rate=-4.74,z=2.14) gate_found=1 gate_area=0.0046
+[STEP 80] active_gate=0 closest_gate=0 dist=3.38 reward=-0.545 vel=(2.65,0.06,0.67) cmd=(r=0.05,p=0.20,yaw_rate=-1.26,z=3.48) gate_found=0 gate_area=0.0000
+[STEP 85] Collision detected
+
+[RESET] Episode 174 starting
+[RESET] Armed
+[RESET] Moved to hard pose (2.85, -0.37, 3.01)
+[RESET] Distance to gate 0: 2.22
+[STEP 10] active_gate=0 closest_gate=0 dist=3.42 reward=-0.627 vel=(2.84,0.03,0.12) cmd=(r=-0.08,p=0.08,yaw_rate=8.54,z=2.70) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=11 dist=8.44 reward=-1.549 vel=(4.85,-0.13,0.70) cmd=(r=0.02,p=0.25,yaw_rate=-6.84,z=3.19) gate_found=1 gate_area=0.0136
+[STEP 21] Collision detected
+
+[RESET] Episode 175 starting
+[RESET] Armed
+[RESET] Moved to hard pose (0.15, -0.04, 2.69)
+[RESET] Distance to gate 0: 2.11
+[STEP 10] active_gate=0 closest_gate=0 dist=3.97 reward=-0.681 vel=(3.34,0.66,0.08) cmd=(r=-0.10,p=0.10,yaw_rate=-20.00,z=3.22) gate_found=1 gate_area=0.0041
+[STEP 13] Collision detected
+
+[RESET] Episode 176 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.82, -4.17, 2.20)
+[RESET] Distance to gate 0: 2.21
+[STEP 10] active_gate=0 closest_gate=0 dist=4.18 reward=-0.718 vel=(3.19,-0.22,0.46) cmd=(r=0.10,p=0.17,yaw_rate=11.00,z=2.48) gate_found=0 gate_area=0.0000
+[STEP 19] Collision detected
+
+[RESET] Episode 177 starting
+[RESET] Armed
+[RESET] Moved to hard pose (1.90, -0.02, 3.03)
+[RESET] Distance to gate 0: 2.27
+[STEP 10] active_gate=0 closest_gate=0 dist=5.38 reward=-0.985 vel=(3.68,-1.29,0.28) cmd=(r=-0.05,p=0.12,yaw_rate=12.77,z=2.79) gate_found=1 gate_area=0.0077
+[STEP 15] Collision detected
+
+[RESET] Episode 178 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.15, -2.94, 2.11)
+[RESET] Distance to gate 0: 2.06
+[STEP 10] active_gate=0 closest_gate=0 dist=3.17 reward=-0.589 vel=(2.81,0.45,0.32) cmd=(r=0.05,p=0.12,yaw_rate=7.77,z=2.63) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=11 dist=8.05 reward=-2.004 vel=(4.78,0.58,0.28) cmd=(r=-0.04,p=0.16,yaw_rate=20.00,z=2.88) gate_found=0 gate_area=0.0000
+[STEP 30] active_gate=0 closest_gate=0 dist=2.12 reward=-0.234 vel=(0.84,-0.04,2.16) cmd=(r=-0.10,p=0.21,yaw_rate=2.34,z=2.30) gate_found=0 gate_area=0.0000
+[STEP 40] active_gate=0 closest_gate=0 dist=4.26 reward=-0.776 vel=(3.47,-0.39,0.41) cmd=(r=-0.03,p=0.19,yaw_rate=-4.22,z=3.40) gate_found=0 gate_area=0.0000
+[STEP 50] active_gate=0 closest_gate=0 dist=2.06 reward=0.030 vel=(1.15,0.10,0.43) cmd=(r=-0.07,p=0.17,yaw_rate=10.45,z=2.50) gate_found=1 gate_area=0.0052
+[STEP 60] active_gate=0 closest_gate=0 dist=3.86 reward=-0.765 vel=(3.24,0.38,0.53) cmd=(r=0.02,p=0.08,yaw_rate=20.00,z=2.59) gate_found=1 gate_area=0.0059
+[STEP 70] active_gate=0 closest_gate=0 dist=2.29 reward=0.638 vel=(0.00,0.00,3.93) cmd=(r=0.04,p=0.25,yaw_rate=20.00,z=0.24) gate_found=1 gate_area=0.0175
+[STEP 80] active_gate=0 closest_gate=0 dist=2.53 reward=-0.415 vel=(2.32,0.27,-0.00) cmd=(r=-0.10,p=0.25,yaw_rate=-20.00,z=2.74) gate_found=0 gate_area=0.0000
+[STEP 90] active_gate=0 closest_gate=0 dist=6.56 reward=-1.312 vel=(4.71,0.40,1.02) cmd=(r=0.10,p=0.11,yaw_rate=10.64,z=3.46) gate_found=0 gate_area=0.0000
+[STEP 100] active_gate=0 closest_gate=0 dist=2.30 reward=-0.393 vel=(1.74,-0.44,0.30) cmd=(r=0.00,p=0.25,yaw_rate=-20.00,z=3.07) gate_found=0 gate_area=0.0000
+[STEP 110] active_gate=0 closest_gate=0 dist=5.35 reward=-0.784 vel=(3.79,-1.02,1.03) cmd=(r=-0.04,p=0.25,yaw_rate=9.81,z=3.22) gate_found=1 gate_area=0.0073
+[STEP 114] Collision detected
+
+[RESET] Episode 179 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.64, -3.22, 1.92)
+[RESET] Distance to gate 0: 2.13
+[STEP 10] active_gate=0 closest_gate=0 dist=3.28 reward=-0.691 vel=(2.68,-0.22,0.62) cmd=(r=-0.04,p=0.25,yaw_rate=-20.00,z=3.22) gate_found=0 gate_area=0.0000
+[STEP 15] Collision detected
+
+[RESET] Episode 180 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.87, -3.83, 2.20)
+[RESET] Distance to gate 0: 2.32
+[STEP 10] active_gate=0 closest_gate=0 dist=2.91 reward=2.031 vel=(0.00,0.00,0.01) cmd=(r=0.04,p=0.25,yaw_rate=2.43,z=3.63) gate_found=1 gate_area=0.0179
+[STEP 20] active_gate=0 closest_gate=0 dist=2.43 reward=-0.263 vel=(1.75,-0.29,-0.13) cmd=(r=-0.00,p=0.13,yaw_rate=20.00,z=2.44) gate_found=1 gate_area=0.0051
+[STEP 30] active_gate=0 closest_gate=0 dist=4.85 reward=-0.920 vel=(3.48,-0.29,0.48) cmd=(r=0.06,p=0.21,yaw_rate=-20.00,z=2.72) gate_found=0 gate_area=0.0000
+[STEP 40] active_gate=0 closest_gate=0 dist=2.25 reward=0.664 vel=(0.00,0.00,4.05) cmd=(r=0.10,p=0.19,yaw_rate=20.00,z=0.74) gate_found=1 gate_area=0.0171
+[STEP 50] active_gate=0 closest_gate=0 dist=3.45 reward=-0.664 vel=(3.06,-0.54,0.14) cmd=(r=0.10,p=0.21,yaw_rate=-20.00,z=2.37) gate_found=1 gate_area=0.0063
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 45.5         |
+|    ep_rew_mean          | -113         |
+| time/                   |              |
+|    fps                  | 6            |
+|    iterations           | 4            |
+|    time_elapsed         | 1343         |
+|    total_timesteps      | 8192         |
+| train/                  |              |
+|    approx_kl            | 0.0061863037 |
+|    clip_fraction        | 0.0325       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -5.71        |
+|    explained_variance   | 0.000686     |
+|    learning_rate        | 0.0003       |
+|    loss                 | 605          |
+|    n_updates            | 30           |
+|    policy_gradient_loss | -0.0036      |
+|    std                  | 1.01         |
+|    value_loss           | 1.48e+03     |
+------------------------------------------
+[STEP 60] active_gate=0 closest_gate=0 dist=3.11 reward=-0.297 vel=(0.51,-0.89,-0.10) cmd=(r=0.02,p=0.08,yaw_rate=7.68,z=2.40) gate_found=0 gate_area=0.0000
+[STEP 70] active_gate=0 closest_gate=0 dist=3.73 reward=-0.477 vel=(2.51,-0.05,0.25) cmd=(r=0.10,p=0.17,yaw_rate=20.00,z=2.66) gate_found=0 gate_area=0.0000
+[STEP 77] Collision detected
+
+[RESET] Episode 181 starting
+[RESET] Armed
+[RESET] Moved to hard pose (3.92, -0.03, 3.49)
+[RESET] Distance to gate 0: 2.02
+[STEP 10] active_gate=0 closest_gate=0 dist=4.72 reward=-0.853 vel=(3.89,0.29,0.27) cmd=(r=0.01,p=0.17,yaw_rate=6.29,z=2.74) gate_found=1 gate_area=0.0082
+[STEP 20] active_gate=0 closest_gate=0 dist=2.03 reward=0.261 vel=(0.20,0.03,3.20) cmd=(r=-0.04,p=0.17,yaw_rate=20.00,z=1.16) gate_found=0 gate_area=0.0000
+[STEP 30] active_gate=0 closest_gate=0 dist=3.19 reward=-0.441 vel=(2.43,-0.37,0.65) cmd=(r=-0.00,p=0.21,yaw_rate=-20.00,z=3.35) gate_found=1 gate_area=0.0056
+[STEP 35] Collision detected
+
+[RESET] Episode 182 starting
+[RESET] Armed
+[RESET] Moved to hard pose (4.26, 0.25, 3.07)
+[RESET] Distance to gate 0: 2.10
+[STEP 10] active_gate=0 closest_gate=0 dist=4.56 reward=-0.712 vel=(3.73,0.43,0.60) cmd=(r=0.10,p=0.10,yaw_rate=14.03,z=2.76) gate_found=1 gate_area=0.0070
+[STEP 20] active_gate=0 closest_gate=0 dist=2.54 reward=0.752 vel=(0.00,0.00,3.01) cmd=(r=0.10,p=0.22,yaw_rate=7.53,z=0.48) gate_found=1 gate_area=0.0170
+[STEP 30] active_gate=0 closest_gate=0 dist=2.47 reward=-0.378 vel=(1.89,0.03,-0.15) cmd=(r=-0.07,p=0.15,yaw_rate=-20.00,z=2.62) gate_found=0 gate_area=0.0000
+[STEP 40] active_gate=0 closest_gate=0 dist=5.67 reward=-0.933 vel=(3.84,-0.02,0.39) cmd=(r=0.04,p=0.08,yaw_rate=2.80,z=2.90) gate_found=0 gate_area=0.0000
+[STEP 50] active_gate=0 closest_gate=0 dist=2.58 reward=0.547 vel=(0.00,0.00,2.81) cmd=(r=0.01,p=0.09,yaw_rate=-15.79,z=0.43) gate_found=1 gate_area=0.0175
+[STEP 60] active_gate=0 closest_gate=0 dist=2.52 reward=-0.373 vel=(1.77,0.08,0.30) cmd=(r=-0.10,p=0.12,yaw_rate=20.00,z=3.28) gate_found=0 gate_area=0.0000
+[STEP 64] Collision detected
+
+[RESET] Episode 183 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.25, -4.25, 2.15)
+[RESET] Distance to gate 0: 2.31
+[STEP 10] active_gate=0 closest_gate=0 dist=4.69 reward=-0.911 vel=(3.53,-0.27,0.21) cmd=(r=-0.00,p=0.08,yaw_rate=-8.68,z=3.13) gate_found=0 gate_area=0.0000
+[STEP 18] Collision detected
+
+[RESET] Episode 184 starting
+[RESET] Armed
+[RESET] Moved to hard pose (4.80, -1.24, 3.52)
+[RESET] Distance to gate 0: 2.19
+[STEP 10] active_gate=0 closest_gate=0 dist=3.96 reward=-0.710 vel=(3.55,0.63,0.70) cmd=(r=0.02,p=0.25,yaw_rate=-11.94,z=3.67) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=0 dist=2.22 reward=0.091 vel=(1.57,0.07,0.39) cmd=(r=-0.10,p=0.25,yaw_rate=0.67,z=3.16) gate_found=1 gate_area=0.0055
+[STEP 30] active_gate=0 closest_gate=0 dist=4.43 reward=-0.884 vel=(3.80,0.11,0.64) cmd=(r=0.03,p=0.25,yaw_rate=20.00,z=3.23) gate_found=0 gate_area=0.0000
+[STEP 33] Collision detected
+
+[RESET] Episode 185 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.98, -4.11, 1.97)
+[RESET] Distance to gate 0: 2.18
+[STEP 10] active_gate=0 closest_gate=0 dist=3.64 reward=-0.426 vel=(3.08,-0.08,0.12) cmd=(r=0.10,p=0.25,yaw_rate=-7.78,z=2.51) gate_found=1 gate_area=0.0055
+[STEP 20] Collision detected
+[STEP 20] active_gate=0 closest_gate=11 dist=8.40 reward=-101.738 vel=(4.87,0.33,0.99) cmd=(r=0.07,p=0.25,yaw_rate=20.00,z=3.64) gate_found=0 gate_area=0.0000
+
+[RESET] Episode 186 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.75, -3.42, 1.95)
+[RESET] Distance to gate 0: 2.18
+[STEP 10] active_gate=0 closest_gate=0 dist=3.76 reward=-0.798 vel=(3.39,0.27,0.14) cmd=(r=-0.02,p=0.25,yaw_rate=14.24,z=2.90) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=0 dist=2.57 reward=0.670 vel=(0.00,0.00,2.88) cmd=(r=0.08,p=0.08,yaw_rate=7.89,z=0.29) gate_found=1 gate_area=0.0173
+[STEP 30] active_gate=0 closest_gate=0 dist=2.30 reward=-0.092 vel=(2.28,0.43,0.09) cmd=(r=-0.00,p=0.10,yaw_rate=15.75,z=3.08) gate_found=1 gate_area=0.0052
+[STEP 40] active_gate=0 closest_gate=0 dist=5.71 reward=-1.042 vel=(4.10,0.19,1.03) cmd=(r=-0.01,p=0.25,yaw_rate=20.00,z=3.56) gate_found=1 gate_area=0.0091
+[STEP 47] Collision detected
+
+[RESET] Episode 187 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.39, -4.02, 1.97)
+[RESET] Distance to gate 0: 2.20
+[STEP 10] active_gate=0 closest_gate=0 dist=3.97 reward=-0.600 vel=(3.28,0.04,0.35) cmd=(r=-0.06,p=0.08,yaw_rate=-1.77,z=3.23) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=0 dist=2.56 reward=0.556 vel=(0.00,0.00,2.92) cmd=(r=0.08,p=0.08,yaw_rate=18.97,z=0.46) gate_found=1 gate_area=0.0173
+[STEP 30] active_gate=0 closest_gate=0 dist=2.60 reward=-0.264 vel=(2.07,-0.23,0.10) cmd=(r=-0.09,p=0.09,yaw_rate=20.00,z=2.91) gate_found=1 gate_area=0.0054
+[STEP 40] active_gate=0 closest_gate=0 dist=5.61 reward=-0.954 vel=(3.79,-0.27,0.82) cmd=(r=0.01,p=0.25,yaw_rate=20.00,z=3.50) gate_found=0 gate_area=0.0000
+[STEP 43] Collision detected
+
+[RESET] Episode 188 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.03, -4.64, 2.13)
+[RESET] Distance to gate 0: 2.39
+[STEP 10] active_gate=0 closest_gate=0 dist=4.19 reward=-0.834 vel=(3.01,-0.49,0.45) cmd=(r=0.03,p=0.20,yaw_rate=8.84,z=3.17) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=0 dist=2.59 reward=0.630 vel=(0.00,0.00,2.79) cmd=(r=0.00,p=0.18,yaw_rate=-8.75,z=0.42) gate_found=1 gate_area=0.0174
+[STEP 30] active_gate=0 closest_gate=0 dist=2.33 reward=-0.160 vel=(1.61,0.03,0.25) cmd=(r=0.01,p=0.08,yaw_rate=-6.47,z=2.95) gate_found=0 gate_area=0.0000
+[STEP 40] active_gate=0 closest_gate=0 dist=4.62 reward=-0.764 vel=(3.53,-0.12,0.63) cmd=(r=0.08,p=0.25,yaw_rate=20.00,z=3.29) gate_found=1 gate_area=0.0061
+[STEP 45] Collision detected
+
+[RESET] Episode 189 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.26, -3.43, 2.13)
+[RESET] Distance to gate 0: 2.18
+[STEP 10] active_gate=0 closest_gate=0 dist=3.42 reward=-0.772 vel=(2.83,0.01,0.42) cmd=(r=-0.03,p=0.08,yaw_rate=20.00,z=3.30) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=0 dist=2.28 reward=0.684 vel=(0.00,0.00,3.97) cmd=(r=-0.02,p=0.08,yaw_rate=-20.00,z=0.40) gate_found=1 gate_area=0.0174
+[STEP 30] active_gate=0 closest_gate=0 dist=2.69 reward=-0.079 vel=(1.83,-0.21,0.16) cmd=(r=0.10,p=0.20,yaw_rate=-7.06,z=2.83) gate_found=1 gate_area=0.0051
+[STEP 40] active_gate=0 closest_gate=0 dist=2.91 reward=4.526 vel=(0.00,0.00,0.00) cmd=(r=0.10,p=0.15,yaw_rate=3.77,z=3.34) gate_found=1 gate_area=0.0178
+[STEP 50] active_gate=0 closest_gate=0 dist=2.13 reward=-0.226 vel=(1.93,0.43,-0.25) cmd=(r=-0.04,p=0.22,yaw_rate=-16.61,z=2.61) gate_found=0 gate_area=0.0000
+[STEP 60] active_gate=0 closest_gate=0 dist=4.05 reward=-0.424 vel=(3.33,0.53,0.19) cmd=(r=0.06,p=0.25,yaw_rate=2.19,z=2.69) gate_found=1 gate_area=0.0029
+[STEP 70] active_gate=0 closest_gate=11 dist=8.58 reward=-1.257 vel=(1.88,0.06,-0.05) cmd=(r=-0.02,p=0.25,yaw_rate=-20.00,z=3.26) gate_found=0 gate_area=0.0000
+[STEP 80] active_gate=0 closest_gate=0 dist=2.28 reward=-0.058 vel=(1.57,-0.23,-0.03) cmd=(r=0.10,p=0.18,yaw_rate=14.17,z=2.61) gate_found=1 gate_area=0.0052
+[STEP 90] active_gate=0 closest_gate=0 dist=4.40 reward=-0.479 vel=(3.46,-0.40,0.24) cmd=(r=-0.10,p=0.09,yaw_rate=1.53,z=2.33) gate_found=1 gate_area=0.0056
+[STEP 100] active_gate=0 closest_gate=11 dist=9.70 reward=-1.745 vel=(5.44,-0.67,0.72) cmd=(r=-0.10,p=0.25,yaw_rate=-20.00,z=3.22) gate_found=1 gate_area=0.0154
+[STEP 101] Collision detected
+
+[RESET] Episode 190 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.10, -4.17, 1.98)
+[RESET] Distance to gate 0: 1.99
+[STEP 10] active_gate=0 closest_gate=0 dist=3.39 reward=-0.597 vel=(3.21,0.39,0.56) cmd=(r=-0.07,p=0.23,yaw_rate=20.00,z=2.85) gate_found=1 gate_area=0.0060
+[STEP 18] Collision detected
+
+[RESET] Episode 191 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.48, -3.39, 2.13)
+[RESET] Distance to gate 0: 2.39
+[STEP 10] active_gate=0 closest_gate=0 dist=4.29 reward=-0.611 vel=(3.20,-0.61,0.27) cmd=(r=-0.01,p=0.08,yaw_rate=20.00,z=3.17) gate_found=1 gate_area=0.0061
+[STEP 20] active_gate=0 closest_gate=11 dist=8.63 reward=-1.892 vel=(4.86,-0.85,0.43) cmd=(r=-0.10,p=0.08,yaw_rate=14.26,z=3.06) gate_found=0 gate_area=0.0000
+[STEP 22] Collision detected
+
+[RESET] Episode 192 starting
+[RESET] Armed
+[RESET] Moved to hard pose (5.55, -0.71, 2.83)
+[RESET] Distance to gate 0: 2.01
+[STEP 10] active_gate=0 closest_gate=0 dist=3.38 reward=-0.538 vel=(3.04,0.10,-0.05) cmd=(r=0.05,p=0.08,yaw_rate=-20.00,z=2.47) gate_found=1 gate_area=0.0062
+[STEP 20] active_gate=0 closest_gate=0 dist=2.91 reward=9.260 vel=(0.00,0.00,0.00) cmd=(r=0.05,p=0.12,yaw_rate=-20.00,z=3.22) gate_found=1 gate_area=0.0179
+[STEP 30] active_gate=0 closest_gate=0 dist=2.33 reward=-0.164 vel=(1.62,0.22,-0.00) cmd=(r=-0.10,p=0.19,yaw_rate=11.14,z=3.03) gate_found=0 gate_area=0.0000
+[STEP 40] active_gate=0 closest_gate=0 dist=4.21 reward=-0.564 vel=(3.52,0.34,-0.08) cmd=(r=0.00,p=0.08,yaw_rate=-2.68,z=2.80) gate_found=1 gate_area=0.0752
+[STEP 50] active_gate=0 closest_gate=0 dist=2.05 reward=0.308 vel=(0.14,-0.01,3.29) cmd=(r=0.10,p=0.21,yaw_rate=-11.23,z=1.21) gate_found=0 gate_area=0.0000
+[STEP 60] active_gate=0 closest_gate=0 dist=3.14 reward=-0.708 vel=(3.21,0.24,0.18) cmd=(r=-0.10,p=0.12,yaw_rate=-14.50,z=2.53) gate_found=0 gate_area=0.0000
+[STEP 70] active_gate=0 closest_gate=11 dist=7.75 reward=-1.941 vel=(4.91,-0.00,0.85) cmd=(r=-0.10,p=0.13,yaw_rate=-20.00,z=3.35) gate_found=0 gate_area=0.0000
+[STEP 72] Collision detected
+
+[RESET] Episode 193 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.54, -4.18, 2.11)
+[RESET] Distance to gate 0: 2.25
+[STEP 10] active_gate=0 closest_gate=0 dist=3.45 reward=-0.444 vel=(2.78,-0.25,0.53) cmd=(r=0.10,p=0.08,yaw_rate=0.49,z=3.06) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=11 dist=7.42 reward=-1.764 vel=(4.61,-0.37,1.01) cmd=(r=0.05,p=0.25,yaw_rate=20.00,z=3.49) gate_found=0 gate_area=0.0000
+[STEP 22] Collision detected
+
+[RESET] Episode 194 starting
+[RESET] Armed
+[RESET] Moved to hard pose (0.79, -0.20, 2.73)
+[RESET] Distance to gate 0: 2.05
+[STEP 10] active_gate=0 closest_gate=0 dist=3.32 reward=-0.765 vel=(2.85,-0.07,0.10) cmd=(r=-0.10,p=0.21,yaw_rate=20.00,z=2.30) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=11 dist=7.49 reward=-1.681 vel=(4.57,-0.60,0.94) cmd=(r=-0.06,p=0.25,yaw_rate=14.23,z=3.05) gate_found=0 gate_area=0.0000
+[STEP 24] Collision detected
+
+[RESET] Episode 195 starting
+[RESET] Armed
+[RESET] Moved to hard pose (4.17, 0.39, 2.83)
+[RESET] Distance to gate 0: 2.15
+[STEP 10] active_gate=0 closest_gate=0 dist=3.87 reward=-0.715 vel=(3.16,0.04,0.37) cmd=(r=0.10,p=0.22,yaw_rate=13.20,z=2.60) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=0 dist=2.62 reward=0.623 vel=(0.00,0.00,2.67) cmd=(r=0.07,p=0.17,yaw_rate=-4.58,z=-0.20) gate_found=1 gate_area=0.0175
+[STEP 30] active_gate=0 closest_gate=0 dist=2.65 reward=-0.215 vel=(2.03,-0.52,-0.01) cmd=(r=0.03,p=0.17,yaw_rate=-20.00,z=2.56) gate_found=1 gate_area=0.0053
+[STEP 40] active_gate=0 closest_gate=0 dist=5.63 reward=-1.216 vel=(4.14,-0.35,0.28) cmd=(r=0.07,p=0.22,yaw_rate=20.00,z=2.55) gate_found=0 gate_area=0.0000
+[STEP 50] active_gate=0 closest_gate=0 dist=2.82 reward=0.335 vel=(0.00,0.00,1.50) cmd=(r=-0.09,p=0.16,yaw_rate=7.31,z=0.02) gate_found=1 gate_area=0.0180
+[STEP 60] active_gate=0 closest_gate=0 dist=2.32 reward=-0.196 vel=(2.60,0.51,-0.01) cmd=(r=-0.06,p=0.25,yaw_rate=15.86,z=2.19) gate_found=1 gate_area=0.0050
+[STEP 70] active_gate=0 closest_gate=0 dist=5.79 reward=-0.814 vel=(4.36,0.46,0.83) cmd=(r=-0.04,p=0.15,yaw_rate=12.62,z=3.25) gate_found=1 gate_area=0.0485
+[STEP 76] Collision detected
+
+[RESET] Episode 196 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.72, -3.13, 2.11)
+[RESET] Distance to gate 0: 2.16
+[STEP 10] active_gate=0 closest_gate=0 dist=3.85 reward=-0.804 vel=(3.45,0.10,0.51) cmd=(r=-0.05,p=0.10,yaw_rate=15.54,z=3.03) gate_found=0 gate_area=0.0000
+[STEP 17] Collision detected
+
+[RESET] Episode 197 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.77, -3.03, 2.20)
+[RESET] Distance to gate 0: 2.32
+[STEP 10] active_gate=0 closest_gate=0 dist=3.90 reward=-0.401 vel=(3.25,-0.18,0.24) cmd=(r=0.10,p=0.18,yaw_rate=-5.44,z=3.29) gate_found=1 gate_area=0.0056
+[STEP 20] active_gate=0 closest_gate=0 dist=2.13 reward=-0.155 vel=(1.02,-0.08,1.30) cmd=(r=0.10,p=0.20,yaw_rate=-20.00,z=2.70) gate_found=1 gate_area=0.0048
+[STEP 30] active_gate=0 closest_gate=0 dist=4.07 reward=-0.874 vel=(3.34,-0.43,0.66) cmd=(r=-0.04,p=0.25,yaw_rate=-6.19,z=3.15) gate_found=0 gate_area=0.0000
+[STEP 40] active_gate=0 closest_gate=0 dist=2.04 reward=0.369 vel=(0.07,0.06,3.19) cmd=(r=0.10,p=0.08,yaw_rate=4.15,z=1.05) gate_found=0 gate_area=0.0000
+[STEP 50] active_gate=0 closest_gate=0 dist=2.77 reward=-0.187 vel=(2.50,0.39,0.38) cmd=(r=0.10,p=0.11,yaw_rate=3.73,z=2.86) gate_found=1 gate_area=0.0056
+[STEP 60] active_gate=0 closest_gate=0 dist=6.88 reward=-0.991 vel=(4.56,1.00,0.71) cmd=(r=0.07,p=0.25,yaw_rate=-9.62,z=3.24) gate_found=1 gate_area=0.0112
+[STEP 62] Collision detected
+
+[RESET] Episode 198 starting
+[RESET] Armed
+[RESET] Moved to hard pose (2.95, 0.55, 2.65)
+[RESET] Distance to gate 0: 2.03
+[STEP 10] active_gate=0 closest_gate=0 dist=4.31 reward=-0.687 vel=(3.49,-0.16,0.87) cmd=(r=-0.06,p=0.25,yaw_rate=-4.88,z=2.83) gate_found=1 gate_area=0.0058
+[STEP 18] Collision detected
+
+[RESET] Episode 199 starting
+[RESET] Armed
+[RESET] Moved to hard pose (6.71, 1.17, 3.34)
+[RESET] Distance to gate 0: 2.38
+[STEP 10] active_gate=0 closest_gate=0 dist=5.25 reward=-1.017 vel=(3.89,0.36,0.34) cmd=(r=-0.10,p=0.25,yaw_rate=9.20,z=3.47) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=0 dist=2.31 reward=-0.185 vel=(2.06,0.23,-0.26) cmd=(r=0.04,p=0.22,yaw_rate=11.00,z=2.74) gate_found=0 gate_area=0.0000
+[STEP 30] active_gate=0 closest_gate=0 dist=4.76 reward=-0.832 vel=(3.76,0.44,0.68) cmd=(r=0.08,p=0.08,yaw_rate=-20.00,z=2.92) gate_found=1 gate_area=0.0086
+[STEP 40] active_gate=0 closest_gate=0 dist=2.57 reward=0.638 vel=(0.00,0.00,2.88) cmd=(r=-0.10,p=0.13,yaw_rate=11.07,z=0.17) gate_found=1 gate_area=0.0172
+[STEP 50] active_gate=0 closest_gate=0 dist=2.44 reward=-0.161 vel=(2.36,0.01,0.17) cmd=(r=0.03,p=0.18,yaw_rate=-8.84,z=2.48) gate_found=1 gate_area=0.0050
+[STEP 60] active_gate=0 closest_gate=0 dist=5.58 reward=-0.790 vel=(4.14,0.16,0.66) cmd=(r=0.05,p=0.22,yaw_rate=-18.96,z=2.78) gate_found=1 gate_area=0.0087
+[STEP 66] Collision detected
+
+[RESET] Episode 200 starting
+[RESET] Armed
+[RESET] Moved to start pose (-0.18, -4.74, 1.94)
+[RESET] Distance to gate 0: 2.16
+[STEP 10] active_gate=0 closest_gate=0 dist=3.62 reward=-0.366 vel=(2.98,-0.10,0.37) cmd=(r=0.03,p=0.25,yaw_rate=2.45,z=2.60) gate_found=1 gate_area=0.0055
+[STEP 20] active_gate=0 closest_gate=0 dist=2.83 reward=0.195 vel=(0.00,0.00,1.45) cmd=(r=-0.10,p=0.25,yaw_rate=-20.00,z=-0.23) gate_found=1 gate_area=0.0181
+[STEP 30] active_gate=0 closest_gate=0 dist=2.33 reward=-0.052 vel=(1.83,0.00,0.08) cmd=(r=-0.04,p=0.08,yaw_rate=-11.83,z=2.76) gate_found=1 gate_area=0.0055
+[STEP 40] active_gate=0 closest_gate=0 dist=5.24 reward=-0.842 vel=(3.80,-0.14,0.73) cmd=(r=-0.06,p=0.25,yaw_rate=20.00,z=3.11) gate_found=1 gate_area=0.0080
+[STEP 50] active_gate=0 closest_gate=0 dist=2.06 reward=0.179 vel=(0.08,-0.02,3.50) cmd=(r=0.04,p=0.20,yaw_rate=-17.70,z=1.60) gate_found=0 gate_area=0.0000
+[STEP 60] active_gate=0 closest_gate=0 dist=2.55 reward=-0.308 vel=(2.25,0.12,0.02) cmd=(r=0.03,p=0.10,yaw_rate=15.66,z=3.01) gate_found=0 gate_area=0.0000
+[STEP 70] active_gate=0 closest_gate=0 dist=4.96 reward=-0.646 vel=(3.90,0.31,0.31) cmd=(r=0.10,p=0.25,yaw_rate=19.02,z=3.51) gate_found=1 gate_area=0.0774
+[STEP 76] Collision detected
+
+[RESET] Episode 201 starting
+[RESET] Armed
+[RESET] Moved to hard pose (6.54, -0.16, 3.30)
+[RESET] Distance to gate 0: 2.00
+[STEP 10] active_gate=0 closest_gate=0 dist=3.01 reward=-0.447 vel=(2.67,0.18,0.36) cmd=(r=0.00,p=0.25,yaw_rate=2.91,z=2.75) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=0 dist=2.56 reward=0.637 vel=(0.00,0.00,2.92) cmd=(r=0.09,p=0.16,yaw_rate=0.73,z=0.56) gate_found=1 gate_area=0.0173
+[STEP 30] active_gate=0 closest_gate=0 dist=2.10 reward=-0.014 vel=(1.38,0.34,0.23) cmd=(r=-0.01,p=0.19,yaw_rate=0.42,z=3.08) gate_found=0 gate_area=0.0000
+[STEP 40] active_gate=0 closest_gate=0 dist=3.40 reward=-0.435 vel=(3.21,0.53,0.35) cmd=(r=-0.10,p=0.13,yaw_rate=9.53,z=2.54) gate_found=1 gate_area=0.0661
+[STEP 50] active_gate=0 closest_gate=11 dist=7.19 reward=-1.468 vel=(4.68,0.78,0.89) cmd=(r=-0.01,p=0.08,yaw_rate=-19.01,z=3.47) gate_found=0 gate_area=0.0000
+[STEP 60] active_gate=0 closest_gate=0 dist=1.99 reward=0.001 vel=(0.63,0.22,1.48) cmd=(r=-0.01,p=0.24,yaw_rate=20.00,z=2.46) gate_found=1 gate_area=0.0051
+[STEP 70] active_gate=0 closest_gate=0 dist=2.61 reward=-0.271 vel=(2.49,0.37,0.42) cmd=(r=-0.10,p=0.08,yaw_rate=0.46,z=2.53) gate_found=0 gate_area=0.0000
+[STEP 80] active_gate=0 closest_gate=0 dist=5.41 reward=-0.684 vel=(3.94,0.43,0.62) cmd=(r=-0.10,p=0.18,yaw_rate=-1.09,z=2.87) gate_found=0 gate_area=0.0000
+[STEP 90] active_gate=0 closest_gate=0 dist=2.13 reward=0.450 vel=(0.02,0.00,3.89) cmd=(r=0.01,p=0.19,yaw_rate=-1.57,z=0.73) gate_found=0 gate_area=0.0000
+[STEP 100] active_gate=0 closest_gate=0 dist=2.77 reward=-0.358 vel=(2.66,-0.14,0.02) cmd=(r=0.09,p=0.25,yaw_rate=-10.04,z=3.04) gate_found=0 gate_area=0.0000
+[STEP 110] active_gate=0 closest_gate=0 dist=5.14 reward=-1.000 vel=(4.13,0.01,0.37) cmd=(r=0.10,p=0.24,yaw_rate=-20.00,z=3.37) gate_found=0 gate_area=0.0000
+[STEP 120] active_gate=0 closest_gate=0 dist=2.40 reward=0.726 vel=(0.00,0.00,3.51) cmd=(r=-0.10,p=0.25,yaw_rate=4.75,z=0.18) gate_found=1 gate_area=0.0181
+[STEP 130] active_gate=0 closest_gate=0 dist=2.22 reward=-0.159 vel=(2.00,0.39,0.17) cmd=(r=-0.08,p=0.18,yaw_rate=8.97,z=3.04) gate_found=0 gate_area=0.0000
+[STEP 140] active_gate=0 closest_gate=0 dist=3.79 reward=-0.283 vel=(3.25,0.46,0.44) cmd=(r=0.10,p=0.18,yaw_rate=0.61,z=2.87) gate_found=1 gate_area=0.0067
+[STEP 150] active_gate=0 closest_gate=0 dist=2.71 reward=0.329 vel=(0.00,0.00,2.20) cmd=(r=0.10,p=0.25,yaw_rate=20.00,z=-0.19) gate_found=1 gate_area=0.0176
+[STEP 160] active_gate=0 closest_gate=0 dist=2.39 reward=-0.167 vel=(2.01,-0.23,-0.13) cmd=(r=-0.10,p=0.19,yaw_rate=-20.00,z=2.87) gate_found=1 gate_area=0.0054
+[STEP 170] active_gate=0 closest_gate=0 dist=4.59 reward=-0.617 vel=(3.75,-0.20,0.31) cmd=(r=0.01,p=0.25,yaw_rate=-3.94,z=2.61) gate_found=0 gate_area=0.0000
+[STEP 178] Collision detected
+
+[RESET] Episode 202 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.09, -2.97, 1.88)
+[RESET] Distance to gate 0: 2.04
+[STEP 10] active_gate=0 closest_gate=0 dist=3.65 reward=-0.660 vel=(3.46,0.41,0.43) cmd=(r=0.08,p=0.25,yaw_rate=-9.61,z=2.93) gate_found=1 gate_area=0.0063
+[STEP 19] Collision detected
+
+[RESET] Episode 203 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.84, -3.77, 1.87)
+[RESET] Distance to gate 0: 2.09
+[STEP 10] active_gate=0 closest_gate=0 dist=3.56 reward=-0.635 vel=(3.26,0.18,0.36) cmd=(r=0.01,p=0.12,yaw_rate=-20.00,z=2.37) gate_found=0 gate_area=0.0000
+[STEP 20] active_gate=0 closest_gate=11 dist=7.03 reward=-1.322 vel=(4.54,0.50,0.62) cmd=(r=0.10,p=0.25,yaw_rate=-4.22,z=3.44) gate_found=0 gate_area=0.0000
+[STEP 30] active_gate=0 closest_gate=0 dist=2.04 reward=0.379 vel=(0.09,0.01,3.46) cmd=(r=0.10,p=0.25,yaw_rate=10.59,z=1.53) gate_found=1 gate_area=0.0051
+[STEP 40] active_gate=0 closest_gate=0 dist=2.69 reward=-0.071 vel=(2.41,-0.03,0.31) cmd=(r=0.10,p=0.23,yaw_rate=-1.41,z=2.94) gate_found=1 gate_area=0.0057
+[STEP 50] active_gate=0 closest_gate=0 dist=5.57 reward=-1.054 vel=(4.23,-0.47,0.27) cmd=(r=-0.10,p=0.14,yaw_rate=-3.23,z=3.02) gate_found=0 gate_area=0.0000
+[STEP 60] active_gate=0 closest_gate=0 dist=2.06 reward=0.524 vel=(0.07,0.00,3.27) cmd=(r=0.03,p=0.08,yaw_rate=-4.57,z=0.98) gate_found=1 gate_area=0.0053
+[STEP 70] active_gate=0 closest_gate=0 dist=2.43 reward=-0.331 vel=(2.17,0.01,-0.21) cmd=(r=-0.01,p=0.25,yaw_rate=-12.69,z=2.89) gate_found=0 gate_area=0.0000
+[STEP 80] active_gate=0 closest_gate=0 dist=4.89 reward=-0.587 vel=(3.78,-0.12,0.20) cmd=(r=0.10,p=0.08,yaw_rate=20.00,z=2.59) gate_found=1 gate_area=0.0608
+[STEP 89] Collision detected
+
+[RESET] Episode 204 starting
+[RESET] Armed
+[RESET] Moved to hard pose (2.08, -0.03, 3.04)
+[RESET] Distance to gate 0: 2.16
+[STEP 10] active_gate=0 closest_gate=0 dist=3.37 reward=-0.373 vel=(2.88,-0.02,0.31) cmd=(r=0.08,p=0.23,yaw_rate=13.67,z=2.49) gate_found=1 gate_area=0.0050
+[STEP 20] active_gate=0 closest_gate=11 dist=6.80 reward=-1.537 vel=(4.55,-0.07,0.47) cmd=(r=-0.07,p=0.11,yaw_rate=-11.40,z=2.76) gate_found=1 gate_area=0.0030
+[STEP 30] active_gate=0 closest_gate=0 dist=2.24 reward=0.654 vel=(0.00,0.00,4.11) cmd=(r=0.10,p=0.19,yaw_rate=-9.92,z=0.92) gate_found=1 gate_area=0.0171
+[STEP 40] active_gate=0 closest_gate=0 dist=2.24 reward=-0.292 vel=(2.11,0.31,0.05) cmd=(r=0.06,p=0.17,yaw_rate=-14.08,z=2.43) gate_found=0 gate_area=0.0000
+[STEP 50] active_gate=0 closest_gate=0 dist=4.28 reward=-0.596 vel=(3.55,0.66,0.69) cmd=(r=-0.10,p=0.15,yaw_rate=17.83,z=3.25) gate_found=1 gate_area=0.0086
+[STEP 60] active_gate=0 closest_gate=0 dist=2.72 reward=0.359 vel=(0.00,0.00,2.15) cmd=(r=-0.03,p=0.15,yaw_rate=-14.87,z=0.27) gate_found=1 gate_area=0.0178
+[STEP 70] active_gate=0 closest_gate=0 dist=2.34 reward=-0.189 vel=(2.27,0.07,0.38) cmd=(r=0.03,p=0.25,yaw_rate=-17.02,z=2.90) gate_found=1 gate_area=0.0057
+[STEP 80] active_gate=0 closest_gate=0 dist=4.71 reward=-0.731 vel=(3.81,0.09,0.22) cmd=(r=-0.02,p=0.12,yaw_rate=20.00,z=2.56) gate_found=1 gate_area=0.0603
+[STEP 90] Collision detected
+[STEP 90] active_gate=0 closest_gate=11 dist=9.15 reward=-101.675 vel=(5.13,0.30,0.46) cmd=(r=0.10,p=0.25,yaw_rate=4.36,z=3.32) gate_found=0 gate_area=0.0000
+
+[RESET] Episode 205 starting
+[RESET] Armed
+[RESET] Moved to start pose (-1.68, -4.62, 1.94)
+[RESET] Distance to gate 0: 2.21
+[STEP 10] active_gate=0 closest_gate=0 dist=3.86 reward=-1.125 vel=(3.26,-0.32,-0.06) cmd=(r=0.01,p=0.12,yaw_rate=20.00,z=2.61) gate_found=0 gate_area=0.0000
+Traceback (most recent call last):
+  File "C:\Users\brend\AI-GP\train_rl.py", line 66, in <module>
+    model.learn(total_timesteps=TOTAL_TIMESTEPS, callback=callbacks, progress_bar=True)
+  File "C:\Users\brend\AppData\Local\Programs\Python\Python310\lib\site-packages\stable_baselines3\ppo\ppo.py", line 311, in learn
+    return super().learn(
+  File "C:\Users\brend\AppData\Local\Programs\Python\Python310\lib\site-packages\stable_baselines3\common\on_policy_algorithm.py", line 324, in learn
+    continue_training = self.collect_rollouts(self.env, callback, self.rollout_buffer, n_rollout_steps=self.n_steps)
+  File "C:\Users\brend\AppData\Local\Programs\Python\Python310\lib\site-packages\stable_baselines3\common\on_policy_algorithm.py", line 218, in collect_rollouts
+    new_obs, rewards, dones, infos = env.step(clipped_actions)
+  File "C:\Users\brend\AppData\Local\Programs\Python\Python310\lib\site-packages\stable_baselines3\common\vec_env\base_vec_env.py", line 222, in step
+    return self.step_wait()
+  File "C:\Users\brend\AppData\Local\Programs\Python\Python310\lib\site-packages\stable_baselines3\common\vec_env\dummy_vec_env.py", line 59, in step_wait
+    obs, self.buf_rews[env_idx], terminated, truncated, self.buf_infos[env_idx] = self.envs[env_idx].step(  # type: ignore[assignment]
+  File "C:\Users\brend\AppData\Local\Programs\Python\Python310\lib\site-packages\stable_baselines3\common\monitor.py", line 94, in step
+    observation, reward, terminated, truncated, info = self.env.step(action)
+  File "C:\Users\brend\AI-GP\adrl_env.py", line 375, in step
+    "gate_dist": float("inf"),
+  File "C:\Users\brend\AI-GP\adrl_env.py", line 253, in _get_obs
+    def _get_obs(self):
+  File "C:\Users\brend\AI-GP\adrl_env.py", line 176, in _extract_cv_features
+    kin.linear_velocity.x_val,
+  File "C:\Users\brend\AppData\Local\Programs\Python\Python310\lib\site-packages\airsimdroneracinglab\client.py", line 328, in simGetImages
+    responses_raw = self.client.call("simGetImages", requests, vehicle_name)
+  File "C:\Users\brend\AppData\Local\Programs\Python\Python310\lib\site-packages\msgpackrpc\session.py", line 41, in call
+    return self.send_request(method, args).get()
+  File "C:\Users\brend\AppData\Local\Programs\Python\Python310\lib\site-packages\msgpackrpc\future.py", line 43, in get
+    raise self._error
+msgpackrpc.error.TimeoutError: Request timed out
+Exception ignored in: <function tqdm.__del__ at 0x0000025419793AC0>
+Traceback (most recent call last):
+  File "C:\Users\brend\AppData\Local\Programs\Python\Python310\lib\site-packages\tqdm\std.py", line 1148, in __del__
+  File "C:\Users\brend\AppData\Local\Programs\Python\Python310\lib\site-packages\tqdm\rich.py", line 121, in close
+  File "C:\Users\brend\AppData\Local\Programs\Python\Python310\lib\site-packages\rich\progress.py", line 1190, in __exit__
+  File "C:\Users\brend\AppData\Local\Programs\Python\Python310\lib\site-packages\rich\progress.py", line 1176, in stop
+  File "C:\Users\brend\AppData\Local\Programs\Python\Python310\lib\site-packages\rich\live.py", line 162, in stop
+  File "C:\Users\brend\AppData\Local\Programs\Python\Python310\lib\site-packages\rich\console.py", line 870, in __exit__
+  File "C:\Users\brend\AppData\Local\Programs\Python\Python310\lib\site-packages\rich\console.py", line 826, in _exit_buffer
+  File "C:\Users\brend\AppData\Local\Programs\Python\Python310\lib\site-packages\rich\console.py", line 2042, in _check_buffer
+  File "C:\Users\brend\AppData\Local\Programs\Python\Python310\lib\site-packages\rich\console.py", line 2071, in _write_buffer
+ImportError: sys.meta_path is None, Python is likely shutting down
